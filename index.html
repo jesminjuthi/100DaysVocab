@@ -28,7 +28,6 @@
           transform: translateY(0);
         }
       }
-      /* Custom Print Styles */
       @media print {
         body {
           background-color: white !important;
@@ -56,7 +55,7 @@
         <div class="font-bold text-2xl tracking-wide">
           Juthi's Vocab Library
         </div>
-        <div class="text-violet-200 text-sm hidden sm:block">
+        <div class="text-violet-400 text-sm hidden sm:block">
           | 100 Days Vocab Challenge
         </div>
       </div>
@@ -89,50 +88,74 @@
         <p class="text-lg font-medium">অ্যাপ লোড হচ্ছে...</p>
       </div>
 
-      <!-- Dashboard View -->
+
       <div id="view-dashboard" class="hidden animate-fade-in">
         <div
-          class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4"
+          class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4"
         >
           <h1 class="text-3xl font-bold text-gray-800">
             সকল কন্টেন্ট (<span id="total-days">0</span>)
           </h1>
-          <div class="flex flex-wrap justify-center gap-3">
-            <label
-              class="cursor-pointer bg-white border border-violet-600 text-violet-700 px-4 py-2 rounded-lg hover:bg-violet-50 flex items-center shadow-sm transition"
+          <div class="flex flex-wrap justify-center md:justify-end gap-3">
+
+            <div
+              class="flex bg-gray-100 p-1 rounded-lg border border-gray-200 shadow-inner mr-2"
             >
-              <i data-lucide="upload" class="w-4 h-4 mr-2"></i> ব্যাকআপ আপলোড
+              <label
+                class="cursor-pointer text-gray-600 px-3 py-2 rounded hover:bg-white flex items-center transition text-sm font-medium"
+                title="সম্পূর্ণ ডেটাবেস ইমপোর্ট"
+              >
+                <i data-lucide="upload" class="w-4 h-4 mr-1.5"></i> ফুল ব্যাকআপ
+                আপলোড
+                <input
+                  type="file"
+                  accept=".json"
+                  class="hidden"
+                  id="file-import"
+                  onchange="window.importData(event)"
+                />
+              </label>
+              <div class="w-px bg-gray-300 my-2"></div>
+              <button
+                onclick="window.exportData()"
+                class="text-gray-600 px-3 py-2 rounded hover:bg-white flex items-center transition text-sm font-medium"
+                title="সম্পূর্ণ ডেটাবেস সেভ"
+              >
+                <i data-lucide="download" class="w-4 h-4 mr-1.5"></i> ফুল
+                ব্যাকআপ সেভ
+              </button>
+            </div>
+
+            <label
+              class="cursor-pointer bg-violet-50 border border-violet-500 text-violet-700 px-4 py-2 rounded-lg hover:bg-violet-100 flex items-center shadow-sm transition font-medium"
+            >
+              <i data-lucide="file-json" class="w-5 h-5 mr-2"></i> সিঙ্গেল ডে
+              আপলোড
               <input
                 type="file"
                 accept=".json"
                 class="hidden"
-                id="file-import"
-                onchange="window.importData(event)"
+                id="single-day-import"
+                onchange="window.importSingleDay(event)"
               />
             </label>
             <button
-              onclick="window.exportData()"
-              class="bg-white border border-violet-600 text-violet-700 px-4 py-2 rounded-lg hover:bg-violet-50 flex items-center shadow-sm transition"
-            >
-              <i data-lucide="download" class="w-4 h-4 mr-2"></i> ব্যাকআপ সেভ
-            </button>
-            <button
               onclick="window.createNewDay()"
-              class="bg-violet-600 text-white px-5 py-2 rounded-lg hover:bg-violet-700 flex items-center shadow-md transition transform hover:scale-105"
+              class="bg-violet-600 text-white px-5 py-2 rounded-lg hover:bg-violet-700 flex items-center shadow-md transition transform hover:scale-105 font-bold"
             >
-              <i data-lucide="plus" class="w-5 h-5 mr-2"></i> নতুন দিন যোগ করুন
+              <i data-lucide="plus" class="w-5 h-5 mr-2"></i> নতুন দিন তৈরি করুন
             </button>
           </div>
         </div>
+
         <div
           id="dashboard-grid"
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
         >
-          <!-- Cards will be injected here -->
+
         </div>
       </div>
 
-      <!-- Editor View -->
       <div
         id="view-editor"
         class="hidden animate-fade-in bg-white rounded-xl shadow-lg p-6 max-w-4xl mx-auto border border-gray-100 pb-24 relative"
@@ -156,7 +179,7 @@
         </div>
 
         <div class="space-y-8">
-          <!-- Basic Info -->
+
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-1"
@@ -184,7 +207,6 @@
             </div>
           </div>
 
-          <!-- Dynamic Lists Containers -->
           <div id="list-vocabularies"></div>
           <div id="list-prepositions"></div>
           <div id="list-idioms"></div>
@@ -207,7 +229,6 @@
           </div>
         </div>
 
-        <!-- Floating Save Button -->
         <div
           class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t p-4 flex justify-center shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-40 print-hidden"
         >
@@ -237,13 +258,11 @@
             </button>
           </div>
           <div id="preview-content">
-            
           </div>
         </div>
       </div>
     </main>
 
-    <!-- Custom Modal -->
     <div
       id="custom-modal"
       class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center print-hidden p-4"
@@ -268,13 +287,13 @@
           </h3>
         </div>
         <div class="flex justify-center gap-3" id="modal-actions">
+
         </div>
       </div>
     </div>
 
     <!-- Application Logic -->
     <script>
-      // Global State Configuration
       window.appState = {
         days: [],
         currentDay: null,
@@ -331,7 +350,7 @@
           grid.innerHTML = `
                     <div class="col-span-full text-center py-20 text-gray-400 bg-white rounded-xl border border-dashed border-gray-300 shadow-sm">
                         <i data-lucide="alert-circle" class="w-12 h-12 mx-auto mb-4 opacity-50"></i>
-                        <p class="text-xl">কোনো কন্টেন্ট পাওয়া যায়নি। নতুন কন্টেন্ট তৈরি করুন।</p>
+                        <p class="text-xl">কোনো কন্টেন্ট পাওয়া যায়নি। নতুন কন্টেন্ট তৈরি করুন অথবা ফাইল আপলোড করুন।</p>
                     </div>`;
         } else {
           const sortedDays = [...window.appState.days].sort(
@@ -587,7 +606,6 @@
         const arrowIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>`;
         const arrowIconLg = `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>`;
 
-        
         const footerLink = `
                 <div class="absolute bottom-8 left-0 w-full text-center">
                     <p class="text-xs text-gray-400 font-medium">Made with <span class="text-red-500 text-sm">❤️</span> Jesmin Juthi</p>
@@ -596,7 +614,7 @@
 
         let html = `
                 <!-- Cover Page -->
-                <div class="page-break min-h-[1050px] print:h-[1100px] flex flex-col justify-center items-center bg-[#31395c] text-white p-12 text-center relative border-b-8 border-gray-100 print:border-none">
+                <div class="page-break min-h-[1050px] print:h-[1100px] flex flex-col justify-center items-center bg-[#2c376c] text-white p-12 text-center relative border-b-8 border-gray-100 print:border-none">
                     <h1 class="text-[8rem] sm:text-9xl font-black mb-12 tracking-tight drop-shadow-lg">Day-${data.dayNumber || "?"}</h1>
                     <p class="text-2xl sm:text-3xl leading-relaxed max-w-lg font-medium px-4">${data.quote || ""}</p>
                     <div class="absolute bottom-12 left-0 w-full text-center">
@@ -610,14 +628,12 @@
           if (!items || items.length === 0) return "";
           let pageHtml = `
                     <div class="page-break min-h-[1050px] print:h-[1100px] bg-white p-8 sm:p-12 relative border-b-8 border-gray-100 flex flex-col">
-                        <div class="bg-[#31395c] text-white text-2xl sm:text-3xl font-bold py-4 px-8 inline-block rounded-br-3xl rounded-tl-3xl mb-12 shadow-md self-start">${title}</div>
+                        <div class="bg-[#2c376c] text-white text-2xl sm:text-3xl font-bold py-4 px-8 inline-block rounded-br-3xl rounded-tl-3xl mb-12 shadow-md self-start">${title}</div>
                         <div class="space-y-10 flex-1 px-2 sm:px-6">
                 `;
           items.forEach((item) => {
             pageHtml += `<div class="mb-6">${renderItem(item)}</div>`;
           });
-
-          
           pageHtml += `</div>${footerLink}</div>`;
           return pageHtml;
         };
@@ -662,7 +678,6 @@
                 </div>`,
         );
 
-        // Responsive 
         html += addDynamicPage(
           "Spelling",
           data.spellings,
@@ -674,7 +689,6 @@
                 </div>`,
         );
 
-        // Responsive 
         html += addDynamicPage(
           "One word substitution",
           data.oneWords,
@@ -688,7 +702,6 @@
                 </div>`,
         );
 
-        // Responsive 
         html += addDynamicPage(
           "Analogy",
           data.analogies,
@@ -716,11 +729,11 @@
                 </div>`;
         }
 
-
         document.getElementById("preview-content").innerHTML = html;
         if (typeof lucide !== "undefined") lucide.createIcons();
       };
 
+      // EXPORT ALL DATA
       window.exportData = function () {
         if (window.appState.days.length === 0) {
           window.showModal("alert", "এক্সপোর্ট করার মতো কোনো ডাটা নেই!");
@@ -731,12 +744,13 @@
           encodeURIComponent(JSON.stringify(window.appState.days, null, 2));
         const downloadNode = document.createElement("a");
         downloadNode.setAttribute("href", dataStr);
-        downloadNode.setAttribute("download", "vocabulary_backup.json");
+        downloadNode.setAttribute("download", "vocabulary_full_backup.json");
         document.body.appendChild(downloadNode);
         downloadNode.click();
         downloadNode.remove();
       };
 
+      // IMPORT FULL BACKUP (Replace all)
       window.importData = function (event) {
         const file = event.target.files[0];
         if (!file) return;
@@ -747,12 +761,94 @@
           try {
             const importedDays = JSON.parse(e.target.result);
             if (Array.isArray(importedDays)) {
-              window.appState.days = importedDays;
-              window.saveToLocalStorage();
-              window.renderDashboard();
-              window.showModal("alert", "ডেটা সফলভাবে ইমপোর্ট হয়েছে!");
+              window.showModal(
+                "confirm",
+                "এটি আপলোড করলে আপনার বর্তমান সব ডেটা মুছে গিয়ে নতুন ডেটা বসবে। আপনি কি নিশ্চিত?",
+                () => {
+                  window.appState.days = importedDays;
+                  window.saveToLocalStorage();
+                  window.renderDashboard();
+                  window.closeModal();
+                  setTimeout(
+                    () =>
+                      window.showModal(
+                        "alert",
+                        "ফুল ব্যাকআপ সফলভাবে ইমপোর্ট হয়েছে!",
+                      ),
+                    300,
+                  );
+                },
+              );
             } else {
               window.showModal("alert", "ভুল ফাইল ফরম্যাট!");
+            }
+          } catch (error) {
+            window.showModal("alert", "ফাইল পড়তে সমস্যা হয়েছে!");
+          }
+          event.target.value = null;
+        };
+      };
+
+      // IMPORT SINGLE DAY (Merge/Append)
+      window.importSingleDay = function (event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.readAsText(file, "UTF-8");
+        reader.onload = (e) => {
+          try {
+            const importedData = JSON.parse(e.target.result);
+            let newDay = null;
+            if (Array.isArray(importedData) && importedData.length > 0) {
+              newDay = importedData[0];
+            } else if (
+              importedData &&
+              typeof importedData === "object" &&
+              !Array.isArray(importedData)
+            ) {
+              newDay = importedData;
+            }
+
+            if (newDay && (newDay.id || newDay.dayNumber)) {
+              
+              const existingIndex = window.appState.days.findIndex(
+                (d) => d.dayNumber === newDay.dayNumber,
+              );
+
+              if (existingIndex >= 0) {
+                window.showModal(
+                  "confirm",
+                  `Day-${newDay.dayNumber} এর ডেটা আগে থেকেই আছে। আপনি কি পুরনো ডেটা মুছে এটি আপডেট করতে চান?`,
+                  () => {
+                    window.appState.days[existingIndex] = newDay;
+                    window.saveToLocalStorage();
+                    window.renderDashboard();
+                    window.closeModal();
+                    setTimeout(
+                      () =>
+                        window.showModal(
+                          "alert",
+                          `Day-${newDay.dayNumber} সফলভাবে আপডেট হয়েছে!`,
+                        ),
+                      300,
+                    );
+                  },
+                );
+              } else {
+                window.appState.days.push(newDay);
+                window.saveToLocalStorage();
+                window.renderDashboard();
+                window.showModal(
+                  "alert",
+                  `নতুন দিন (Day-${newDay.dayNumber}) সফলভাবে যোগ হয়েছে!`,
+                );
+              }
+            } else {
+              window.showModal(
+                "alert",
+                "ভুল ফাইল ফরম্যাট! কনভার্টার থেকে জেনারেট করা সঠিক JSON ফাইল আপলোড করুন।",
+              );
             }
           } catch (error) {
             window.showModal("alert", "ফাইল পড়তে সমস্যা হয়েছে!");
@@ -798,12 +894,10 @@
 
       // --- APP INITIALIZATION ---
       document.addEventListener("DOMContentLoaded", function () {
-
         if (typeof lucide !== "undefined") {
           lucide.createIcons();
         }
 
-        // Safe Local Storage Data Load
         try {
           const savedData = localStorage.getItem("jobAchieverData");
           if (savedData) {

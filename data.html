@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Data Converter - Juthi's Vocab Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap");
+      body {
+        font-family: "Noto Sans Bengali", sans-serif;
+        background-color: #f0fdf4;
+      }
+      textarea {
+        font-family: "Consolas", "Courier New", monospace;
+      }
+    </style>
+  </head>
+  <body class="text-gray-800 h-screen flex flex-col">
+    <nav
+      class="bg-teal-700 text-white p-4 shadow-md flex justify-between items-center shrink-0"
+    >
+      <div class="font-bold text-xl flex items-center">
+        <i data-lucide="file-json" class="mr-2"></i> Auto Format JSON Converter
+      </div>
+      <button
+        onclick="loadTemplate()"
+        class="bg-teal-800 hover:bg-teal-900 px-4 py-2 rounded shadow text-sm font-medium transition flex items-center"
+      >
+        <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> ডেমো টেমপ্লেট লোড
+        করুন
+      </button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col lg:flex-row p-4 gap-4 min-h-0">
+      <div
+        class="flex-1 flex flex-col bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden"
+      >
+        <div
+          class="bg-gray-100 p-3 border-b border-gray-200 flex justify-between items-center"
+        >
+          <h2 class="font-bold text-gray-700">
+            এখানে আপনার টেক্সট পেস্ট করুন:
+          </h2>
+          <span
+            class="text-xs text-teal-600 bg-teal-50 px-2 py-1 rounded font-medium border border-teal-100"
+            >Smart Auto Parse Enabled</span
+          >
+        </div>
+        <textarea
+          id="rawInput"
+          class="flex-1 w-full p-4 outline-none resize-none text-sm leading-relaxed"
+          placeholder="উপরে 'ডেমো টেমপ্লেট লোড করুন' বাটনে ক্লিক করে ফরম্যাট দেখে নিন..."
+        ></textarea>
+      </div>
+
+      <div class="flex-1 flex flex-col gap-4">
+        <div
+          class="flex-1 flex flex-col bg-gray-900 rounded-xl shadow-md overflow-hidden"
+        >
+          <div
+            class="bg-gray-800 p-3 border-b border-gray-700 flex justify-between items-center"
+          >
+            <h2 class="font-bold text-teal-400">JSON প্রিভিউ:</h2>
+            <span id="status" class="text-xs text-gray-400"
+              >Waiting for input...</span
+            >
+          </div>
+          <div class="flex-1 relative">
+            <textarea
+              id="jsonOutput"
+              class="absolute inset-0 w-full h-full p-4 bg-gray-900 text-green-400 text-sm outline-none resize-none whitespace-pre"
+              readonly
+            ></textarea>
+          </div>
+        </div>
+
+        <div
+          class="bg-white p-4 rounded-xl shadow-md border border-gray-200 shrink-0 flex gap-3"
+        >
+          <button
+            onclick="parseText()"
+            class="flex-1 bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 flex justify-center items-center font-bold transition"
+          >
+            <i data-lucide="refresh-cw" class="w-5 h-5 mr-2"></i> জেনারেট করুন
+          </button>
+          <button
+            onclick="downloadJSON()"
+            class="flex-1 bg-teal-600 text-white px-4 py-3 rounded-lg hover:bg-teal-700 flex justify-center items-center font-bold transition shadow-[0_4px_14px_0_rgba(13,148,136,0.39)]"
+          >
+            <i data-lucide="download" class="w-5 h-5 mr-2"></i> JSON ডাউনলোড
+            করুন
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      lucide.createIcons();
+
+      const template = `Day-02
+“সাফল্যের চাবিকাঠি হলো আমাদের সচেতন মনকে এমন সব বিষয় দিয়ে গড়ে তোলা, যা আমরা ভয় পাই না বরং যা আমরা অর্জন করতে চাই।”
+
+Vocabulary
+1. Ambiguous : অস্পষ্ট / দ্ব্যর্থবোধক
+Synonym: Vague, Obscure, Unclear
+Antonym: Explicit, Clear, Lucid
+Example: The instructions were too ambiguous to understand.
+
+2. Complacent : আত্মতৃপ্ত
+Synonym: Self-satisfied, Content, Smug
+Antonym: Dissatisfied, Anxious, Concerned
+Example: We cannot afford to be complacent about our health.
+
+3. Inevitable : অনিবার্য
+Synonym: Unavoidable, Certain, Inescapable
+Antonym: Avoidable, Preventable, Uncertain
+Example: Death is inevitable for everyone.
+
+4. Obsolete : সেকেলে / অপ্রচলিত
+Synonym: Outdated, Archaic, Old-fashioned
+Antonym: Modern, Contemporary, Current
+Example: Typewriters have become obsolete now.
+
+5. Vulnerable : অরক্ষিত / সহজে আঘাতযোগ্য
+Synonym: Susceptible, Weak, Defenseless
+Antonym: Invincible, Protected, Secure
+Example: Children are the most vulnerable members of society.
+
+Appropriate Preposition
+1. Abound in / with
+অর্থ: প্রচুর পরিমাণে থাকা
+Example: The river abounds with fish.
+
+2. Capable of
+অর্থ: সক্ষম
+Example: He is capable of solving the problem alone.
+
+3. Desire for
+অর্থ: আকাঙ্ক্ষা
+Example: He has no desire for fame.
+
+4. Envious of
+অর্থ: ঈর্ষান্বিত
+Example: She is envious of my success.
+
+5. Fond of
+অর্থ: প্রিয় / পছন্দ করে এমন
+Example: I am fond of sweets.
+
+Idioms & Phrases
+1. A bolt from the blue
+অর্থ: বিনা মেঘে বজ্রপাত / অপ্রত্যাশিত বিপদ
+Example: The news of his father's death came as a bolt from the blue.
+
+2. Cats and dogs
+অর্থ: মুষলধারে
+Example: It is raining cats and dogs.
+
+3. Crocodile tears
+অর্থ: মায়াকান্না / লোক দেখানো শোক
+Example: She shed crocodile tears at the funeral.
+
+4. Gala day
+অর্থ: উৎসবের দিন
+Example: The 16th December is a gala day for us.
+
+5. In lieu of
+অর্থ: পরিবর্তে
+Example: He gave me a check in lieu of cash.
+
+Spelling
+A-chieve-ment → Achievement (অর্জন)
+Dys-en-ter-y → Dysentery (আমাশয়)
+Hu-mor-ous → Humorous (রসিকতাপূর্ণ)
+Jew-el-ler-y → Jewellery (অলঙ্কার)
+Main-te-nance → Maintenance (রক্ষণাবেক্ষণ)
+
+Note: সিলেবল (Syllable) ভেঙে পড়লে বানান মনে রাখা সহজ হয়।
+
+One Word Substitution
+Present everywhere at the same time → Omnipresent (সর্বব্যাপী)
+A paper written by hand → Manuscript (পাণ্ডুলিপি)
+One who hates women → Misogynist (নারীবিদ্বেষী)
+Plants of a particular region → Flora (উদ্ভিদকুল)
+Animals of a particular region → Fauna (প্রাণিকুল)
+
+Analogy
+1. Editor : Newspaper
+(সম্পর্ক: Worker and Product। সম্পাদকের নির্দেশনায় সংবাদপত্র প্রকাশিত হয়)
+
+2. Breeze : Tornado
+(সম্পর্ক: Degree of Intensity। মৃদু বাতাস হলো Breeze, আর ধ্বংসাত্মক বাতাস হলো Tornado)
+
+3. Light : Blind
+(সম্পর্ক: Lack of। অন্ধ ব্যক্তির আলোর অভাব থাকে)
+
+4. Safe : Secure
+(সম্পর্ক: Synonym। নিরাপদ ও সুরক্ষিত একই অর্থ বহন করে)
+
+5. Pen : Write
+(সম্পর্ক: Tool and Action। কলম দিয়ে লেখার কাজ করা হয়)`;
+
+      function loadTemplate() {
+        document.getElementById("rawInput").value = template;
+        parseText();
+      }
+
+      function parseText() {
+        const raw = document.getElementById("rawInput").value;
+        const lines = raw.split("\n");
+
+        const dayData = {
+          id: "day-" + Date.now(),
+          dayNumber: "",
+          quote: "",
+          vocabularies: [],
+          prepositions: [],
+          idioms: [],
+          spellings: [],
+          oneWords: [],
+          analogies: [],
+          examLink: "",
+        };
+
+        let currentSection = "header";
+        let currentItem = null;
+
+        function pushCurrentItem() {
+          if (currentItem) {
+            if (currentSection === "vocab")
+              dayData.vocabularies.push(currentItem);
+            else if (currentSection === "prep")
+              dayData.prepositions.push(currentItem);
+            else if (currentSection === "idiom")
+              dayData.idioms.push(currentItem);
+            else if (currentSection === "analogy")
+              dayData.analogies.push(currentItem);
+            currentItem = null;
+          }
+        }
+
+        for (let i = 0; i < lines.length; i++) {
+          let line = lines[i].trim();
+          if (!line) continue;
+
+          // 1. Detect Header / Day / Quote
+          if (line.match(/^Day-\d+/i)) {
+            dayData.dayNumber = line.replace(/^Day-/i, "").trim();
+            let nextLineIndex = i + 1;
+            while (
+              nextLineIndex < lines.length &&
+              lines[nextLineIndex].trim() === ""
+            ) {
+              nextLineIndex++;
+            }
+            if (
+              nextLineIndex < lines.length &&
+              !lines[nextLineIndex].match(
+                /Vocabulary|Preposition|Idiom|Spelling|One Word|Analogy/i,
+              )
+            ) {
+              dayData.quote = lines[nextLineIndex].trim();
+              i = nextLineIndex;
+            }
+            continue;
+          }
+
+          // 2. Detect Section Changes
+          if (line.match(/^Vocabulary/i)) {
+            pushCurrentItem();
+            currentSection = "vocab";
+            continue;
+          }
+          if (line.match(/^Appropriate Preposition/i)) {
+            pushCurrentItem();
+            currentSection = "prep";
+            continue;
+          }
+          if (line.match(/^Idioms? & Phrases?/i) || line.match(/^Idioms?/i)) {
+            pushCurrentItem();
+            currentSection = "idiom";
+            continue;
+          }
+          if (line.match(/^Spelling/i)) {
+            pushCurrentItem();
+            currentSection = "spell";
+            continue;
+          }
+          if (line.match(/^One Word/i)) {
+            pushCurrentItem();
+            currentSection = "oneWord";
+            continue;
+          }
+          if (line.match(/^Analogy/i)) {
+            pushCurrentItem();
+            currentSection = "analogy";
+            continue;
+          }
+
+          // Skip any notes
+          if (line.match(/^Note:/i)) continue;
+
+          // 3. Process Section Contents
+          if (currentSection === "vocab") {
+            // Start of new word (e.g., "1. Ambiguous : অস্পষ্ট / দ্ব্যর্থবোধক")
+            const matchWord = line.match(/^\d+\.\s*(.+?)\s*:\s*(.+)/);
+            if (matchWord) {
+              pushCurrentItem();
+              currentItem = {
+                word: matchWord[1].trim(),
+                meaning: matchWord[2].trim(),
+                synonym: "",
+                antonym: "",
+                example: "",
+              };
+            } else if (currentItem) {
+              if (line.match(/^Synonym:/i))
+                currentItem.synonym = line.replace(/^Synonym:\s*/i, "").trim();
+              else if (line.match(/^Antonym:/i))
+                currentItem.antonym = line.replace(/^Antonym:\s*/i, "").trim();
+              else if (line.match(/^Example:/i))
+                currentItem.example = line.replace(/^Example:\s*/i, "").trim();
+            }
+          } else if (currentSection === "prep" || currentSection === "idiom") {
+            // Start of new prep/idiom (e.g., "1. Abound in / with")
+            const matchWord = line.match(/^\d+\.\s*(.+)/);
+            if (matchWord) {
+              pushCurrentItem();
+              currentItem = {
+                word: matchWord[1].trim(),
+                meaning: "",
+                example: "",
+              };
+            } else if (currentItem) {
+              if (line.match(/^অর্থ:/i))
+                currentItem.meaning = line.replace(/^অর্থ:\s*/i, "").trim();
+              else if (line.match(/^Example:/i))
+                currentItem.example = line.replace(/^Example:\s*/i, "").trim();
+            }
+          } else if (currentSection === "spell") {
+            // e.g., "A-chieve-ment → Achievement (অর্জন)"
+            const parts = line.split(/→|->/);
+            if (parts.length === 2) {
+              dayData.spellings.push({
+                broken: parts[0].trim(),
+                correct: parts[1].trim(),
+              });
+            }
+          } else if (currentSection === "oneWord") {
+            // e.g., "Present everywhere at the same time → Omnipresent (সর্বব্যাপী)"
+            const parts = line.split(/→|->/);
+            if (parts.length === 2) {
+              dayData.oneWords.push({
+                phrase: parts[0].trim(),
+                word: parts[1].trim(),
+              });
+            }
+          } else if (currentSection === "analogy") {
+            // e.g., "1. Editor : Newspaper"
+            const matchRel = line.match(/^\d+\.\s*(.+)/);
+            if (matchRel) {
+              pushCurrentItem();
+              currentItem = { relation: matchRel[1].trim(), explanation: "" };
+            } else if (
+              currentItem &&
+              line.startsWith("(") &&
+              line.endsWith(")")
+            ) {
+              // e.g., "(সম্পর্ক: Worker and Product...)"
+              currentItem.explanation = line.trim();
+            }
+          }
+        }
+
+        pushCurrentItem();
+
+        const finalJSON = [dayData];
+
+        document.getElementById("jsonOutput").value = JSON.stringify(
+          finalJSON,
+          null,
+          2,
+        );
+        document.getElementById("status").innerText =
+          "JSON Generated Successfully!";
+        document.getElementById("status").className =
+          "text-xs text-green-400 font-bold";
+      }
+
+      function downloadJSON() {
+        parseText(); 
+        const jsonText = document.getElementById("jsonOutput").value;
+        if (
+          !jsonText ||
+          document.getElementById("rawInput").value.trim() === ""
+        ) {
+          alert("Please enter some data first!");
+          return;
+        }
+
+        // filename 
+        const parsedData = JSON.parse(jsonText);
+        const dayNum = parsedData[0]?.dayNumber || "Data";
+
+        const dataStr =
+          "data:text/json;charset=utf-8," + encodeURIComponent(jsonText);
+        const downloadNode = document.createElement("a");
+        downloadNode.setAttribute("href", dataStr);
+        downloadNode.setAttribute("download", `Day_${dayNum}_Data.json`);
+        document.body.appendChild(downloadNode);
+        downloadNode.click();
+        downloadNode.remove();
+      }
+
+      // Auto-parse
+      let timeout = null;
+      document.getElementById("rawInput").addEventListener("input", () => {
+        document.getElementById("status").innerText = "Parsing...";
+        document.getElementById("status").className = "text-xs text-yellow-400";
+        clearTimeout(timeout);
+        timeout = setTimeout(parseText, 600); 
+      });
+    </script>
+  </body>
+</html>
