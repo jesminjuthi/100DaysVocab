@@ -1,0 +1,3262 @@
+[
+  {
+    "id": "day-1772977386156",
+    "dayNumber": "1",
+    "quote": "“ভবিষ্যৎ তাদেরই, যারা তাদের স্বপ্নের সৌন্দর্যে বিশ্বাস করে।” — এলিনর রুজভেল্ট",
+    "vocabularies": [
+      {
+        "word": "Magnanimous",
+        "meaning": "মহানুভব / উদার",
+        "synonym": "Generous, Charitable, Benevolent",
+        "antonym": "Selfish, Mean, Vindictive",
+        "example": "The team was magnanimous in victory."
+      },
+      {
+        "word": "Ephemeral",
+        "meaning": "ক্ষণস্থায়ী",
+        "synonym": "Transitory, Short-lived, Fleeting",
+        "antonym": "Eternal, Permanent, Enduring",
+        "example": "Fashion trends are often ephemeral."
+      },
+      {
+        "word": "Candid",
+        "meaning": "স্পষ্টবাদী / মনখোলা",
+        "synonym": "Frank, Outspoken, Honest",
+        "antonym": "Secretive, Devious, Insincere",
+        "example": "He gave a candid interview about his past."
+      },
+      {
+        "word": "Bolster",
+        "meaning": "শক্তিশালী করা / সমর্থন করা",
+        "synonym": "Strengthen, Reinforce, Support",
+        "antonym": "Undermine, Weaken, Discourage",
+        "example": "More evidence is needed to bolster the argument."
+      },
+      {
+        "word": "Lethargy",
+        "meaning": "অলসতা / নিস্তেজ ভাব",
+        "synonym": "Sluggishness, Inertia, Apathy",
+        "antonym": "Vigor, Energy, Enthusiasm",
+        "example": "The hot weather filled us with lethargy."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Abide by",
+        "meaning": "মেনে চলা",
+        "example": "We must abide by the decision of the committee."
+      },
+      {
+        "word": "Abstain from",
+        "meaning": "বিরত থাকা",
+        "example": "You should abstain from smoking."
+      },
+      {
+        "word": "Absorbed in",
+        "meaning": "মগ্ন / নিবিষ্ট",
+        "example": "He is deeply absorbed in his studies."
+      },
+      {
+        "word": "Access to",
+        "meaning": "প্রবেশাধিকার",
+        "example": "Public has no access to this building."
+      },
+      {
+        "word": "Accused of",
+        "meaning": "অভিযুক্ত",
+        "example": "The man was accused of theft."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "A bed of roses",
+        "meaning": "আরামদায়ক অবস্থা / ফুলশয্যা",
+        "example": "Life is not a bed of roses."
+      },
+      {
+        "word": "Apple of discord",
+        "meaning": "বিবাদের মূল / ঝগড়ার কারণ",
+        "example": "The paternal property was the apple of discord between the two brothers."
+      },
+      {
+        "word": "At sixes and sevens",
+        "meaning": "বিশৃঙ্খল অবস্থা",
+        "example": "All the books on the table were at sixes and sevens."
+      },
+      {
+        "word": "Black sheep",
+        "meaning": "কুলাঙ্গার",
+        "example": "He is the black sheep of his family."
+      },
+      {
+        "word": "By hook or by crook",
+        "meaning": "যে কোনো উপায়ে (সৎ বা অসৎ)",
+        "example": "He wants to get the job by hook or by crook."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "As-sess-ment",
+        "correct": "Assessment (মূল্যায়ন)"
+      },
+      {
+        "broken": "Com-mit-tee",
+        "correct": "Committee (কমিটি / সমিতি)"
+      },
+      {
+        "broken": "Em-bar-rass-ment",
+        "correct": "Embarrassment (বিব্রতকর অবস্থা)"
+      },
+      {
+        "broken": "Mil-len-ni-um",
+        "correct": "Millennium (সহস্রাব্দ)"
+      },
+      {
+        "broken": "Sur-veil-lance",
+        "correct": "Surveillance (নজরদারি)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A person who does not believe in God",
+        "word": "Atheist (নাস্তিক)"
+      },
+      {
+        "phrase": "Life history of a person written by himself",
+        "word": "Autobiography (আত্মজীবনী)"
+      },
+      {
+        "phrase": "A lover of books",
+        "word": "Bibliophile (পুস্তকপ্রেমী)"
+      },
+      {
+        "phrase": "Government of the people, by the people, for the people",
+        "word": "Democracy (গণতন্ত্র)"
+      },
+      {
+        "phrase": "One who thinks only of oneself",
+        "word": "Egoist (আত্মকেন্দ্রিক)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Joy : Ecstasy",
+        "explanation": "(সম্পর্ক: Degree বা মাত্রা। Joy হলো আনন্দ, আর Ecstasy হলো আনন্দের চরম সীমা বা পরমানন্দ)"
+      },
+      {
+        "relation": "Pessimist : Optimist",
+        "explanation": "(সম্পর্ক: Antonym বা বিপরীত শব্দ। নিরাশাবাদী : আশাবাদী)"
+      },
+      {
+        "relation": "School : Fish",
+        "explanation": "(সম্পর্ক: Collective Noun বা সমষ্টি। মাছের ঝাঁককে ইংরেজিতে School বা Shoal বলা হয়)"
+      },
+      {
+        "relation": "Doctor : Stethoscope",
+        "explanation": "(সম্পর্ক: Worker and Tool। ডাক্তারের কাজের যন্ত্র হলো স্টেথিস্কোপ)"
+      },
+      {
+        "relation": "Careless : Accident",
+        "explanation": "(সম্পর্ক: Cause and Effect বা কারণ ও ফলাফল। অসতর্কতার ফলে দুর্ঘটনা ঘটে)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1772989556607",
+    "dayNumber": "02",
+    "quote": "“সাফল্যের চাবিকাঠি হলো আমাদের সচেতন মনকে এমন সব বিষয় দিয়ে গড়ে তোলা, যা আমরা ভয় পাই না বরং যা আমরা অর্জন করতে চাই।”",
+    "vocabularies": [
+      {
+        "word": "Ambiguous",
+        "meaning": "অস্পষ্ট / দ্ব্যর্থবোধক",
+        "synonym": "Vague, Obscure, Unclear",
+        "antonym": "Explicit, Clear, Lucid",
+        "example": "The instructions were too ambiguous to understand."
+      },
+      {
+        "word": "Complacent",
+        "meaning": "আত্মতৃপ্ত",
+        "synonym": "Self-satisfied, Content, Smug",
+        "antonym": "Dissatisfied, Anxious, Concerned",
+        "example": "We cannot afford to be complacent about our health."
+      },
+      {
+        "word": "Inevitable",
+        "meaning": "অনিবার্য",
+        "synonym": "Unavoidable, Certain, Inescapable",
+        "antonym": "Avoidable, Preventable, Uncertain",
+        "example": "Death is inevitable for everyone."
+      },
+      {
+        "word": "Obsolete",
+        "meaning": "সেকেলে / অপ্রচলিত",
+        "synonym": "Outdated, Archaic, Old-fashioned",
+        "antonym": "Modern, Contemporary, Current",
+        "example": "Typewriters have become obsolete now."
+      },
+      {
+        "word": "Vulnerable",
+        "meaning": "অরক্ষিত / সহজে আঘাতযোগ্য",
+        "synonym": "Susceptible, Weak, Defenseless",
+        "antonym": "Invincible, Protected, Secure",
+        "example": "Children are the most vulnerable members of society."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Abound in / with",
+        "meaning": "প্রচুর পরিমাণে থাকা",
+        "example": "The river abounds with fish."
+      },
+      {
+        "word": "Capable of",
+        "meaning": "সক্ষম",
+        "example": "He is capable of solving the problem alone."
+      },
+      {
+        "word": "Desire for",
+        "meaning": "আকাঙ্ক্ষা",
+        "example": "He has no desire for fame."
+      },
+      {
+        "word": "Envious of",
+        "meaning": "ঈর্ষান্বিত",
+        "example": "She is envious of my success."
+      },
+      {
+        "word": "Fond of",
+        "meaning": "প্রিয় / পছন্দ করে এমন",
+        "example": "I am fond of sweets."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "A bolt from the blue",
+        "meaning": "বিনা মেঘে বজ্রপাত / অপ্রত্যাশিত বিপদ",
+        "example": "The news of his father's death came as a bolt from the blue."
+      },
+      {
+        "word": "Cats and dogs",
+        "meaning": "মুষলধারে",
+        "example": "It is raining cats and dogs."
+      },
+      {
+        "word": "Crocodile tears",
+        "meaning": "মায়াকান্না / লোক দেখানো শোক",
+        "example": "She shed crocodile tears at the funeral."
+      },
+      {
+        "word": "Gala day",
+        "meaning": "উৎসবের দিন",
+        "example": "The 16th December is a gala day for us."
+      },
+      {
+        "word": "In lieu of",
+        "meaning": "পরিবর্তে",
+        "example": "He gave me a check in lieu of cash."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "A-chieve-ment",
+        "correct": "Achievement (অর্জন)"
+      },
+      {
+        "broken": "Dys-en-ter-y",
+        "correct": "Dysentery (আমাশয়)"
+      },
+      {
+        "broken": "Hu-mor-ous",
+        "correct": "Humorous (রসিকতাপূর্ণ)"
+      },
+      {
+        "broken": "Jew-el-ler-y",
+        "correct": "Jewellery (অলঙ্কার)"
+      },
+      {
+        "broken": "Main-te-nance",
+        "correct": "Maintenance (রক্ষণাবেক্ষণ)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "Present everywhere at the same time",
+        "word": "Omnipresent (সর্বব্যাপী)"
+      },
+      {
+        "phrase": "A paper written by hand",
+        "word": "Manuscript (পাণ্ডুলিপি)"
+      },
+      {
+        "phrase": "One who hates women",
+        "word": "Misogynist (নারীবিদ্বেষী)"
+      },
+      {
+        "phrase": "Plants of a particular region",
+        "word": "Flora (উদ্ভিদকুল)"
+      },
+      {
+        "phrase": "Animals of a particular region",
+        "word": "Fauna (প্রাণিকুল)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Editor : Newspaper",
+        "explanation": "(সম্পর্ক: Worker and Product। সম্পাদকের নির্দেশনায় সংবাদপত্র প্রকাশিত হয়)"
+      },
+      {
+        "relation": "Breeze : Tornado",
+        "explanation": "(সম্পর্ক: Degree of Intensity। মৃদু বাতাস হলো Breeze, আর ধ্বংসাত্মক বাতাস হলো Tornado)"
+      },
+      {
+        "relation": "Light : Blind",
+        "explanation": "(সম্পর্ক: Lack of। অন্ধ ব্যক্তির আলোর অভাব থাকে)"
+      },
+      {
+        "relation": "Safe : Secure",
+        "explanation": "(সম্পর্ক: Synonym। নিরাপদ ও সুরক্ষিত একই অর্থ বহন করে)"
+      },
+      {
+        "relation": "Pen : Write",
+        "explanation": "(সম্পর্ক: Tool and Action। কলম দিয়ে লেখার কাজ করা হয়)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773000256914",
+    "dayNumber": "03",
+    "quote": "“তোমার আজকের পরিশ্রম, আগামীকালের খুশির চাবিকাঠি।”",
+    "vocabularies": [
+      {
+        "word": "Concise",
+        "meaning": "সংক্ষিপ্ত",
+        "synonym": "Brief, Short, Compact",
+        "antonym": "Lengthy, Verbose, Wordy",
+        "example": "Keep your answer concise and to the point."
+      },
+      {
+        "word": "Obstinate",
+        "meaning": "একগুঁয়ে / জেদি",
+        "synonym": "Stubborn, Adamant, Inflexible",
+        "antonym": "Pliable, Flexible, Yielding",
+        "example": "He is too obstinate to admit he was wrong."
+      },
+      {
+        "word": "Amiable",
+        "meaning": "বন্ধুভাবাপন্ন / অমায়িক",
+        "synonym": "Friendly, Sociable, Agreeable",
+        "antonym": "Hostile, Unfriendly, Aggressive",
+        "example": "The new neighbor seems very amiable."
+      },
+      {
+        "word": "Prohibit",
+        "meaning": "নিষিদ্ধ করা",
+        "synonym": "Ban, Forbid, Disallow",
+        "antonym": "Permit, Allow, Authorize",
+        "example": "Smoking is prohibited in this area."
+      },
+      {
+        "word": "Rectify",
+        "meaning": "সংশোধন করা",
+        "synonym": "Correct, Amend, Repair",
+        "antonym": "Falsify, Worsen, Damage",
+        "example": "Please rectify the mistake in the bill."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Addicted to",
+        "meaning": "আসক্ত (খারাপ অর্থে)",
+        "example": "He is addicted to gambling."
+      },
+      {
+        "word": "Belong to",
+        "meaning": "অধিকারে থাকা / মালিকানাধীন হওয়া",
+        "example": "This house belongs to my uncle."
+      },
+      {
+        "word": "Compete with",
+        "meaning": "প্রতিযোগিতা করা (ব্যক্তির সাথে)",
+        "example": "Don't compete with others without preparation."
+      },
+      {
+        "word": "Die of",
+        "meaning": "মারা যাওয়া (রোগে)",
+        "example": "The man died of cholera."
+      },
+      {
+        "word": "Expert in",
+        "meaning": "দক্ষ",
+        "example": "She is expert in English."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "At a loss",
+        "meaning": "হতবুদ্ধি / কিংকর্তব্যবিমূঢ়",
+        "example": "I was at a loss what to do."
+      },
+      {
+        "word": "Black and blue",
+        "meaning": "নির্মমভাবে / বেদম প্রহার",
+        "example": "The thief was beaten black and blue."
+      },
+      {
+        "word": "By fits and starts",
+        "meaning": "অনিয়মিতভাবে / খাপছাড়া ভাবে",
+        "example": "He works by fits and starts."
+      },
+      {
+        "word": "Carry the day",
+        "meaning": "জয়লাভ করা",
+        "example": "Our team carried the day in the final match."
+      },
+      {
+        "word": "End in smoke",
+        "meaning": "ব্যর্থ হওয়া / নিস্ফল হওয়া",
+        "example": "All his plans ended in smoke."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Col-o-nel",
+        "correct": "Colonel (কর্নেল)"
+      },
+      {
+        "broken": "Pneu-mo-nia",
+        "correct": "Pneumonia (নিউমোনিয়া)"
+      },
+      {
+        "broken": "Psy-chol-o-gy",
+        "correct": "Psychology (মনোবিজ্ঞান)"
+      },
+      {
+        "broken": "Res-tau-rant",
+        "correct": "Restaurant (রেস্তোরাঁ)"
+      },
+      {
+        "broken": "Tsu-na-mi",
+        "correct": "Tsunami (সুনামি)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A lover of mankind",
+        "word": "Philanthropist (বিশ্বপ্রেমিক)"
+      },
+      {
+        "phrase": "Murder of a king",
+        "word": "Regicide (রাজহত্যা)"
+      },
+      {
+        "phrase": "One who eats human flesh",
+        "word": "Cannibal (নরখাদক)"
+      },
+      {
+        "phrase": "Study of stars and planets",
+        "word": "Astronomy (জ্যোতির্বিদ্যা)"
+      },
+      {
+        "phrase": "Government by the rich",
+        "word": "Plutocracy (ধনিকতন্ত্র)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Gills : Fish :: Lungs : Mammal",
+        "explanation": "(সম্পর্ক: Breathing Organ। মাছ ফুলকা (Gills) দিয়ে শ্বাস নেয়, স্তন্যপায়ী প্রাণী ফুসফুস (Lungs) দিয়ে শ্বাস নেয়)"
+      },
+      {
+        "relation": "Cobbler : Shoe :: Carpenter : Furniture",
+        "explanation": "(সম্পর্ক: Worker and Product। মুচি জুতা তৈরি/মেরামত করে, কাঠমিস্ত্রী আসবাবপত্র তৈরি করে)"
+      },
+      {
+        "relation": "Freeze : Ice :: Heat : Vapor",
+        "explanation": "(সম্পর্ক: Process and Result। জমালে বরফ হয়, তাপ দিলে বাষ্প হয়)"
+      },
+      {
+        "relation": "Weak : Frail",
+        "explanation": "(সম্পর্ক: Synonym। দুর্বল এবং ভঙ্গুর প্রায় সমার্থক)"
+      },
+      {
+        "relation": "Telescope : Star",
+        "explanation": "(সম্পর্ক: Tool for viewing। টেলিস্কোপ দিয়ে তারা দেখা হয়)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773000433963",
+    "dayNumber": "04",
+    "quote": "“কঠোর পরিশ্রম প্রতিভার অভাবকেও পূরণ করে দিতে পারে, যখন প্রতিভা কঠোর পরিশ্রম করে না।”",
+    "vocabularies": [
+      {
+        "word": "Prudent",
+        "meaning": "বিচক্ষণ / সতর্ক",
+        "synonym": "Wise, Judicious, Sagacious",
+        "antonym": "Imprudent, Careless, Foolish",
+        "example": "It was a prudent decision to save money for the future."
+      },
+      {
+        "word": "Indispensable",
+        "meaning": "অপরিহার্য",
+        "synonym": "Essential, Crucial, Vital",
+        "antonym": "Dispensable, Unnecessary, Superfluous",
+        "example": "Mobile phones have become indispensable in our daily life."
+      },
+      {
+        "word": "Gregarious",
+        "meaning": "মিশুক / দলবদ্ধ হয়ে থাকতে ভালোবাসে এমন",
+        "synonym": "Sociable, Outgoing, Friendly",
+        "antonym": "Reclusive, Introverted, Unsociable",
+        "example": "Dolphins are gregarious animals."
+      },
+      {
+        "word": "Extravagant",
+        "meaning": "অপব্যয়ী / অমিতব্যয়ী",
+        "synonym": "Wasteful, Lavish, Spendthrift",
+        "antonym": "Thrifty, Frugal, Economical",
+        "example": "He leads an extravagant lifestyle."
+      },
+      {
+        "word": "Transient",
+        "meaning": "ক্ষণস্থায়ী",
+        "synonym": "Temporary, Brief, Momentary",
+        "antonym": "Permanent, Lasting, Eternal",
+        "example": "Their happiness was transient."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Agree with (person) / to (proposal)",
+        "meaning": "রাজি হওয়া (ব্যক্তির সাথে with, প্রস্তাবে to)",
+        "example": "I agree with you on this point. / He agreed to my proposal."
+      },
+      {
+        "word": "Blind to",
+        "meaning": "দোষের প্রতি অন্ধ (দেখেও না দেখা)",
+        "example": "The mother is blind to her son's faults."
+      },
+      {
+        "word": "Call for",
+        "meaning": "চাওয়া / দাবি করা",
+        "example": "The situation calls for immediate action."
+      },
+      {
+        "word": "Devoid of",
+        "meaning": "বর্জিত / শূন্য",
+        "example": "He is devoid of common sense."
+      },
+      {
+        "word": "Enquire of",
+        "meaning": "জিজ্ঞাসা করা",
+        "example": "I enquired of him about the matter."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Call to mind",
+        "meaning": "স্মরণ করা",
+        "example": "I cannot call to mind your name."
+      },
+      {
+        "word": "Die in harness",
+        "meaning": "কাজ করতে করতে মারা যাওয়া",
+        "example": "Dr. Yunus wants to die in harness."
+      },
+      {
+        "word": "Flesh and blood",
+        "meaning": "রক্তমাংসের শরীর (মানুষ)",
+        "example": "Flesh and blood cannot bear this insult."
+      },
+      {
+        "word": "Hue and cry",
+        "meaning": "শোরগোল / হইচই",
+        "example": "The villagers raised a hue and cry seeing the thief."
+      },
+      {
+        "word": "Kith and kin",
+        "meaning": "আত্মীয়স্বজন",
+        "example": "He has no kith and kin in this town."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ac-cel-er-a-tion",
+        "correct": "Acceleration (ত্বরণ / গতিবৃদ্ধি)"
+      },
+      {
+        "broken": "As-sas-si-na-tion",
+        "correct": "Assassination (গুপ্তহত্যা)"
+      },
+      {
+        "broken": "Col-lab-o-ra-tion",
+        "correct": "Collaboration (সহযোগিতা)"
+      },
+      {
+        "broken": "Ex-ag-ger-ate",
+        "correct": "Exaggerate (অতিরঞ্জিত করা)"
+      },
+      {
+        "broken": "Hal-lu-ci-na-tion",
+        "correct": "Hallucination (বিভ্রম / অলীক বস্তু দেখা)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A child born after the death of its father",
+        "word": "Posthumous (মরণোত্তর সন্তান)"
+      },
+      {
+        "phrase": "One who cannot make any mistake",
+        "word": "Infallible (অভ্রান্ত)"
+      },
+      {
+        "phrase": "One who does something for the sake of money",
+        "word": "Mercenary (ভাড়াটে সৈনিক/কর্মী)"
+      },
+      {
+        "phrase": "One who never drinks alcohol",
+        "word": "Teetotaller (মদ্যপানবিমিখ)"
+      },
+      {
+        "phrase": "A woman whose husband is dead",
+        "word": "Widow (বিধবা)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Good : Bad :: White : Black",
+        "explanation": "(সম্পর্ক: Antonym বা বিপরীত শব্দ)"
+      },
+      {
+        "relation": "Knife : Cut :: Gun : Shoot",
+        "explanation": "(সম্পর্ক: Tool and Action। ছুরি দিয়ে কাটা হয়, বন্দুক দিয়ে গুলি করা হয়)"
+      },
+      {
+        "relation": "Bird : Fly :: Fish : Swim",
+        "explanation": "(সম্পর্ক: Creature and Locomotion। পাখি ওড়ে, মাছ সাঁতার কাটে)"
+      },
+      {
+        "relation": "Always : Never :: All : None",
+        "explanation": "(সম্পর্ক: Antonym বা বিপরীত)"
+      },
+      {
+        "relation": "Doctor : Hospital :: Teacher : School",
+        "explanation": "(সম্পর্ক: Worker and Workplace। ডাক্তার হাসপাতালে কাজ করেন, শিক্ষক স্কুলে)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773000536355",
+    "dayNumber": "05",
+    "quote": "“থেমে যেও না। এখন হয়তো কঠিন সময় যাচ্ছে, কিন্তু মনে রেখো, ঝড় চিরকাল থাকে না, সূর্য আবার উঠবেই।”",
+    "vocabularies": [
+      {
+        "word": "Eloquent",
+        "meaning": "বাকপটু / সুন্দরভাবে কথা বলতে পারে এমন",
+        "synonym": "Fluent, Articulate, Expressive",
+        "antonym": "Inarticulate, Hesitant, Mute",
+        "example": "She made an eloquent speech defending her principles."
+      },
+      {
+        "word": "Fastidious",
+        "meaning": "খুঁতখুঁতে / সহজে তুষ্ট হয় না এমন",
+        "synonym": "Choosy, Picky, Fussy",
+        "antonym": "Easygoing, Uncritical, Indifferent",
+        "example": "He is very fastidious about his food."
+      },
+      {
+        "word": "Impeccable",
+        "meaning": "নিখুঁত / ত্রুটিহীন",
+        "synonym": "Flawless, Perfect, Faultless",
+        "antonym": "Defective, Imperfect, Sinful",
+        "example": "Her English grammar is impeccable."
+      },
+      {
+        "word": "Opulent",
+        "meaning": "বিত্তশালী / জাঁকজমকপূর্ণ",
+        "synonym": "Wealthy, Luxurious, Affluent",
+        "antonym": "Poor, Destitute, Impoverished",
+        "example": "They live in an opulent apartment in Gulshan."
+      },
+      {
+        "word": "Taciturn",
+        "meaning": "অল্পভাষী / মিতভাষী",
+        "synonym": "Silent, Reserved, Reticent",
+        "antonym": "Talkative, Loquacious, Chatty",
+        "example": "He is a taciturn man who rarely speaks."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Comply with",
+        "meaning": "সম্মত হওয়া / মেনে নেওয়া",
+        "example": "You must comply with the rules."
+      },
+      {
+        "word": "Differ from (thing) / with (person)",
+        "meaning": "ভিন্ন হওয়া (বস্তু থেকে from, ব্যক্তির সাথে with)",
+        "example": "This pen differs from that one. / I differ with you on this point."
+      },
+      {
+        "word": "Escape from",
+        "meaning": "মুক্তি পাওয়া / পালানো",
+        "example": "The prisoner escaped from the jail."
+      },
+      {
+        "word": "Faith in",
+        "meaning": "বিশ্বাস",
+        "example": "I have full faith in his honesty."
+      },
+      {
+        "word": "Grateful to (person) / for (something)",
+        "meaning": "কৃতজ্ঞ",
+        "example": "I am grateful to you for your help."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Dead letter",
+        "meaning": "অকার্যকর আইন",
+        "example": "The law has become a dead letter now."
+      },
+      {
+        "word": "For good",
+        "meaning": "চিরতরে",
+        "example": "He left the country for good."
+      },
+      {
+        "word": "In cold blood",
+        "meaning": "ঠান্ডা মাথায় / নৃশংসভাবে",
+        "example": "The man was murdered in cold blood."
+      },
+      {
+        "word": "Null and void",
+        "meaning": "বাতিল",
+        "example": "The deed was declared null and void."
+      },
+      {
+        "word": "Pros and cons",
+        "meaning": "খুঁটিনাটি / ভালো-মন্দ দিক",
+        "example": "You should consider the pros and cons of the matter."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Com-mis-sion",
+        "correct": "Commission (কমিশন / আয়োগ)"
+      },
+      {
+        "broken": "Mis-cel-la-ne-ous",
+        "correct": "Miscellaneous (বিবিধ)"
+      },
+      {
+        "broken": "Oc-ca-sion",
+        "correct": "Occasion (উপলক্ষ)"
+      },
+      {
+        "broken": "Par-al-lel",
+        "correct": "Parallel (সমান্তরাল)"
+      },
+      {
+        "broken": "Rec-om-men-da-tion",
+        "correct": "Recommendation (সুপারিশ)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A speech delivered for the first time",
+        "word": "Maiden speech (প্রথম বক্তৃতা)"
+      },
+      {
+        "phrase": "That which cannot be conquered",
+        "word": "Invincible (অজেয়)"
+      },
+      {
+        "phrase": "A place where birds are kept",
+        "word": "Aviary (পক্ষীশালা)"
+      },
+      {
+        "phrase": "Killing of a human being",
+        "word": "Homicide (নরহত্যা)"
+      },
+      {
+        "phrase": "Extreme fear of water",
+        "word": "Hydrophobia (জলাতঙ্ক)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Canvas : Painter :: Marble : Sculptor",
+        "explanation": "(সম্পর্ক: Material and Artist। চিত্রশিল্পী ক্যানভাসে ছবি আঁকেন, ভাস্কর মার্বেল বা পাথর খোদাই করে ভাস্কর্য বানান)"
+      },
+      {
+        "relation": "Needle : Thread :: Pen : Ink",
+        "explanation": "(সম্পর্ক: Complementary Tools। সুঁইয়ের কাজ করতে সুতা লাগে, কলমের কাজ করতে কালি লাগে)"
+      },
+      {
+        "relation": "Earth : Sun :: Moon : Earth",
+        "explanation": "(সম্পর্ক: Orbit / Rotation। পৃথিবী সূর্যকে কেন্দ্র করে ঘোরে, চাঁদ পৃথিবীকে কেন্দ্র করে ঘোরে)"
+      },
+      {
+        "relation": "Introduction : Conclusion :: Morning : Night",
+        "explanation": "(সম্পর্ক: Beginning and End। শুরু এবং শেষ)"
+      },
+      {
+        "relation": "Soldier : Army :: Player : Team",
+        "explanation": "(সম্পর্ক: Individual and Group। সৈন্য বাহিনীর অংশ, খেলোয়াড় দলের অংশ)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773000627172",
+    "dayNumber": "06",
+    "quote": "“স্বপ্ন সেটা নয় যা তুমি ঘুমিয়ে দেখো, স্বপ্ন সেটাই যা তোমাকে ঘুমোতে দেয় না।”— এ.পি.জে. আব্দুল কালাম",
+    "vocabularies": [
+      {
+        "word": "Scrutinize",
+        "meaning": "খুঁটিয়ে দেখা / পরীক্ষা করা",
+        "synonym": "Examine, Inspect, Analyze",
+        "antonym": "Ignore, Neglect, Overlook",
+        "example": "The auditor scrutinized the financial records."
+      },
+      {
+        "word": "Ubiquitous",
+        "meaning": "সর্বত্র বিরাজমান",
+        "synonym": "Omnipresent, Universal, Pervasive",
+        "antonym": "Rare, Scarce, Uncommon",
+        "example": "Smartphones have become ubiquitous in modern society."
+      },
+      {
+        "word": "Altruistic",
+        "meaning": "পরোপকারী",
+        "synonym": "Selfless, Charitable, Philanthropic",
+        "antonym": "Selfish, Egotistic, Greedy",
+        "example": "His motives were purely altruistic."
+      },
+      {
+        "word": "Bias",
+        "meaning": "পক্ষপাতিত্ব / ঝোঁক",
+        "synonym": "Prejudice, Partiality, Favoritism",
+        "antonym": "Impartiality, Fairness, Neutrality",
+        "example": "The report showed a clear bias against the opposition."
+      },
+      {
+        "word": "Coherent",
+        "meaning": "সংগতিপূর্ণ / সুসংবদ্ধ",
+        "synonym": "Logical, Consistent, Rational",
+        "antonym": "Incoherent, Illogical, Confused",
+        "example": "He failed to give a coherent explanation."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Hinder from",
+        "meaning": "বাধা দেওয়া",
+        "example": "Nothing can hinder me from going there."
+      },
+      {
+        "word": "Ignorant of",
+        "meaning": "অজ্ঞ",
+        "example": "He is ignorant of the law."
+      },
+      {
+        "word": "Jump at",
+        "meaning": "লুফে নেওয়া (সুযোগ / প্রস্তাব)",
+        "example": "He jumped at the offer without thinking."
+      },
+      {
+        "word": "Key to",
+        "meaning": "চাবিকাঠি",
+        "example": "Hard work is the key to success."
+      },
+      {
+        "word": "Limit to",
+        "meaning": "সীমা",
+        "example": "There is a limit to my patience."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Bag and baggage",
+        "meaning": "তল্পিতল্পাসহ",
+        "example": "He left the house bag and baggage."
+      },
+      {
+        "word": "By and by",
+        "meaning": "শীঘ্রই / অচিরেই",
+        "example": "You will learn it by and by."
+      },
+      {
+        "word": "Dead against",
+        "meaning": "ঘোর বিরোধী",
+        "example": "I am dead against the proposal."
+      },
+      {
+        "word": "Hard and fast",
+        "meaning": "বাঁধাধরা",
+        "example": "There are no hard and fast rules in this game."
+      },
+      {
+        "word": "Irony of fate",
+        "meaning": "ভাগ্যের পরিহাস",
+        "example": "By the irony of fate, the rich man became a beggar."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ac-com-mo-da-tion",
+        "correct": "Accommodation (বাসস্থান)"
+      },
+      {
+        "broken": "Co-in-ci-dence",
+        "correct": "Coincidence (কাকতালীয় ঘটনা)"
+      },
+      {
+        "broken": "Em-bar-rass",
+        "correct": "Embarrass (লজ্জিত করা)"
+      },
+      {
+        "broken": "Main-te-nance",
+        "correct": "Maintenance (রক্ষণাবেক্ষণ)"
+      },
+      {
+        "broken": "Oc-cur-rence",
+        "correct": "Occurrence (ঘটনা)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A written declaration made on oath",
+        "word": "Affidavit (হলফনামা)"
+      },
+      {
+        "phrase": "One who is indifferent to pleasure or pain",
+        "word": "Stoic (নির্বিকার)"
+      },
+      {
+        "phrase": "To look at someone in an angry or threatening way",
+        "word": "Glower (রোষদৃষ্টিতে তাকানো)"
+      },
+      {
+        "phrase": "Murder of a brother",
+        "word": "Fratricide (ভ্রাতৃহণন)"
+      },
+      {
+        "phrase": "A remedy for all diseases",
+        "word": "Panacea (সর্ব রোগের মহৌষধ)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Bee : Hive :: Bird : Nest",
+        "explanation": "(সম্পর্ক: Living Place / Shelter। মৌমাছি মৌচাকে থাকে, পাখি বাসায় থাকে)"
+      },
+      {
+        "relation": "Eye : See :: Ear : Hear",
+        "explanation": "(সম্পর্ক: Organ and Function। চোখ দেখার কাজ করে, কান শোনার কাজ করে)"
+      },
+      {
+        "relation": "Hot : Scald :: Cold : Frostbite",
+        "explanation": "(সম্পর্ক: Cause and Effect (Damage)। অতিরিক্ত গরমে ঝলসে যায় (Scald), অতিরিক্ত শীতে ফ্রস্টবাইট হয়)"
+      },
+      {
+        "relation": "Poverty : Wealth :: Sickness : Health",
+        "explanation": "(সম্পর্ক: Antonym বা বিপরীত শব্দ)"
+      },
+      {
+        "relation": "Judge : Court :: Teacher : School",
+        "explanation": "(সম্পর্ক: Worker and Workplace। বিচারক আদালতে কাজ করেন, শিক্ষক স্কুলে)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773000738950",
+    "dayNumber": "07",
+    "quote": "“সুযোগের জন্য অপেক্ষা করো না, সুযোগ তৈরি করে নাও।”",
+    "vocabularies": [
+      {
+        "word": "Vindicate",
+        "meaning": "সত্যতা প্রমাণ করা / অভিযোগ মুক্ত করা",
+        "synonym": "Justify, Exonerate, Defend",
+        "antonym": "Accuse, Blame, Convict",
+        "example": "The investigation vindicated his claim."
+      },
+      {
+        "word": "Spurious",
+        "meaning": "ভেজাল / কৃত্রিম / মিথ্যা",
+        "synonym": "Fake, Counterfeit, False",
+        "antonym": "Genuine, Authentic, Real",
+        "example": "He made a spurious claim about his achievements."
+      },
+      {
+        "word": "Mundane",
+        "meaning": "জাগতিক / সাধারণ / একঘেয়ে",
+        "synonym": "Ordinary, Dull, Routine",
+        "antonym": "Extraordinary, Exciting, Spiritual",
+        "example": "He decided to leave his mundane job."
+      },
+      {
+        "word": "Reverence",
+        "meaning": "গভীর শ্রদ্ধা",
+        "synonym": "Respect, Veneration, Awe",
+        "antonym": "Disrespect, Contempt, Scorn",
+        "example": "The students have deep reverence for their teacher."
+      },
+      {
+        "word": "Turbulent",
+        "meaning": "অশান্ত / বিশৃঙ্খল",
+        "synonym": "Chaotic, Stormy, Unstable",
+        "antonym": "Peaceful, Calm, Serene",
+        "example": "The plane went through turbulent weather."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Part from (person) / with (thing)",
+        "meaning": "বিদায় নেওয়া (ব্যক্তি) / ত্যাগ করা (বস্তু)",
+        "example": "He parted from his friends. / He cannot part with his phone."
+      },
+      {
+        "word": "Popular with",
+        "meaning": "জনপ্রিয়",
+        "example": "The singer is very popular with the young generation."
+      },
+      {
+        "word": "Succeed in",
+        "meaning": "সফল হওয়া",
+        "example": "He succeeded in passing the exam."
+      },
+      {
+        "word": "Thirst for",
+        "meaning": "প্রবল ইচ্ছা / তৃষ্ণা",
+        "example": "He has a thirst for knowledge."
+      },
+      {
+        "word": "Wait for (person) / on (serve)",
+        "meaning": "অপেক্ষা করা (for) / সেবা করা (on)",
+        "example": "I am waiting for him. / The nurse waits on the patient."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "A man of straw",
+        "meaning": "অপদার্থ লোক / দুর্বল চিত্তের লোক",
+        "example": "Don't rely on him; he is a man of straw."
+      },
+      {
+        "word": "By dint of",
+        "meaning": "বদৌলতে / প্রভাবে",
+        "example": "He succeeded by dint of hard work."
+      },
+      {
+        "word": "Crying need",
+        "meaning": "জরুরি প্রয়োজন",
+        "example": "Education is the crying need of Bangladesh."
+      },
+      {
+        "word": "Hold water",
+        "meaning": "ধোপে টেকা / বিশ্বাসযোগ্য হওয়া",
+        "example": "His argument does not hold water."
+      },
+      {
+        "word": "In a fix",
+        "meaning": "মুশকিলে পড়া / কিংকর্তব্যবিমূঢ়",
+        "example": "I am in a fix regarding this matter."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ad-mis-si-ble",
+        "correct": "Admissible (গ্রহণযোগ্য)"
+      },
+      {
+        "broken": "Bou-quet",
+        "correct": "Bouquet (ফুলের তোড়া)"
+      },
+      {
+        "broken": "E-ti-quette",
+        "correct": "Etiquette (শিষ্টাচার)"
+      },
+      {
+        "broken": "Hy-giene",
+        "correct": "Hygiene (স্বাস্থ্যবিধি)"
+      },
+      {
+        "broken": "O-mis-sion",
+        "correct": "Omission (বর্জন / বাদ পড়া)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "Inscription on a tomb",
+        "word": "Epitaph (সমাধিলিপি)"
+      },
+      {
+        "phrase": "One who walks in sleep",
+        "word": "Somnambulist (স্বপ্নচারী / যে ঘুমের মধ্যে হাঁটে)"
+      },
+      {
+        "phrase": "Murder of a father",
+        "word": "Patricide (পিতৃহণন)"
+      },
+      {
+        "phrase": "A person of the whole world",
+        "word": "Cosmopolitan (বিশ্বজনীন)"
+      },
+      {
+        "phrase": "One who knows many languages",
+        "word": "Polyglot (বহুভাষী)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Rice : Paddy :: Metal : Ore",
+        "explanation": "(সম্পর্ক: Product and Source। ধান থেকে চাল হয়, আকরিক (Ore) থেকে ধাতু (Metal) পাওয়া যায়)"
+      },
+      {
+        "relation": "Architect : Building :: Sculptor : Statue",
+        "explanation": "(সম্পর্ক: Creator and Creation। স্থপতি দালান ডিজাইন করেন, ভাস্কর মূর্তি তৈরি করেন)"
+      },
+      {
+        "relation": "Fear : Tremble :: Cold : Shiver",
+        "explanation": "(সম্পর্ক: Cause and Physical Reaction। ভয়ে মানুষ কাঁপে (Tremble), শীতেও কাঁপে (Shiver))"
+      },
+      {
+        "relation": "Dictionary : Word :: Atlas : Map",
+        "explanation": "(সম্পর্ক: Container/Book of। ডিকশনারিতে শব্দ থাকে, অ্যাটলাসে মানচিত্র থাকে)"
+      },
+      {
+        "relation": "Sorrow : Joy :: Pleasure : Pain",
+        "explanation": "(সম্পর্ক: Antonym বা বিপরীত শব্দ)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773000869621",
+    "dayNumber": "08",
+    "quote": "“ধৈর্য হলো এমন এক সঙ্গী, যে তোমাকে অন্ধকারের সুড়ঙ্গ পার করে আলোর সন্ধান দেবে।”",
+    "vocabularies": [
+      {
+        "word": "Meticulous",
+        "meaning": "অতি সতর্ক / খুঁতখুঁতে",
+        "synonym": "Careful, Precise, Scrupulous",
+        "antonym": "Careless, Negligent, Sloppy",
+        "example": "He is very meticulous about his work."
+      },
+      {
+        "word": "Oblivious",
+        "meaning": "বেখবর / অমনোযোগী / বিস্মৃত",
+        "synonym": "Unaware, Ignorant, Forgetful",
+        "antonym": "Aware, Conscious, Observant",
+        "example": "She was completely oblivious to the danger."
+      },
+      {
+        "word": "Plaudits",
+        "meaning": "প্রশংসা / হাততালি",
+        "synonym": "Praise, Acclaim, Applause",
+        "antonym": "Criticism, Blame, Censure",
+        "example": "The actress received plaudits from the critics."
+      },
+      {
+        "word": "Repudiate",
+        "meaning": "প্রত্যাখ্যান করা / অস্বীকার করা",
+        "synonym": "Reject, Deny, Disown",
+        "antonym": "Accept, Admit, Embrace",
+        "example": "The government repudiated the allegations."
+      },
+      {
+        "word": "Tenacious",
+        "meaning": "নাছোড়বান্দা / দৃঢ়",
+        "synonym": "Persistent, Determine, Stubborn",
+        "antonym": "Weak, Yielding, Surrendering",
+        "example": "A tenacious adherence to one's principles is admirable."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Absent from",
+        "meaning": "অনুপস্থিত",
+        "example": "He was absent from the meeting."
+      },
+      {
+        "word": "Boast of",
+        "meaning": "গর্ব করা / দম্ভ করা",
+        "example": "Do not boast of your wealth."
+      },
+      {
+        "word": "Conscious of",
+        "meaning": "সচেতন",
+        "example": "He is conscious of his weakness."
+      },
+      {
+        "word": "Disgrace to",
+        "meaning": "কলঙ্ক",
+        "example": "He is a disgrace to his family."
+      },
+      {
+        "word": "Eligible for",
+        "meaning": "যোগ্য",
+        "example": "Only graduates are eligible for the post."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Bone of contention",
+        "meaning": "বিবাদের বিষয়",
+        "example": "This land is the bone of contention between the two brothers."
+      },
+      {
+        "word": "Cry in the wilderness",
+        "meaning": "অরণ্যে রোদন / বৃথা চেষ্টা",
+        "example": "His advice was a cry in the wilderness."
+      },
+      {
+        "word": "Fight shy of",
+        "meaning": "এড়িয়ে চলা",
+        "example": "Why do you fight shy of me?"
+      },
+      {
+        "word": "Out and out",
+        "meaning": "হাড়ে হাড়ে / পুরোপুরি",
+        "example": "He is a rogue out and out."
+      },
+      {
+        "word": "Rank and file",
+        "meaning": "সাধারণ সৈনিক / সাধারণ লোক",
+        "example": "We should not ignore the opinion of the rank and file."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ad-ul-ter-a-tion",
+        "correct": "Adulteration (ভেজাল)"
+      },
+      {
+        "broken": "Het-er-o-ge-ne-ous",
+        "correct": "Heterogeneous (বিসদৃশ / অসমজাতীয়)"
+      },
+      {
+        "broken": "Sov-er-eign-ty",
+        "correct": "Sovereignty (সার্বভৌমত্ব)"
+      },
+      {
+        "broken": "U-nan-i-mous",
+        "correct": "Unanimous (সর্বসম্মত)"
+      },
+      {
+        "broken": "Vac-u-um",
+        "correct": "Vacuum (শূন্যস্থান)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "Government by one person",
+        "word": "Autocracy (একনায়কতন্ত্র)"
+      },
+      {
+        "phrase": "A sound that cannot be heard",
+        "word": "Inaudible (অশ্রাব্য)"
+      },
+      {
+        "phrase": "One who collects coins",
+        "word": "Numismatist (মুদ্রাসংগ্রাহক)"
+      },
+      {
+        "phrase": "A decision upon which one cannot go back",
+        "word": "Irrevocable (অপরিবর্তনীয়)"
+      },
+      {
+        "phrase": "One who hates mankind",
+        "word": "Misanthrope (মানববিদ্বেষী)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Ship : Anchor :: Car : Brake",
+        "explanation": "(সম্পর্ক: Stopping Mechanism। জাহাজ থামাতে নোঙর (Anchor) লাগে, গাড়ি থামাতে ব্রেক লাগে)"
+      },
+      {
+        "relation": "Architect : Blueprint :: Author : Outline",
+        "explanation": "(সম্পর্ক: Plan and Creator। স্থপতি ব্লুপ্রিন্ট তৈরি করেন, লেখক আউটলাইন বা খসড়া তৈরি করেন)"
+      },
+      {
+        "relation": "Botany : Plant :: Zoology : Animal",
+        "explanation": "(সম্পর্ক: Study of। উদ্ভিদবিদ্যা (Botany) গাছপালা নিয়ে আলোচনা করে, প্রাণিবিদ্যা (Zoology) প্রাণী নিয়ে)"
+      },
+      {
+        "relation": "Pessimistic : Gloomy :: Optimistic : Cheerful",
+        "explanation": "(সম্পর্ক: Synonym / Characteristic। নিরাশাবাদী মানুষ বিষণ্ণ (Gloomy) থাকে, আশাবাদী মানুষ প্রফুল্ল (Cheerful) থাকে)"
+      },
+      {
+        "relation": "Country : Border :: House : Fence",
+        "explanation": "(সম্পর্ক: Boundary। দেশের সীমানাকে বর্ডার বলে, বাড়ির সীমানাকে ফেন্স বা বেড়া বলে)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773000991972",
+    "dayNumber": "09",
+    "quote": "“সাফল্য হলো প্রতিদিনের ছোট ছোট প্রচেষ্টার যোগফল।” — রবার্ট কলিয়ার",
+    "vocabularies": [
+      {
+        "word": "Deteriorate",
+        "meaning": "অবনতি হওয়া / খারাপ হওয়া",
+        "synonym": "Worsen, Decline, Degrade",
+        "antonym": "Improve, Ameliorate, Enhance",
+        "example": "The weather conditions deteriorated rapidly."
+      },
+      {
+        "word": "Lucid",
+        "meaning": "প্রাঞ্জল / সহজে বোধগম্য",
+        "synonym": "Clear, Transparent, Comprehensible",
+        "antonym": "Obscure, Confusing, Vague",
+        "example": "He gave a lucid explanation of the complex theory."
+      },
+      {
+        "word": "Profound",
+        "meaning": "গভীর / অগাধ",
+        "synonym": "Deep, Intense, Absolute",
+        "antonym": "Superficial, Shallow, Mild",
+        "example": "The discovery had a profound effect on modern science."
+      },
+      {
+        "word": "Resilient",
+        "meaning": "স্থিতিস্থাপক / দ্রুত সামলে উঠতে সক্ষম",
+        "synonym": "Flexible, Tough, Adaptable",
+        "antonym": "Vulnerable, Fragile, Weak",
+        "example": "Children are often more resilient than adults."
+      },
+      {
+        "word": "Trivial",
+        "meaning": "তুচ্ছ / নগণ্য",
+        "synonym": "Insignificant, Minor, Worthless",
+        "antonym": "Important, Crucial, Significant",
+        "example": "Don't waste your valuable time on trivial matters."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Familiar with",
+        "meaning": "পরিচিত (কোনো বিষয়ের সাথে)",
+        "example": "I am not familiar with this new software."
+      },
+      {
+        "word": "Guilty of",
+        "meaning": "দোষী",
+        "example": "The man was found guilty of theft."
+      },
+      {
+        "word": "Indulge in",
+        "meaning": "প্রশ্রয় দেওয়া / আসক্ত হওয়া / মগ্ন হওয়া",
+        "example": "You should not indulge in idle gossip."
+      },
+      {
+        "word": "Listen to",
+        "meaning": "শোনা / মনোযোগ দেওয়া",
+        "example": "Listen to what your teachers say."
+      },
+      {
+        "word": "Mourn for",
+        "meaning": "শোক করা",
+        "example": "They are mourning for their dead leader."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Blue blood",
+        "meaning": "আভিজাত্য / অভিজাত বংশীয়",
+        "example": "He is proud of his blue blood."
+      },
+      {
+        "word": "Far and wide",
+        "meaning": "সর্বত্র",
+        "example": "His fame as a scholar spread far and wide."
+      },
+      {
+        "word": "In full swing",
+        "meaning": "পুরোদমে",
+        "example": "The construction work is going on in full swing."
+      },
+      {
+        "word": "Nip in the bud",
+        "meaning": "অঙ্কুরে বিনষ্ট করা",
+        "example": "All his bad habits should be nipped in the bud."
+      },
+      {
+        "word": "To all intents and purposes",
+        "meaning": "কার্যত / প্রকৃতপক্ষে",
+        "example": "He is, to all intents and purposes, the head of the family."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ap-pro-pri-ate",
+        "correct": "Appropriate (যথাযথ)"
+      },
+      {
+        "broken": "Bur-geon-ing",
+        "correct": "Burgeoning (ক্রমবর্ধমান)"
+      },
+      {
+        "broken": "Di-lem-ma",
+        "correct": "Dilemma (উভয়সংকট)"
+      },
+      {
+        "broken": "Il-lu-mi-nate",
+        "correct": "Illuminate (আলোকিত করা)"
+      },
+      {
+        "broken": "Re-nais-sance",
+        "correct": "Renaissance (নবজাগরণ)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A person who is new to a profession",
+        "word": "Novice (শিক্ষানবিশ / নবীন)"
+      },
+      {
+        "phrase": "A government by the nobles",
+        "word": "Aristocracy (অভিজাততন্ত্র)"
+      },
+      {
+        "phrase": "A highly skilled musician or artist",
+        "word": "Virtuoso (শিল্পকলায় পারদর্শী ব্যক্তি)"
+      },
+      {
+        "phrase": "Extreme fear of closed spaces",
+        "word": "Claustrophobia (আবদ্ধ স্থানের ভীতি)"
+      },
+      {
+        "phrase": "One who speaks less or is reserved",
+        "word": "Reticent (স্বল্পভাষী / মিতভাষী)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Author : Book :: Choreographer : Dance",
+        "explanation": "(সম্পর্ক: Creator and Creation। লেখক বই লেখেন, কোরিওগ্রাফার নাচের নির্দেশনা দেন)"
+      },
+      {
+        "relation": "Scale : Weight :: Ruler : Length",
+        "explanation": "(সম্পর্ক: Measurement Tool। স্কেল (দাঁড়িপাল্লা) দিয়ে ওজন মাপা হয়, রুলার দিয়ে দৈর্ঘ্য মাপা হয়)"
+      },
+      {
+        "relation": "Thirsty : Water :: Hungry : Food",
+        "explanation": "(সম্পর্ক: Basic Need। তৃষ্ণার্তের পানির প্রয়োজন, ক্ষুধার্তের খাবারের প্রয়োজন)"
+      },
+      {
+        "relation": "Expand : Contract :: Ascend : Descend",
+        "explanation": "(সম্পর্ক: Antonym বা বিপরীত শব্দ। প্রসারিত হওয়া : সঙ্কুচিত হওয়া :: আরোহণ করা : অবতরণ করা)"
+      },
+      {
+        "relation": "Finger : Hand :: Toe : Foot",
+        "explanation": "(সম্পর্ক: Part to Whole। হাতের আঙুলকে Finger বলে, যা হাতের অংশ; পায়ের আঙুলকে Toe বলে, যা পায়ের অংশ)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773001123959",
+    "dayNumber": "10",
+    "quote": "“সাফল্যের সিঁড়িতে ওঠার জন্য কোনো লিফট নেই, তোমাকে সিঁড়ি বেয়েই ধাপে ধাপে উঠতে হবে।”",
+    "vocabularies": [
+      {
+        "word": "Adverse",
+        "meaning": "প্রতিকূল / বৈরী",
+        "synonym": "Unfavorable, Hostile, Negative",
+        "antonym": "Favorable, Beneficial, Friendly",
+        "example": "Despite adverse weather conditions, the plane landed safely."
+      },
+      {
+        "word": "Benevolent",
+        "meaning": "হিতৈষী / দয়ালু",
+        "synonym": "Kind, Generous, Charitable",
+        "antonym": "Malevolent, Cruel, Selfish",
+        "example": "He was a benevolent leader who cared for his people."
+      },
+      {
+        "word": "Concur",
+        "meaning": "একমত হওয়া",
+        "synonym": "Agree, Approve, Coincide",
+        "antonym": "Disagree, Differ, Oppose",
+        "example": "The board concurred with the chairman's proposal."
+      },
+      {
+        "word": "Despair",
+        "meaning": "হতাশা / নিরাশ হওয়া",
+        "synonym": "Hopelessness, Misery, Gloom",
+        "antonym": "Hope, Optimism, Confidence",
+        "example": "Don't give in to despair; keep trying."
+      },
+      {
+        "word": "Elusive",
+        "meaning": "পলায়নপর / সহজে ধরা দেয় না এমন",
+        "synonym": "Evasive, Slippery, Tricky",
+        "antonym": "Accessible, Definite, Stable",
+        "example": "Success often seems elusive to those who are lazy."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Aim at",
+        "meaning": "লক্ষ্য করা / তাক করা",
+        "example": "He aimed at the bird but missed."
+      },
+      {
+        "word": "Charge with",
+        "meaning": "অভিযুক্ত করা",
+        "example": "He was charged with murder."
+      },
+      {
+        "word": "Cure for",
+        "meaning": "প্রতিকার / আরোগ্য",
+        "example": "There is no cure for this disease yet."
+      },
+      {
+        "word": "Deal in",
+        "meaning": "ব্যবসা করা",
+        "example": "He deals in rice."
+      },
+      {
+        "word": "Deal with",
+        "meaning": "আচরণ করা / সমস্যা সমাধান করা",
+        "example": "He knows how to deal with customers."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "At daggers drawn",
+        "meaning": "সাপে-নেউলে সম্পর্ক / ভীষণ শত্রুতা",
+        "example": "The two brothers are at daggers drawn."
+      },
+      {
+        "word": "By leaps and bounds",
+        "meaning": "দ্রুতগতিতে",
+        "example": "Our country is progressing by leaps and bounds."
+      },
+      {
+        "word": "In black and white",
+        "meaning": "লিখিতভাবে",
+        "example": "Put your statement in black and white."
+      },
+      {
+        "word": "Once in a blue moon",
+        "meaning": "কদাচিৎ / কালেভদ্রে",
+        "example": "He visits us once in a blue moon."
+      },
+      {
+        "word": "Ups and downs",
+        "meaning": "উত্থান-পতন",
+        "example": "Life is full of ups and downs."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ac-knowl-edge-ment",
+        "correct": "Acknowledgement (স্বীকৃতি / প্রাপ্তিস্বীকার)"
+      },
+      {
+        "broken": "Dis-ci-pline",
+        "correct": "Discipline (শৃঙ্খলা)"
+      },
+      {
+        "broken": "Guar-an-tee",
+        "correct": "Guarantee (নিশ্চয়তা)"
+      },
+      {
+        "broken": "Oc-cur-red",
+        "correct": "Occurred (ঘটেছিল)"
+      },
+      {
+        "broken": "Pos-ses-sion",
+        "correct": "Possession (মালিকানা / দখল)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "One who can use both hands equally well",
+        "word": "Ambidextrous (সব্যসাচী)"
+      },
+      {
+        "phrase": "A place for storing weapons and ammunition",
+        "word": "Arsenal (অস্ত্রাগার)"
+      },
+      {
+        "phrase": "A speech or piece of writing praising a deceased person",
+        "word": "Eulogy (স্মৃতিচারণমূলক প্রশংসা)"
+      },
+      {
+        "phrase": "An irresistible desire to steal",
+        "word": "Kleptomania (চৌর্যবাতিক / চুরির রোগ)"
+      },
+      {
+        "phrase": "A person widely known for bad deeds",
+        "word": "Notorious (কুখ্যাত)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Calendar : Date :: Dictionary : Word",
+        "explanation": "(সম্পর্ক: Source of Information। ক্যালেন্ডারে তারিখ দেখা হয়, ডিকশনারিতে শব্দ দেখা হয়)"
+      },
+      {
+        "relation": "Grain : Granary :: Water : Reservoir",
+        "explanation": "(সম্পর্ক: Item and Storage। শস্য গোলাঘরে (Granary) রাখা হয়, পানি জলাধারে (Reservoir) রাখা হয়)"
+      },
+      {
+        "relation": "Telescope : Astronomer :: Microscope : Biologist",
+        "explanation": "(সম্পর্ক: Tool and User। জ্যোতির্বিদ টেলিস্কোপ ব্যবহার করেন, জীববিজ্ঞানী মাইক্রোস্কোপ ব্যবহার করেন)"
+      },
+      {
+        "relation": "Word : Sentence :: Page : Book",
+        "explanation": "(সম্পর্ক: Part to Whole। শব্দ দিয়ে বাক্য তৈরি হয়, পৃষ্ঠা দিয়ে বই তৈরি হয়)"
+      },
+      {
+        "relation": "Oar : Boat :: Paddle : Canoe",
+        "explanation": "(সম্পর্ক: Tool for Movement। নৌকা চালাতে দাঁড় (Oar) লাগে, ক্যানু চালাতে প্যাডেল লাগে)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773002156992",
+    "dayNumber": "11",
+    "quote": "“সাফল্য কোনো ঘটনা নয়, এটি একটি অভ্যাস।” — অ্যারিস্টটল",
+    "vocabularies": [
+      {
+        "word": "Ambivalent",
+        "meaning": "দোদুল্যমান / মিশ্র অনুভূতি",
+        "synonym": "Uncertain, Indecisive, Mixed",
+        "antonym": "Certain, Decisive, Sure",
+        "example": "She remained ambivalent about her marriage."
+      },
+      {
+        "word": "Censure",
+        "meaning": "নিন্দা করা / সমালোচনা করা",
+        "synonym": "Criticize, Condemn, Blame",
+        "antonym": "Praise, Commend, Applaud",
+        "example": "The minister was censured for his failure."
+      },
+      {
+        "word": "Discord",
+        "meaning": "মতবিরোধ / অনৈক্য",
+        "synonym": "Conflict, Disagreement, Dispute",
+        "antonym": "Harmony, Agreement, Accord",
+        "example": "The issue created discord among the members."
+      },
+      {
+        "word": "Exacerbate",
+        "meaning": "আরও খারাপ করা / তীব্র করা",
+        "synonym": "Aggravate, Worsen, Intensify",
+        "antonym": "Alleviate, Soothe, Improve",
+        "example": "His aggressive behavior exacerbated the situation."
+      },
+      {
+        "word": "Frugal",
+        "meaning": "মিতব্যয়ী / হিসেবি",
+        "synonym": "Economical, Thrifty, Saving",
+        "antonym": "Extravagant, Wasteful, Lavish",
+        "example": "He lives a frugal life to save money for his children."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Burst into (tears)",
+        "meaning": "কান্নায় ভেঙে পড়া",
+        "example": "She burst into tears at the news."
+      },
+      {
+        "word": "Confined to (bed)",
+        "meaning": "শয্যাশায়ী / আবদ্ধ",
+        "example": "He is confined to bed due to illness."
+      },
+      {
+        "word": "Disqualified for",
+        "meaning": "অযোগ্য",
+        "example": "He was disqualified for the post."
+      },
+      {
+        "word": "Excel in",
+        "meaning": "দক্ষতা দেখানো",
+        "example": "He excels in painting."
+      },
+      {
+        "word": "Good at",
+        "meaning": "দক্ষ",
+        "example": "He is very good at Mathematics."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Blue chips",
+        "meaning": "নিরাপদ বিনিয়োগ / নামকরা কোম্পানির শেয়ার",
+        "example": "Wise investors always buy blue chips."
+      },
+      {
+        "word": "Capital punishment",
+        "meaning": "মৃত্যুদণ্ড",
+        "example": "Capital punishment has been abolished in many countries."
+      },
+      {
+        "word": "Face the music",
+        "meaning": "কৃতকর্মের ফল ভোগ করা / বকুনি খাওয়া",
+        "example": "You have made a mistake, now you must face the music."
+      },
+      {
+        "word": "Gift of the gab",
+        "meaning": "বাকপটুতা / কথা বলার দক্ষতা",
+        "example": "A lawyer should have the gift of the gab."
+      },
+      {
+        "word": "Golden mean",
+        "meaning": "মধ্যপন্থা",
+        "example": "We should follow the golden mean in everything."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Fore-cast",
+        "correct": "Forecast (পূর্বাভাস)"
+      },
+      {
+        "broken": "Gri-ev-ance",
+        "correct": "Grievance (অভিযোগ / ক্ষোভ)"
+      },
+      {
+        "broken": "Par-lia-ment",
+        "correct": "Parliament (সংসদ)"
+      },
+      {
+        "broken": "Pseu-do-nym",
+        "correct": "Pseudonym (ছদ্মনাম)"
+      },
+      {
+        "broken": "Re-ceipt",
+        "correct": "Receipt (রসিদ / প্রাপ্তি স্বীকার)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "Art of beautiful handwriting",
+        "word": "Calligraphy (হস্তলিপি বিদ্যা)"
+      },
+      {
+        "phrase": "Art of map making",
+        "word": "Cartography (মানচিত্র অঙ্কন বিদ্যা)"
+      },
+      {
+        "phrase": "Persons living at the same time",
+        "word": "Contemporary (সমসাময়িক)"
+      },
+      {
+        "phrase": "One who pretends to be what he is not",
+        "word": "Hypocrite (ভন্ড / কপট)"
+      },
+      {
+        "phrase": "That which cannot be believed",
+        "word": "Incredible (অবিশ্বাস্য)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Prose : Paragraph :: Poetry : Stanza",
+        "explanation": "(সম্পর্ক: Structural Unit। গদ্যের অংশকে প্যারাগ্রাফ বলে, কবিতার অংশকে স্ট্যানজা বা স্তবক বলে)"
+      },
+      {
+        "relation": "Water : Oxygen :: Salt : Sodium",
+        "explanation": "(সম্পর্ক: Composition / Ingredient। পানিতে অক্সিজেন থাকে, লবণে সোডিয়াম থাকে)"
+      },
+      {
+        "relation": "Tiger : Zoology :: Mars : Astronomy",
+        "explanation": "(সম্পর্ক: Subject of Study। বাঘ প্রাণীবিদ্যার বিষয়, মঙ্গল গ্রহ জ্যোতির্বিদ্যার বিষয়)"
+      },
+      {
+        "relation": "Nose : Smell :: Tongue : Taste",
+        "explanation": "(সম্পর্ক: Sense Organ and Function। নাক দিয়ে ঘ্রাণ নেওয়া হয়, জিহ্বা দিয়ে স্বাদ নেওয়া হয়)"
+      },
+      {
+        "relation": "Color : Spectrum :: Tone : Scale",
+        "explanation": "(সম্পর্ক: Range / Collection। রঙের বিন্যাসকে বর্ণালী (Spectrum) বলে, সুরের বিন্যাসকে স্কেল (Scale) বলে)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773002246718",
+    "dayNumber": "12",
+    "quote": "“সাফল্য অর্জনের জন্য তোমাকে ৩টি জিনিস মেনে চলতে হবে: অন্যের চেয়ে বেশি জানো, অন্যের চেয়ে বেশি কাজ করো, এবং অন্যের চেয়ে কম আশা করো।” — উইলিয়াম শেকসপিয়র",
+    "vocabularies": [
+      {
+        "word": "Empathy",
+        "meaning": "সহানুভূতি / সমমর্মিতা",
+        "synonym": "Compassion, Sympathy, Understanding",
+        "antonym": "Indifference, Apathy, Cruelty",
+        "example": "She showed great empathy for the poor."
+      },
+      {
+        "word": "Fortitude",
+        "meaning": "মানসিক শক্তি / ধৈর্য",
+        "synonym": "Courage, Endurance, Resilience",
+        "antonym": "Cowardice, Weakness, Fear",
+        "example": "He faced the crisis with remarkable fortitude."
+      },
+      {
+        "word": "Incessant",
+        "meaning": "অবিরাম / অনবরত",
+        "synonym": "Constant, Unceasing, Continuous",
+        "antonym": "Occasional, Intermittent, Broken",
+        "example": "The incessant rain caused a flood."
+      },
+      {
+        "word": "Paramount",
+        "meaning": "সর্বপ্রধান / সর্বোচ্চ",
+        "synonym": "Supreme, Foremost, Vital",
+        "antonym": "Insignificant, Minor, Trivial",
+        "example": "Safety is of paramount importance."
+      },
+      {
+        "word": "Serene",
+        "meaning": "শান্ত / নির্মল",
+        "synonym": "Calm, Peaceful, Tranquil",
+        "antonym": "Turbulent, Stormy, Chaotic",
+        "example": "The lake looked serene in the moonlight."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Boast of",
+        "meaning": "দম্ভ করা",
+        "example": "Do not boast of your wealth."
+      },
+      {
+        "word": "Busy with",
+        "meaning": "ব্যস্ত",
+        "example": "He is busy with his work."
+      },
+      {
+        "word": "Care for",
+        "meaning": "গ্রাহ্য করা / যত্ন নেওয়া",
+        "example": "I do not care for your opinion."
+      },
+      {
+        "word": "Cling to",
+        "meaning": "আঁকড়ে থাকা",
+        "example": "The child clung to its mother."
+      },
+      {
+        "word": "Congratulate on",
+        "meaning": "অভিনন্দন জানানো",
+        "example": "I congratulated him on his success."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "A black sheep",
+        "meaning": "কুলাঙ্গার",
+        "example": "He is the black sheep of the family."
+      },
+      {
+        "word": "Apple of one’s eye",
+        "meaning": "চোখের মণি / অতি আদরের",
+        "example": "The little girl is the apple of her father's eye."
+      },
+      {
+        "word": "Beat about the bush",
+        "meaning": "কাজের কথায় না এসে আজেবাজে বকা",
+        "example": "Don't beat about the bush, come to the point."
+      },
+      {
+        "word": "By hook or by crook",
+        "meaning": "ছলে-বলে-কৌশলে / যেভাবেই হোক",
+        "example": "He wants to pass the exam by hook or by crook."
+      },
+      {
+        "word": "From hand to mouth",
+        "meaning": "দিন আনে দিন খায় অবস্থা",
+        "example": "The poor man lives from hand to mouth."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ac-com-plice",
+        "correct": "Accomplice (দুষ্কর্মের সহযোগী)"
+      },
+      {
+        "broken": "Em-bar-rass-ment",
+        "correct": "Embarrassment (বিব্রতকর অবস্থা)"
+      },
+      {
+        "broken": "Liai-son",
+        "correct": "Liaison (যোগাযোগ / সম্পর্ক)"
+      },
+      {
+        "broken": "Man-oeu-vre",
+        "correct": "Manoeuvre (কৌশল / চাল)"
+      },
+      {
+        "broken": "Que-ue",
+        "correct": "Queue (সারি / লাইন)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A doctor who treats skin diseases",
+        "word": "Dermatologist (চর্মরোগ বিশেষজ্ঞ)"
+      },
+      {
+        "phrase": "A doctor who treats heart diseases",
+        "word": "Cardiologist (হৃদরোগ বিশেষজ্ঞ)"
+      },
+      {
+        "phrase": "Study of ancient things",
+        "word": "Archaeology (প্রত্নতত্ত্ব)"
+      },
+      {
+        "phrase": "One who believes in fate",
+        "word": "Fatalist (অদৃষ্টবাদী)"
+      },
+      {
+        "phrase": "A person who cannot make a mistake",
+        "word": "Infallible (অভ্রান্ত)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Bird : Feather :: Fish : Scale",
+        "explanation": "(সম্পর্ক: Covering। পাখির শরীর পালকে ঢাকা, মাছের শরীর আঁশে ঢাকা)"
+      },
+      {
+        "relation": "Judge : Gavel :: Referee : Whistle",
+        "explanation": "(সম্পর্ক: Tool of Authority। বিচারক হাতুড়ি (Gavel) ব্যবহার করেন, রেফারি বাঁশি ব্যবহার করেন)"
+      },
+      {
+        "relation": "Cobbler : Leather :: Carpenter : Wood",
+        "explanation": "(সম্পর্ক: Raw Material। মুচি চামড়া দিয়ে কাজ করেন, কাঠমিস্ত্রি কাঠ দিয়ে কাজ করেন)"
+      },
+      {
+        "relation": "Cow : Calf :: Cat : Kitten",
+        "explanation": "(সম্পর্ক: Parent and Offspring। গরুর বাচ্চা বাছুর, বিড়ালের বাচ্চা বিড়ালছানা)"
+      },
+      {
+        "relation": "Circle : Diameter :: Rectangle : Diagonal",
+        "explanation": "(সম্পর্ক: Bisecting Line। বৃত্তের মাঝখানের রেখাকে ব্যাস (Diameter) বলে, আয়তক্ষেত্রের কোণাকুণি রেখাকে কর্ণ (Diagonal) বলে)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773002328949",
+    "dayNumber": "13",
+    "quote": "“শিক্ষা হলো সবচেয়ে শক্তিশালী অস্ত্র, যা তুমি পৃথিবীকে পরিবর্তন করতে ব্যবহার করতে পারো।” — নেলসন ম্যান্ডেলা",
+    "vocabularies": [
+      {
+        "word": "Imminent",
+        "meaning": "আসন্ন / শিয়রে সমুপস্থিত",
+        "synonym": "Impending, Approaching, Near",
+        "antonym": "Distant, Remote, Far-off",
+        "example": "The dark clouds indicate an imminent storm."
+      },
+      {
+        "word": "Jovial",
+        "meaning": "প্রফুল্ল / হাসিখুশি",
+        "synonym": "Cheerful, Merry, Jolly",
+        "antonym": "Gloomy, Sad, Morose",
+        "example": "He is a jovial person who loves to crack jokes."
+      },
+      {
+        "word": "Lethal",
+        "meaning": "প্রাণঘাতী / মারাত্মক",
+        "synonym": "Deadly, Fatal, Mortal",
+        "antonym": "Harmless, Safe, Benign",
+        "example": "The snake bite was lethal."
+      },
+      {
+        "word": "Mediocre",
+        "meaning": "মাঝারি মানের",
+        "synonym": "Average, Ordinary, Common",
+        "antonym": "Excellent, Superior, Outstanding",
+        "example": "The movie was mediocre, not great."
+      },
+      {
+        "word": "Nullify",
+        "meaning": "বাতিল করা",
+        "synonym": "Cancel, Annul, Invalidate",
+        "antonym": "Ratify, Validate, Confirm",
+        "example": "The court nullified the decision."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Appetite for",
+        "meaning": "ক্ষুধা / প্রবল ইচ্ছা",
+        "example": "He has a great appetite for knowledge."
+      },
+      {
+        "word": "Bark at",
+        "meaning": "ঘেউ ঘেউ করা",
+        "example": "The dog barked at the stranger."
+      },
+      {
+        "word": "Capacity for",
+        "meaning": "যোগ্যতা / ক্ষমতা",
+        "example": "He has a capacity for hard work."
+      },
+      {
+        "word": "Deprive of",
+        "meaning": "বঞ্চিত করা",
+        "example": "The poor man was deprived of his rights."
+      },
+      {
+        "word": "Envy of",
+        "meaning": "ঈর্ষা",
+        "example": "I have no envy of his wealth."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Birds of a feather",
+        "meaning": "একই স্বভাবের লোক",
+        "example": "Birds of a feather flock together."
+      },
+      {
+        "word": "By the by",
+        "meaning": "কথায় কথায় / প্রসঙ্গক্রমে",
+        "example": "By the by, have you seen him recently?"
+      },
+      {
+        "word": "Cat and dog life",
+        "meaning": "কলহপূর্ণ জীবন",
+        "example": "They lead a cat and dog life."
+      },
+      {
+        "word": "Get rid of",
+        "meaning": "মুক্তি পাওয়া / ঝেড়ে ফেলা",
+        "example": "Try to get rid of your bad habits."
+      },
+      {
+        "word": "Head and ears",
+        "meaning": "সম্পূর্ণরূপে / আপাদমস্তক",
+        "example": "He is in debt over head and ears."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Hem-or-rhage",
+        "correct": "Hemorrhage (রক্তক্ষরণ)"
+      },
+      {
+        "broken": "Ir-re-sis-ti-ble",
+        "correct": "Irresistible (অপ্রতিরোধ্য)"
+      },
+      {
+        "broken": "Mis-chie-vous",
+        "correct": "Mischievous (অনিষ্টকারী / দুষ্টু)"
+      },
+      {
+        "broken": "Re-hears-al",
+        "correct": "Rehearsal (মহড়া)"
+      },
+      {
+        "broken": "Vet-er-i-nary",
+        "correct": "Veterinary (পশুচিকিৎসা সংক্রান্ত)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "One who is all powerful",
+        "word": "Omnipotent (সর্বশক্তিমান)"
+      },
+      {
+        "phrase": "Absence of government",
+        "word": "Anarchy (অরাজকতা)"
+      },
+      {
+        "phrase": "A post without salary",
+        "word": "Honorary (অবৈতনিক)"
+      },
+      {
+        "phrase": "A person coming to a foreign land to settle there",
+        "word": "Immigrant (অভিবাসী)"
+      },
+      {
+        "phrase": "A person leaving his own country to settle in another",
+        "word": "Emigrant (দেশত্যাগী)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Scalpel : Surgeon :: Chisel : Sculptor",
+        "explanation": "(সম্পর্ক: Primary Tool। সার্জন স্ক্যালপেল (ছুরি) ব্যবহার করেন, ভাস্কর ছেনি (Chisel) ব্যবহার করেন)"
+      },
+      {
+        "relation": "Ignite : Fire :: Trigger : Gun",
+        "explanation": "(সম্পর্ক: Activating Action। আগুন জ্বালাতে Ignite করতে হয়, বন্দুক চালাতে Trigger চাপতে হয়)"
+      },
+      {
+        "relation": "Poet : Poem :: Playwright : Drama",
+        "explanation": "(সম্পর্ক: Creator and Creation। কবি কবিতা লেখেন, নাট্যকার নাটক লেখেন)"
+      },
+      {
+        "relation": "Horse : Stable :: Pig : Sty",
+        "explanation": "(সম্পর্ক: Animal and Shelter। ঘোড়া আস্তাবলে (Stable) থাকে, শুকর খোয়াড়ে (Sty) থাকে)"
+      },
+      {
+        "relation": "Dawn : Dusk :: Morning : Evening",
+        "explanation": "(সম্পর্ক: Sequence / Opposite। ভোরের বিপরীত গোধূলি, সকালের বিপরীত সন্ধ্যা)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773002428830",
+    "dayNumber": "14",
+    "quote": "“সুযোগের জন্য অপেক্ষা করো না, সুযোগ তৈরি করে নাও।”",
+    "vocabularies": [
+      {
+        "word": "Plausible",
+        "meaning": "বিশ্বাসযোগ্য / যুক্তিযুক্ত",
+        "synonym": "Credible, Believable, Reasonable",
+        "antonym": "Implausible, Unlikely, Incredible",
+        "example": "His excuse did not seem plausible to me."
+      },
+      {
+        "word": "Scanty",
+        "meaning": "অপ্রতুল / স্বল্প",
+        "synonym": "Insufficient, Meager, Limited",
+        "antonym": "Abundant, Plentiful, Adequate",
+        "example": "The evidence against him is very scanty."
+      },
+      {
+        "word": "Tedious",
+        "meaning": "ক্লান্তিকর / একঘেয়ে",
+        "synonym": "Boring, Dull, Monotonous",
+        "antonym": "Interesting, Exciting, Thrilling",
+        "example": "The journey was long and tedious."
+      },
+      {
+        "word": "Wary",
+        "meaning": "সতর্ক / সাবধান",
+        "synonym": "Cautious, Alert, Watchful",
+        "antonym": "Careless, Reckless, Trusting",
+        "example": "Be wary of strangers in a new city."
+      },
+      {
+        "word": "Zenith",
+        "meaning": "সুউচ্চ স্থান / শীর্ষবিন্দু",
+        "synonym": "Peak, Summit, Apex",
+        "antonym": "Nadir, Bottom, Base",
+        "example": "The singer is now at the zenith of his career."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Abide in",
+        "meaning": "বাস করা (স্থান)",
+        "example": "My uncle abides in Dhaka."
+      },
+      {
+        "word": "Blind of",
+        "meaning": "দৃষ্টিশক্তিহীন (এক চোখে)",
+        "example": "The man is blind of one eye."
+      },
+      {
+        "word": "Die from",
+        "meaning": "মারা যাওয়া (অতিরিক্ত ভোজন/আঘাত/না খেয়ে)",
+        "example": "He died from overeating."
+      },
+      {
+        "word": "Expert at",
+        "meaning": "দক্ষ (কাজে)",
+        "example": "She is expert at cooking."
+      },
+      {
+        "word": "Objection to",
+        "meaning": "আপত্তি",
+        "example": "I have no objection to your proposal."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Hard nut to crack",
+        "meaning": "কঠিন সমস্যা / শক্ত কাজ",
+        "example": "Solving this problem is a hard nut to crack."
+      },
+      {
+        "word": "Lame excuse",
+        "meaning": "বাজে অজুহাত",
+        "example": "Do not show me any lame excuse."
+      },
+      {
+        "word": "Red letter day",
+        "meaning": "স্মরণীয় দিন",
+        "example": "The 21st February is a red letter day in our history."
+      },
+      {
+        "word": "Slip of the tongue",
+        "meaning": "মুখ ফসকে বলা",
+        "example": "It was just a slip of the tongue; I didn't mean to hurt you."
+      },
+      {
+        "word": "Through and through",
+        "meaning": "মজ্জায় মজ্জায় / সম্পূর্ণরূপে",
+        "example": "He is a gentleman through and through."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "An-ni-ver-sa-ry",
+        "correct": "Anniversary (বার্ষিকী)"
+      },
+      {
+        "broken": "Cur-ric-u-lum",
+        "correct": "Curriculum (পাঠ্যক্রম)"
+      },
+      {
+        "broken": "Ex-haus-tion",
+        "correct": "Exhaustion (অবসাদ / ক্লান্তি)"
+      },
+      {
+        "broken": "For-eign",
+        "correct": "Foreign (বিদেশী)"
+      },
+      {
+        "broken": "Mil-lion-aire",
+        "correct": "Millionaire (কোটিপতি)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "Fear of heights",
+        "word": "Acrophobia (উচ্চতা ভীতি)"
+      },
+      {
+        "phrase": "Government by religious leaders",
+        "word": "Theocracy (ধর্মতন্ত্র)"
+      },
+      {
+        "phrase": "Murder of a sister",
+        "word": "Sororicide (ভগ্নিহত্যা)"
+      },
+      {
+        "phrase": "One who hates marriage",
+        "word": "Misogamist (বিবাহবিদ্বেষী)"
+      },
+      {
+        "phrase": "A period of one hundred years",
+        "word": "Century (শতাব্দী)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Wool : Sheep :: Silk : Silkworm",
+        "explanation": "(সম্পর্ক: Source / Origin। ভেড়া থেকে পশম (Wool) পাওয়া যায়, রেশম পোকা থেকে রেশম (Silk) পাওয়া যায়)"
+      },
+      {
+        "relation": "Helmet : Head :: Thimble : Finger",
+        "explanation": "(সম্পর্ক: Protection। হেলমেট মাথাকে রক্ষা করে, থিম্বল (সেলাইয়ের সময় ব্যবহৃত টুপি) আঙুলকে রক্ষা করে)"
+      },
+      {
+        "relation": "Composer : Score :: Author : Book",
+        "explanation": "(সম্পর্ক: Creator and Creation। সুরকার স্বরলিপি (Score) রচনা করেন, লেখক বই রচনা করেন)"
+      },
+      {
+        "relation": "Barometer : Pressure :: Hygrometer : Humidity",
+        "explanation": "(সম্পর্ক: Measuring Instrument। ব্যারোমিটার দিয়ে চাপ মাপা হয়, হাইগ্রোমিটার দিয়ে আর্দ্রতা মাপা হয়)"
+      },
+      {
+        "relation": "Safe : Danger :: Happy : Sad",
+        "explanation": "(সম্পর্ক: Antonym বা বিপরীত শব্দ)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773002498541",
+    "dayNumber": "15",
+    "quote": "“অপেক্ষা করো না। সময় কখনো 'একেবার সঠিক' হবে না। তুমি যেখানে আছো সেখান থেকেই শুরু করো।”",
+    "vocabularies": [
+      {
+        "word": "Acquiesce",
+        "meaning": "নীরবে মেনে নেওয়া / সম্মতি দেওয়া",
+        "synonym": "Agree, Submit, Comply",
+        "antonym": "Protest, Resist, Object",
+        "example": "She acquiesced to her parents' decision."
+      },
+      {
+        "word": "Coerce",
+        "meaning": "বলপ্রয়োগ করা / বাধ্য করা",
+        "synonym": "Force, Compel, Pressurize",
+        "antonym": "Persuade, Request, Allow",
+        "example": "He was coerced into signing the contract."
+      },
+      {
+        "word": "Debilitate",
+        "meaning": "দুর্বল করা",
+        "synonym": "Weaken, Enfeeble, Exhaust",
+        "antonym": "Strengthen, Invigorate, Energize",
+        "example": "The disease debilitated him completely."
+      },
+      {
+        "word": "Immaculate",
+        "meaning": "নিখুঁত / পবিত্র / নিষ্কলঙ্ক",
+        "synonym": "Perfect, Spotless, Flawless",
+        "antonym": "Dirty, Filthy, Defective",
+        "example": "Her performance in the exam was immaculate."
+      },
+      {
+        "word": "Reiterate",
+        "meaning": "পুনরাবৃত্তি করা / বারবার বলা",
+        "synonym": "Repeat, Restate, Retell",
+        "antonym": "Take back, Cancel, Withdraw",
+        "example": "Let me reiterate the most important points."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Engaged in",
+        "meaning": "লিপ্ত / ব্যস্ত (কোনো কাজে)",
+        "example": "He is engaged in politics."
+      },
+      {
+        "word": "Fit for",
+        "meaning": "উপযুক্ত",
+        "example": "This water is not fit for drinking."
+      },
+      {
+        "word": "Glance at",
+        "meaning": "একনজর দেখা",
+        "example": "He glanced at his watch."
+      },
+      {
+        "word": "Hope for",
+        "meaning": "আশা করা",
+        "example": "We must hope for the best."
+      },
+      {
+        "word": "Informed of",
+        "meaning": "জানানো / অবহিত",
+        "example": "I was informed of the news."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "In the long run",
+        "meaning": "পরিশেষে / পরিণামে",
+        "example": "Honesty pays in the long run."
+      },
+      {
+        "word": "Lion's share",
+        "meaning": "সিংহভাগ / সবচেয়ে বড় অংশ",
+        "example": "He took the lion's share of the profit."
+      },
+      {
+        "word": "Open secret",
+        "meaning": "সর্বজনবিদিত গোপন তথ্য (যে গোপন কথা সবাই জানে)",
+        "example": "Their marriage is an open secret now."
+      },
+      {
+        "word": "Red tape",
+        "meaning": "আমলাতান্ত্রিক জটিলতা",
+        "example": "We must reduce red tape to encourage business."
+      },
+      {
+        "word": "Turn a deaf ear",
+        "meaning": "কর্ণপাত না করা / অগ্রাহ্য করা",
+        "example": "He turned a deaf ear to my advice."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "As-cer-tain",
+        "correct": "Ascertain (নিরূপণ করা / নিশ্চিত করা)"
+      },
+      {
+        "broken": "Com-mit-ment",
+        "correct": "Commitment (অঙ্গীকার)"
+      },
+      {
+        "broken": "Ex-pla-na-tion",
+        "correct": "Explanation (ব্যাখ্যা)"
+      },
+      {
+        "broken": "Priv-i-lege",
+        "correct": "Privilege (বিশেষ সুবিধা)"
+      },
+      {
+        "broken": "Sep-a-rate",
+        "correct": "Separate (আলাদা)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A person who eats too much",
+        "word": "Glutton (পেটুক)"
+      },
+      {
+        "phrase": "Speaking one's thoughts aloud to oneself",
+        "word": "Soliloquy (স্বগতোক্টি)"
+      },
+      {
+        "phrase": "Murder of an infant",
+        "word": "Infanticide (শিশুহত্যা)"
+      },
+      {
+        "phrase": "One who walks on foot",
+        "word": "Pedestrian (পথচারী)"
+      },
+      {
+        "phrase": "Misappropriation of money",
+        "word": "Embezzlement (তহবিল তছরুপ / আত্মসাৎ)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Car : Garage :: Aeroplane : Hangar",
+        "explanation": "(সম্পর্ক: Storage Place। গাড়ি গ্যারেজে রাখা হয়, উড়োজাহাজ হ্যাঙ্গারে রাখা হয়)"
+      },
+      {
+        "relation": "Book : Library :: Medicine : Pharmacy",
+        "explanation": "(সম্পর্ক: Place of Availability। বই লাইব্রেরিতে পাওয়া যায়, ওষুধ ফার্মেসিতে পাওয়া যায়)"
+      },
+      {
+        "relation": "Cork : Bottle :: Lid : Jar",
+        "explanation": "(সম্পর্ক: Stopper / Cover। বোতলের মুখ কর্ক দিয়ে বন্ধ করা হয়, জারের মুখ লিড বা ঢাকনা দিয়ে বন্ধ করা হয়)"
+      },
+      {
+        "relation": "Ignorance : Education :: Disease : Medicine",
+        "explanation": "(সম্পর্ক: Solution / Remedy। অজ্ঞতা দূর করতে শিক্ষা প্রয়োজন, রোগ সারাতে ওষুধ প্রয়োজন)"
+      },
+      {
+        "relation": "Food : Hunger :: Water : Thirst",
+        "explanation": "(সম্পর্ক: Need and Satisfier। ক্ষুধা মেটাতে খাবার লাগে, তৃষ্ণা মেটাতে পানি লাগে)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773002718761",
+    "dayNumber": "16",
+    "quote": "“ব্যর্থতা মানে হেরে যাওয়া নয়, ব্যর্থতা মানে নতুন করে আবার শুরু করার সুযোগ।” — হেনরি ফোর্ড",
+    "vocabularies": [
+      {
+        "word": "Callous",
+        "meaning": "অনুভূতিহীন / নিষ্ঠুর",
+        "synonym": "Insensitive, Cruel, Heartless",
+        "antonym": "Sensitive, Compassionate, Kind",
+        "example": "The rich man was callous to the suffering of the poor."
+      },
+      {
+        "word": "Facilitate",
+        "meaning": "সহজতর করা",
+        "synonym": "Ease, Assist, Promote",
+        "antonym": "Hinder, Obstruct, Impede",
+        "example": "The new software will facilitate our work."
+      },
+      {
+        "word": "Obscure",
+        "meaning": "অস্পষ্ট / দুর্বোধ্য / লোকচক্ষুর অন্তরালে",
+        "synonym": "Unclear, Vague, Unknown",
+        "antonym": "Clear, Distinct, Famous",
+        "example": "The meaning of the poem is obscure."
+      },
+      {
+        "word": "Prevalent",
+        "meaning": "প্রচলিত / ব্যাপক",
+        "synonym": "Widespread, Common, Dominant",
+        "antonym": "Rare, Uncommon, Limited",
+        "example": "Malaria is still prevalent in some areas."
+      },
+      {
+        "word": "Retaliate",
+        "meaning": "প্রতিশোধ নেওয়া / পাল্টা আঘাত করা",
+        "synonym": "Revenge, React, Counterattack",
+        "antonym": "Forgive, Pardon, Ignore",
+        "example": "The army retaliated with an air strike."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Accustomed to",
+        "meaning": "অভ্যস্ত",
+        "example": "I am accustomed to hot weather."
+      },
+      {
+        "word": "Aware of",
+        "meaning": "সচেতন",
+        "example": "He is aware of the danger."
+      },
+      {
+        "word": "Bound for",
+        "meaning": "কোনো স্থানের উদ্দেশ্যে যাত্রা করা",
+        "example": "The ship is bound for London."
+      },
+      {
+        "word": "Close to",
+        "meaning": "সন্নিকটে / কাছে",
+        "example": "The school is close to our house."
+      },
+      {
+        "word": "Dedicate to",
+        "meaning": "উৎসর্গ করা",
+        "example": "He dedicated his life to the service of the nation."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "A rainy day",
+        "meaning": "দুর্দিন / অভাবের সময়",
+        "example": "Save something for a rainy day."
+      },
+      {
+        "word": "Bone to pick",
+        "meaning": "বিবাদের বিষয় / অভিযোগ",
+        "example": "I have a bone to pick with you regarding your behavior."
+      },
+      {
+        "word": "Carry coal to Newcastle",
+        "meaning": "তেলা মাথায় তেল দেওয়া / অনাবশ্যক কাজ",
+        "example": "Selling ice in Antarctica is like carrying coal to Newcastle."
+      },
+      {
+        "word": "Get the upper hand",
+        "meaning": "প্রাধান্য বিস্তার করা / নিয়ন্ত্রণ নেওয়া",
+        "example": "Finally, he got the upper hand in the argument."
+      },
+      {
+        "word": "Man of word",
+        "meaning": "এক কথার মানুষ",
+        "example": "He is a man of word; he will keep his promise."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "As-sign-ment",
+        "correct": "Assignment (কাজ / অর্পিত দায়িত্ব)"
+      },
+      {
+        "broken": "Def-i-ni-tion",
+        "correct": "Definition (সংজ্ঞা)"
+      },
+      {
+        "broken": "Gram-mar",
+        "correct": "Grammar (ব্যাকরণ)"
+      },
+      {
+        "broken": "Lei-sure",
+        "correct": "Leisure (অবসর)"
+      },
+      {
+        "broken": "Wed-nes-day",
+        "correct": "Wednesday (বুধবার)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "Scientific study of insects",
+        "word": "Entomology (কীটতত্ত্ব)"
+      },
+      {
+        "phrase": "Murder of a mother",
+        "word": "Matricide (মাতৃহণন)"
+      },
+      {
+        "phrase": "One who eats everything (both plants and meat)",
+        "word": "Omnivorous (সর্বভুক)"
+      },
+      {
+        "phrase": "A person who travels in spacecraft",
+        "word": "Astronaut (মহাকাশচারী)"
+      },
+      {
+        "phrase": "That which cannot be seen",
+        "word": "Invisible (অদৃশ্য)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Bee : Honey :: Cow : Milk",
+        "explanation": "(সম্পর্ক: Producer and Product। মৌমাছি মধু দেয়, গরু দুধ দেয়)"
+      },
+      {
+        "relation": "Moon : Satellite :: Earth : Planet",
+        "explanation": "(সম্পর্ক: Classification / Category। চাঁদ একটি উপগ্রহ, পৃথিবী একটি গ্রহ)"
+      },
+      {
+        "relation": "Win : Joy :: Lose : Sorrow",
+        "explanation": "(সম্পর্ক: Cause and Emotion। জিতলে আনন্দ হয়, হারলে দুঃখ হয়)"
+      },
+      {
+        "relation": "Fire : Burn :: Ice : Freeze",
+        "explanation": "(সম্পর্ক: Effect। আগুন পোড়ায়, বরফ জমিয়ে দেয়)"
+      },
+      {
+        "relation": "Eye : Wink :: Hand : Wave",
+        "explanation": "(সম্পর্ক: Body Part and Action/Gesture। চোখ দিয়ে পলক ফেলা (Wink) হয়, হাত দিয়ে নাড়ানো (Wave) হয়)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773002885601",
+    "dayNumber": "17",
+    "quote": "“সাফল্যের গোপন সূত্র হলো সাধারণ কাজগুলো অসাধারণভাবে করা।” — জন ডি. রকফেলার",
+    "vocabularies": [
+      {
+        "word": "Clandestine",
+        "meaning": "গোপন / গুপ্ত",
+        "synonym": "Secret, Hidden, Covert",
+        "antonym": "Open, Public, Overt",
+        "example": "The group held a clandestine meeting."
+      },
+      {
+        "word": "Exonerate",
+        "meaning": "অভিযোগ থেকে মুক্তি দেওয়া",
+        "synonym": "Absolve, Acquit, Vindicate",
+        "antonym": "Convict, Blame, Accuse",
+        "example": "The DNA evidence exonerated him from the crime."
+      },
+      {
+        "word": "Inquisitive",
+        "meaning": "কৌতূহলী / সন্ধানী",
+        "synonym": "Curious, Eager, inquiring",
+        "antonym": "Indifferent, Uninterested, Apathetic",
+        "example": "Children are naturally inquisitive."
+      },
+      {
+        "word": "Prolific",
+        "meaning": "প্রচুর উৎপাদনশীল / উর্বর",
+        "synonym": "Productive, Fertile, Fruitful",
+        "antonym": "Barren, Unproductive, Sterile",
+        "example": "He is a prolific writer who wrote 50 books."
+      },
+      {
+        "word": "Superficial",
+        "meaning": "অগভীর / ভাষা-ভাষা / ওপর-ওপর",
+        "synonym": "Shallow, Surface, Exterior",
+        "antonym": "Deep, Profound, Thorough",
+        "example": "He has only a superficial knowledge of the subject."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Prefer to",
+        "meaning": "অধিকতর পছন্দ করা",
+        "example": "I prefer tea to coffee."
+      },
+      {
+        "word": "Prevent from",
+        "meaning": "বিরত রাখা / বাধা দেওয়া",
+        "example": "The rain prevented me from going out."
+      },
+      {
+        "word": "Proud of",
+        "meaning": "গর্বিত",
+        "example": "He is proud of his son's success."
+      },
+      {
+        "word": "Recover from",
+        "meaning": "আরোগ্য লাভ করা",
+        "example": "He has recovered from his illness."
+      },
+      {
+        "word": "Rely on / upon",
+        "meaning": "নির্ভর করা",
+        "example": "You can rely on his word."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "At the eleventh hour",
+        "meaning": "শেষ মুহূর্তে",
+        "example": "He arrived at the airport at the eleventh hour."
+      },
+      {
+        "word": "Cock and bull story",
+        "meaning": "গাঁজাখুরি গল্প / অবিশ্বাস্য কাহিনী",
+        "example": "Nobody believes your cock and bull story."
+      },
+      {
+        "word": "From A to Z",
+        "meaning": "প্রথম থেকে শেষ পর্যন্ত / সম্পূর্ণ",
+        "example": "He knows the subject from A to Z."
+      },
+      {
+        "word": "Salt of the earth",
+        "meaning": "আদর্শ ও সৎ ব্যক্তি",
+        "example": "Farmers are the salt of the earth."
+      },
+      {
+        "word": "Three R's",
+        "meaning": "প্রাথমিক শিক্ষা (Reading, Writing, Arithmetic)",
+        "example": "Every child should learn the three R's."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ad-mis-sion",
+        "correct": "Admission (ভর্তি / প্রবেশাধিকার)"
+      },
+      {
+        "broken": "Bu-reau",
+        "correct": "Bureau (দপ্তর / সংস্থা)"
+      },
+      {
+        "broken": "Cig-a-rette",
+        "correct": "Cigarette (সিগারেট)"
+      },
+      {
+        "broken": "Col-league",
+        "correct": "Colleague (সহকর্মী)"
+      },
+      {
+        "broken": "Di-ar-rhoe-a",
+        "correct": "Diarrhoea (ডায়রিয়া)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "Fear of strangers",
+        "word": "Xenophobia (বিদেশি বা অচেনা মানুষ ভীতি)"
+      },
+      {
+        "phrase": "Government by a few people",
+        "word": "Oligarchy (কতিপয়তন্ত্র / গোষ্ঠীতন্ত্র)"
+      },
+      {
+        "phrase": "Killing of a husband",
+        "word": "Mariticide (স্বামীহত্যা)"
+      },
+      {
+        "phrase": "A person who looks at the dark side of things",
+        "word": "Pessimist (নিরাশাবাদী)"
+      },
+      {
+        "phrase": "A sound that can be heard",
+        "word": "Audible (শ্রাব্য)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Breeze : Cyclone :: Drizzle : Downpour",
+        "explanation": "(সম্পর্ক: Intensity / Degree। মৃদু বাতাস হলো Breeze, ধ্বংসাত্মক বাতাস হলো Cyclone। তেমনি ঝিরঝির বৃষ্টি হলো Drizzle, মুষলধারে বৃষ্টি হলো Downpour)"
+      },
+      {
+        "relation": "Fuel : Engine :: Food : Body",
+        "explanation": "(সম্পর্ক: Source of Energy। ইঞ্জিন চলতে জ্বালানি লাগে, শরীর চলতে খাবার লাগে)"
+      },
+      {
+        "relation": "Tailor : Cloth :: Carpenter : Wood",
+        "explanation": "(সম্পর্ক: Worker and Material। দর্জি কাপড় দিয়ে কাজ করেন, কাঠমিস্ত্রি কাঠ দিয়ে কাজ করেন)"
+      },
+      {
+        "relation": "Teacher : Chalk :: Painter : Brush",
+        "explanation": "(সম্পর্ক: Worker and Tool। শিক্ষক চক ব্যবহার করেন, চিত্রশিল্পী তুলি ব্যবহার করেন)"
+      },
+      {
+        "relation": "Day : Night :: Light : Darkness",
+        "explanation": "(সম্পর্ক: Antonym / Opposite)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773002971245",
+    "dayNumber": "18",
+    "quote": "“সফলতা তাদের কাছেই ধরা দেয়, যারা এর সন্ধানে সর্বদা ব্যস্ত থাকে।” — হেনরি ডেভিড থরো",
+    "vocabularies": [
+      {
+        "word": "Impediment",
+        "meaning": "বাধা / প্রতিবন্ধকতা",
+        "synonym": "Obstacle, Hindrance, Barrier",
+        "antonym": "Aid, Assistance, Help",
+        "example": "Poverty is a major impediment to development."
+      },
+      {
+        "word": "Peculiar",
+        "meaning": "অদ্ভুত / অস্বাভাবিক",
+        "synonym": "Strange, Odd, Bizarre",
+        "antonym": "Normal, Ordinary, Usual",
+        "example": "He has a peculiar way of speaking."
+      },
+      {
+        "word": "Superfluous",
+        "meaning": "অপ্রয়োজনীয় / প্রয়োজনাতিরিক্ত",
+        "synonym": "Excess, Redundant, Unnecessary",
+        "antonym": "Essential, Necessary, Vital",
+        "example": "Eliminate superfluous words from your essay."
+      },
+      {
+        "word": "Tranquil",
+        "meaning": "শান্ত / নিস্তব্ধ",
+        "synonym": "Calm, Serene, Peaceful",
+        "antonym": "Disturbed, Noisy, Agitated",
+        "example": "We spent a tranquil afternoon by the river."
+      },
+      {
+        "word": "Versatile",
+        "meaning": "বহুমুখী প্রতিভাসম্পন্ন",
+        "synonym": "Adaptable, Flexible, Skilled",
+        "antonym": "Limited, Inflexible, Unskilled",
+        "example": "He is a versatile actor who can play any role."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Repent of",
+        "meaning": "অনুশোচনা করা",
+        "example": "He repented of his sins."
+      },
+      {
+        "word": "Satisfied with",
+        "meaning": "সন্তুষ্ট",
+        "example": "I am satisfied with your work."
+      },
+      {
+        "word": "Stare at",
+        "meaning": "একদৃষ্টিতে তাকানো",
+        "example": "It is rude to stare at strangers."
+      },
+      {
+        "word": "Taste for",
+        "meaning": "রুচি / পছন্দ",
+        "example": "She has a taste for classical music."
+      },
+      {
+        "word": "Wish for",
+        "meaning": "ইচ্ছা করা / আকাঙ্ক্ষা করা",
+        "example": "I do not wish for any reward."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "At large",
+        "meaning": "স্বাধীনভাবে / মুক্ত",
+        "example": "The prisoner is still at large."
+      },
+      {
+        "word": "Castles in the air",
+        "meaning": "আকাশ কুসুম কল্পনা",
+        "example": "Do not build castles in the air; work hard."
+      },
+      {
+        "word": "French leave",
+        "meaning": "অনুমতি ছাড়া ছুটি / প্রস্থান",
+        "example": "The servant took French leave yesterday."
+      },
+      {
+        "word": "Silver spoon in one's mouth",
+        "meaning": "ধনী পরিবারে জন্ম",
+        "example": "He was born with a silver spoon in his mouth."
+      },
+      {
+        "word": "Stone's throw",
+        "meaning": "খুব নিকটে / হাতের নাগালে",
+        "example": "The school is at a stone's throw from our house."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "As-so-ci-a-tion",
+        "correct": "Association (সমিতি / সংঘ)"
+      },
+      {
+        "broken": "Com-pe-ti-tion",
+        "correct": "Competition (প্রতিযোগিতা)"
+      },
+      {
+        "broken": "En-cy-clo-pe-dia",
+        "correct": "Encyclopedia (বিশ্বকোষ)"
+      },
+      {
+        "broken": "Im-me-di-ate-ly",
+        "correct": "Immediately (তৎক্ষণাৎ)"
+      },
+      {
+        "broken": "Su-per-in-ten-dent",
+        "correct": "Superintendent (তত্ত্বাবধায়ক / পুলিশ সুপার)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "Life history of a person written by another",
+        "word": "Biography (জীবনী)"
+      },
+      {
+        "phrase": "Scientific study of birds",
+        "word": "Ornithology (পক্ষীবিজ্ঞান)"
+      },
+      {
+        "phrase": "A place where bees are kept",
+        "word": "Apiary (মৌমাছি পালন কেন্দ্র)"
+      },
+      {
+        "phrase": "One who cannot read or write",
+        "word": "Illiterate (নিরক্ষর)"
+      },
+      {
+        "phrase": "That which is contrary to law",
+        "word": "Illegal (বেআইনি)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Sound : Echo :: Light : Reflection",
+        "explanation": "(সম্পর্ক: Physical Phenomenon। শব্দ প্রতিফলিত হলে প্রতিধ্বনি (Echo) হয়, আলো প্রতিফলিত হলে প্রতিফলন (Reflection) হয়)"
+      },
+      {
+        "relation": "Odometer : Distance :: Thermometer : Temperature",
+        "explanation": "(সম্পর্ক: Measuring Instrument। ওডোমিটার দিয়ে দূরত্ব মাপা হয়, থার্মোমিটার দিয়ে তাপমাত্রা মাপা হয়)"
+      },
+      {
+        "relation": "Sheep : Flock :: Cattle : Herd",
+        "explanation": "(সম্পর্ক: Collective Noun। ভেড়ার পালকে Flock বলে, গবাদি পশুর পালকে Herd বলে)"
+      },
+      {
+        "relation": "Blacksmith : Iron :: Goldsmith : Gold",
+        "explanation": "(সম্পর্ক: Worker and Material। কামার লোহা দিয়ে কাজ করেন, স্বর্ণকার সোনা দিয়ে কাজ করেন)"
+      },
+      {
+        "relation": "Beautiful : Pretty :: Smart : Clever",
+        "explanation": "(সম্পর্ক: Synonym / সমার্থক শব্দ)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773003070222",
+    "dayNumber": "19",
+    "quote": "“সাফল্য কোনো জাদুকরী বিষয় নয়; এটি হলো পরিশ্রম, অধ্যবসায় এবং ভুলের শিক্ষা থেকে অর্জিত ফলাফল।” — কলিন পাওয়েল",
+    "vocabularies": [
+      {
+        "word": "Authentic",
+        "meaning": "খাঁটি / বিশ্বাসযোগ্য",
+        "synonym": "Genuine, Real, Original",
+        "antonym": "Fake, False, Counterfeit",
+        "example": "The museum has an authentic manuscript of the poem."
+      },
+      {
+        "word": "Harmony",
+        "meaning": "মিল / সদভাব / ঐক্য",
+        "synonym": "Accord, Concord, Unity",
+        "antonym": "Conflict, Discord, Clash",
+        "example": "They lived in perfect harmony with their neighbors."
+      },
+      {
+        "word": "Inferior",
+        "meaning": "নিকৃষ্ট / নিম্নমানের",
+        "synonym": "Lower, Substandard, Lesser",
+        "antonym": "Superior, Excellent, Better",
+        "example": "These goods are inferior in quality."
+      },
+      {
+        "word": "Rational",
+        "meaning": "যৌক্তিক / বিচারবুদ্ধিসম্পন্ন",
+        "synonym": "Logical, Reasonable, Sensible",
+        "antonym": "Irrational, Illogical, Absurd",
+        "example": "We need a rational solution to this problem."
+      },
+      {
+        "word": "Vital",
+        "meaning": "অত্যাবশ্যক / প্রাণবন্ত",
+        "synonym": "Essential, Critical, Crucial",
+        "antonym": "Unimportant, Trivial, Dead",
+        "example": "Vitamins are vital for our health."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Absolve from",
+        "meaning": "দোষ বা পাপ থেকে মুক্তি দেওয়া",
+        "example": "The court absolved him from the charge."
+      },
+      {
+        "word": "Based on",
+        "meaning": "ভিত্তি করে",
+        "example": "The movie is based on a true story."
+      },
+      {
+        "word": "Comment on",
+        "meaning": "মন্তব্য করা",
+        "example": "He refused to comment on the matter."
+      },
+      {
+        "word": "Entitled to",
+        "meaning": "অধিকারী",
+        "example": "Every citizen is entitled to equal rights."
+      },
+      {
+        "word": "Preside over",
+        "meaning": "সভাপতিত্ব করা",
+        "example": "The Headmaster presided over the meeting."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "ABC",
+        "meaning": "প্রাথমিক জ্ঞান",
+        "example": "He does not know the ABC of computer."
+      },
+      {
+        "word": "By all means",
+        "meaning": "সর্বতোভাবে / অবশ্যই",
+        "example": "Try to help him by all means."
+      },
+      {
+        "word": "Dead language",
+        "meaning": "যে ভাষা এখন আর কথ্য নয় (অপ্রচলিত ভাষা)",
+        "example": "Sanskrit is now a dead language."
+      },
+      {
+        "word": "Fresh blood",
+        "meaning": "নতুন সভ্য / নতুন শক্তি",
+        "example": "The party needs some fresh blood to win the election."
+      },
+      {
+        "word": "Hard times",
+        "meaning": "দুঃসময়",
+        "example": "He faced many hard times in his youth."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ad-o-les-cence",
+        "correct": "Adolescence (কৈশোর)"
+      },
+      {
+        "broken": "Bu-reau-cra-cy",
+        "correct": "Bureaucracy (আমলাতন্ত্র)"
+      },
+      {
+        "broken": "Con-quer-or",
+        "correct": "Conqueror (বিজেতা)"
+      },
+      {
+        "broken": "Lieu-ten-ant",
+        "correct": "Lieutenant (লেফটেন্যান্ট / প্রতিনিধি)"
+      },
+      {
+        "broken": "Syl-la-ble",
+        "correct": "Syllable (শব্দাংশ)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A list of books",
+        "word": "Catalogue (তালিকা / ক্যাটালগ)"
+      },
+      {
+        "phrase": "A period of ten years",
+        "word": "Decade (দশক)"
+      },
+      {
+        "phrase": "One who speaks for others",
+        "word": "Spokesman (মুখপাত্র)"
+      },
+      {
+        "phrase": "Study of religion",
+        "word": "Theology (ধর্মতত্ত্ব)"
+      },
+      {
+        "phrase": "A man whose wife is dead",
+        "word": "Widower (বিপত্নীক)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Sky : Bird :: Water : Fish",
+        "explanation": "(সম্পর্ক: Habitat / বাসস্থান। পাখি আকাশে ওড়ে, মাছ পানিতে সাঁতার কাটে)"
+      },
+      {
+        "relation": "Pound : Weight :: Mile : Distance",
+        "explanation": "(সম্পর্ক: Unit of Measurement। পাউন্ড ওজনের একক, মাইল দূরত্বের একক)"
+      },
+      {
+        "relation": "Tea : Leaves :: Coffee : Beans",
+        "explanation": "(সম্পর্ক: Source / Raw Material। চা পাতা থেকে হয়, কফি বীজ (Beans) থেকে হয়)"
+      },
+      {
+        "relation": "Truth : Falsehood :: Smile : Frown",
+        "explanation": "(সম্পর্ক: Antonym / বিপরীত। সত্যের বিপরীত মিথ্যা, হাসির বিপরীত ভ্রুকুটি বা অসন্তোষ)"
+      },
+      {
+        "relation": "Warrior : Sword :: Carpenter : Saw",
+        "explanation": "(সম্পর্ক: Worker and Tool। যোদ্ধা তলোয়ার ব্যবহার করেন, কাঠমিস্ত্রি করাত (Saw) ব্যবহার করেন)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-1773003178769",
+    "dayNumber": "20",
+    "quote": "“বিশ্বাস করো তুমি পারবে, তাহলেই তুমি অর্ধেক পথ পাড়ি দিয়ে ফেলেছ।” — থিওডোর রুজভেল্ট",
+    "vocabularies": [
+      {
+        "word": "Diligent",
+        "meaning": "অধ্যবসায়ী / পরিশ্রমী",
+        "synonym": "Industrious, Assiduous, Hard-working",
+        "antonym": "Lazy, Indolent, Lethargic",
+        "example": "He is a diligent student who always does his homework."
+      },
+      {
+        "word": "Fickle",
+        "meaning": "চঞ্চল / পরিবর্তনশীল",
+        "synonym": "Changeable, Capricious, Unstable",
+        "antonym": "Constant, Stable, Steadfast",
+        "example": "Public opinion is notoriously fickle."
+      },
+      {
+        "word": "Hinder",
+        "meaning": "বাধা দেওয়া",
+        "synonym": "Obstruct, Impede, Hamper",
+        "antonym": "Help, Assist, Facilitate",
+        "example": "Heavy traffic hindered our progress."
+      },
+      {
+        "word": "Lenient",
+        "meaning": "কোমল / দয়ালু / কঠোর নয় এমন",
+        "synonym": "Gentle, Mild, Forgiving",
+        "antonym": "Harsh, Strict, Severe",
+        "example": "The judge was lenient with the first-time offender."
+      },
+      {
+        "word": "Vanity",
+        "meaning": "অহংকার / দম্ভ",
+        "synonym": "Pride, Arrogance, Egotism",
+        "antonym": "Modesty, Humility, Meekness",
+        "example": "His vanity was hurt by her remarks."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Abide with",
+        "meaning": "সঙ্গে থাকা (ব্যক্তি)",
+        "example": "Please abide with me in my distress."
+      },
+      {
+        "word": "Contrary to",
+        "meaning": "বিপরীত",
+        "example": "His action is contrary to his words."
+      },
+      {
+        "word": "Disgusted with (person) / at (conduct)",
+        "meaning": "বিরক্ত",
+        "example": "I am disgusted with him at his behavior."
+      },
+      {
+        "word": "Innocent of",
+        "meaning": "নির্দোষ",
+        "example": "He is innocent of the charge."
+      },
+      {
+        "word": "Sure of",
+        "meaning": "নিশ্চিত",
+        "example": "I am sure of my success."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "A fish out of water",
+        "meaning": "অস্বস্তিকর অবস্থা",
+        "example": "He felt like a fish out of water in the new school."
+      },
+      {
+        "word": "At a low ebb",
+        "meaning": "নিম্নমুখী / পড়তি দশা",
+        "example": "His fortune is now at a low ebb."
+      },
+      {
+        "word": "By and large",
+        "meaning": "মোটের ওপর / প্রধানত",
+        "example": "By and large, the plan was successful."
+      },
+      {
+        "word": "In a nutshell",
+        "meaning": "সংক্ষেপে",
+        "example": "Tell me the story in a nutshell."
+      },
+      {
+        "word": "Weal and woe",
+        "meaning": "সুখ-দুঃখ",
+        "example": "Friends share our weal and woe."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "An-tic-i-pa-tion",
+        "correct": "Anticipation (প্রত্যাশা / পূর্বানুমান)"
+      },
+      {
+        "broken": "Com-mis-sion-er",
+        "correct": "Commissioner (কমিশনার)"
+      },
+      {
+        "broken": "Dys-pep-sia",
+        "correct": "Dyspepsia (হজমশক্তির গোলমাল / অজীর্ণ)"
+      },
+      {
+        "broken": "In-au-gu-ra-tion",
+        "correct": "Inauguration (উদ্বোধন)"
+      },
+      {
+        "broken": "Su-per-sti-tion",
+        "correct": "Superstition (কুসংস্কার)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A person who loves his country",
+        "word": "Patriot (দেশপ্রেমিক)"
+      },
+      {
+        "phrase": "Animals that eat flesh",
+        "word": "Carnivorous (মাংসাশী)"
+      },
+      {
+        "phrase": "Animals that eat plants",
+        "word": "Herbivorous (তৃণভোজী)"
+      },
+      {
+        "phrase": "Handwriting that cannot be read",
+        "word": "Illegible (অপাঠ্য)"
+      },
+      {
+        "phrase": "A person who witnesses an event",
+        "word": "Eyewitness (প্রত্যক্ষদর্শী)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Prologue : Play :: Preamble : Constitution",
+        "explanation": "(সম্পর্ক: Introduction। নাটকের শুরুকে প্রোলগ (Prologue) বলে, সংবিধানের শুরুকে প্রিয়েম্বল (Preamble) বলে)"
+      },
+      {
+        "relation": "Library : Book :: Archive : Document",
+        "explanation": "(সম্পর্ক: Storage। লাইব্রেরিতে বই রাখা হয়, আর্কাইভে দলিল-দস্তাবেজ (Document) রাখা হয়)"
+      },
+      {
+        "relation": "Wick : Candle :: Filament : Bulb",
+        "explanation": "(সম্পর্ক: Source of Light। মোমবাতির সলতে (Wick) জ্বলে আলো দেয়, বাল্বের ফিলামেন্ট জ্বলে আলো দেয়)"
+      },
+      {
+        "relation": "Seismograph : Earthquake :: Thermometer : Temperature",
+        "explanation": "(সম্পর্ক: Measuring Instrument। সিসমোগ্রাফ দিয়ে ভূমিকম্প মাপা হয়, থার্মোমিটার দিয়ে তাপমাত্রা)"
+      },
+      {
+        "relation": "Fragile : Crack :: Pliable : Bend",
+        "explanation": "(সম্পর্ক: Characteristic Property। যা ভঙ্গুর (Fragile) তা ফেটে যায় (Crack), যা নমনীয় (Pliable) তা বাঁকানো যায় (Bend))"
+      }
+    ],
+    "examLink": ""
+  }
+]
