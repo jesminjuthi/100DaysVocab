@@ -4,30 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juthi's Vocab Library - 100 Days Vocab Challenge</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Outfit:wght@400;500;700;900&display=swap");
       body {
-        font-family: "Noto Sans Bengali", sans-serif;
-        background-color: #f9fafb;
+        font-family: "Noto Sans Bengali", "Outfit", sans-serif;
+        background-color: #f4f5f7;
       }
       .animate-fade-in {
-        animation: fadeIn 0.3s ease-in-out;
+        animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
       @keyframes fadeIn {
         from {
           opacity: 0;
-          transform: translateY(10px);
+          transform: translateY(15px);
         }
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Premium Print Styles */
       @media print {
         body {
           background-color: white !important;
@@ -38,75 +43,99 @@
         .preview-container {
           box-shadow: none !important;
           max-width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
         }
         .page-break {
           page-break-after: always;
           break-after: page;
         }
+        .avoid-break {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+        .print-bg-force {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
       }
     </style>
   </head>
-  <body class="text-gray-800 selection:bg-violet-200">
-    <!-- Navbar -->
+  <body class="text-gray-800 selection:bg-violet-400">
     <nav
-      class="bg-violet-700 text-white p-4 shadow-md print-hidden sticky top-0 z-50 flex justify-between items-center"
+      class="bg-gradient-to-r from-violet-800 to-indigo-900 text-white p-4 shadow-lg print-hidden sticky top-0 z-50 flex justify-between items-center"
     >
-      <div class="flex items-center space-x-2">
-        <div class="font-bold text-2xl tracking-wide">
-          Juthi's Vocab Library
+      <div class="flex items-center space-x-3">
+        <div class="bg-white/10 p-2 rounded-lg backdrop-blur-sm">
+          <i data-lucide="book-open" class="w-6 h-6 text-violet-100"></i>
         </div>
-        <div class="text-violet-400 text-sm hidden sm:block">
-          | 100 Days Vocab Challenge
+        <div>
+          <div
+            class="font-bold text-xl sm:text-2xl tracking-wide flex items-center"
+          >
+            Juthi's Vocab Library
+          </div>
+          <div
+            class="text-violet-200 text-xs sm:text-sm font-medium tracking-wider opacity-90"
+          >
+            100 DAYS CHALLENGE
+          </div>
         </div>
       </div>
-      <div class="flex space-x-4 items-center">
+      <div class="flex space-x-3 sm:space-x-4 items-center relative">
         <div
           id="local-status"
-          class="text-xs bg-violet-800 px-3 py-1 rounded-full text-violet-100 flex items-center shadow-sm"
+          class="text-[10px] sm:text-xs bg-black/20 px-3 py-1.5 rounded-full text-violet-100 hidden md:flex items-center backdrop-blur-sm border border-white/10"
         >
-          <i data-lucide="hard-drive" class="w-3 h-3 mr-1"></i> Auto Saved
-          (Local)
+          <i
+            data-lucide="check-circle-2"
+            class="w-3.5 h-3.5 mr-1.5 text-green-400"
+          ></i>
+          Auto Saved
         </div>
         <button
           id="btn-back-dashboard"
-          class="hidden flex items-center hover:text-violet-200 transition bg-violet-800 px-3 py-1 rounded"
+          class="hidden flex items-center hover:bg-white/20 transition bg-white/10 px-4 py-2 rounded-lg text-sm font-medium backdrop-blur-sm border border-white/10"
           onclick="window.switchView('dashboard')"
         >
-          <i data-lucide="arrow-left" class="w-4 h-4 mr-1"></i> ড্যাশবোর্ড
+          <i data-lucide="arrow-left" class="w-4 h-4 mr-1.5"></i>
+          <span class="hidden sm:inline">ফিরে যান</span>
         </button>
-      </div>
-    </nav>
 
-    <!-- Main Content -->
-    <main class="p-4 sm:p-6 print:p-0 print:m-0 max-w-7xl mx-auto">
-      <!-- Loader -->
-      <div
-        id="loader"
-        class="flex flex-col items-center justify-center h-64 text-violet-600"
-      >
-        <i data-lucide="loader-2" class="w-12 h-12 animate-spin mb-4"></i>
-        <p class="text-lg font-medium">অ্যাপ লোড হচ্ছে...</p>
-      </div>
-
-
-      <div id="view-dashboard" class="hidden animate-fade-in">
-        <div
-          class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4"
-        >
-          <h1 class="text-3xl font-bold text-gray-800">
-            সকল কন্টেন্ট (<span id="total-days">0</span>)
-          </h1>
-          <div class="flex flex-wrap justify-center md:justify-end gap-3">
-
+        <div class="relative" id="settings-menu-container">
+          <button
+            id="btn-settings"
+            onclick="window.toggleSettings()"
+            class="flex items-center hover:bg-white/20 transition bg-transparent p-2 rounded-lg"
+            title="সেটিংস ও ব্যাকআপ"
+          >
+            <i data-lucide="settings" class="w-6 h-6"></i>
+          </button>
+          <div
+            id="settings-dropdown"
+            class="hidden absolute right-0 mt-3 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-[60] overflow-hidden transform origin-top-right transition-all"
+          >
             <div
-              class="flex bg-gray-100 p-1 rounded-lg border border-gray-200 shadow-inner mr-2"
+              class="bg-gray-50 px-4 py-3 border-b border-gray-100 flex items-center"
             >
-              <label
-                class="cursor-pointer text-gray-600 px-3 py-2 rounded hover:bg-white flex items-center transition text-sm font-medium"
-                title="সম্পূর্ণ ডেটাবেস ইমপোর্ট"
+              <i
+                data-lucide="database"
+                class="w-4 h-4 mr-2 text-violet-500"
+              ></i>
+              <span
+                class="text-xs font-bold text-gray-600 uppercase tracking-wider"
+                >ডেটা ম্যানেজমেন্ট</span
               >
-                <i data-lucide="upload" class="w-4 h-4 mr-1.5"></i> ফুল ব্যাকআপ
-                আপলোড
+            </div>
+            <div class="py-2">
+              <label
+                class="cursor-pointer flex items-center px-4 py-3 text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700 transition"
+              >
+                <i
+                  data-lucide="upload-cloud"
+                  class="w-4 h-4 mr-3 text-gray-400"
+                ></i>
+                ফুল ব্যাকআপ আপলোড
                 <input
                   type="file"
                   accept=".json"
@@ -115,98 +144,140 @@
                   onchange="window.importData(event)"
                 />
               </label>
-              <div class="w-px bg-gray-300 my-2"></div>
               <button
                 onclick="window.exportData()"
-                class="text-gray-600 px-3 py-2 rounded hover:bg-white flex items-center transition text-sm font-medium"
-                title="সম্পূর্ণ ডেটাবেস সেভ"
+                class="w-full text-left flex items-center px-4 py-3 text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700 transition"
               >
-                <i data-lucide="download" class="w-4 h-4 mr-1.5"></i> ফুল
-                ব্যাকআপ সেভ
+                <i
+                  data-lucide="download-cloud"
+                  class="w-4 h-4 mr-3 text-gray-400"
+                ></i>
+                ফুল ব্যাকআপ সেভ (Export)
               </button>
+              <div class="border-t border-gray-100 my-1 mx-4"></div>
+              <label
+                class="cursor-pointer flex items-center px-4 py-3 text-sm font-medium text-gray-700 hover:bg-violet-50 hover:text-violet-700 transition"
+              >
+                <i
+                  data-lucide="file-plus"
+                  class="w-4 h-4 mr-3 text-gray-400"
+                ></i>
+                সিঙ্গেল ডে আপলোড
+                <input
+                  type="file"
+                  accept=".json"
+                  class="hidden"
+                  id="single-day-import"
+                  onchange="window.importSingleDay(event)"
+                />
+              </label>
             </div>
-
-            <label
-              class="cursor-pointer bg-violet-50 border border-violet-500 text-violet-700 px-4 py-2 rounded-lg hover:bg-violet-100 flex items-center shadow-sm transition font-medium"
-            >
-              <i data-lucide="file-json" class="w-5 h-5 mr-2"></i> সিঙ্গেল ডে
-              আপলোড
-              <input
-                type="file"
-                accept=".json"
-                class="hidden"
-                id="single-day-import"
-                onchange="window.importSingleDay(event)"
-              />
-            </label>
-            <button
-              onclick="window.createNewDay()"
-              class="bg-violet-600 text-white px-5 py-2 rounded-lg hover:bg-violet-700 flex items-center shadow-md transition transform hover:scale-105 font-bold"
-            >
-              <i data-lucide="plus" class="w-5 h-5 mr-2"></i> নতুন দিন তৈরি করুন
-            </button>
           </div>
+        </div>
+      </div>
+    </nav>
+
+    <main
+      class="p-4 sm:p-6 lg:p-8 print:p-0 print:m-0 max-w-7xl mx-auto relative z-0"
+    >
+      <div
+        id="loader"
+        class="flex flex-col items-center justify-center h-64 text-violet-600"
+      >
+        <i data-lucide="loader-2" class="w-12 h-12 animate-spin mb-4"></i>
+        <p class="text-lg font-medium">লোড হচ্ছে...</p>
+      </div>
+
+      <div id="view-dashboard" class="hidden animate-fade-in">
+        <div
+          class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 gap-4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+        >
+          <div>
+            <h1 class="text-3xl font-black text-gray-800 tracking-tight">
+              আপনার লাইব্রেরি
+            </h1>
+            <p class="text-gray-500 mt-1 flex items-center">
+              <i data-lucide="layers" class="w-4 h-4 mr-1.5"></i> মোট কন্টেন্ট:
+              <span
+                id="total-days"
+                class="font-bold text-violet-600 ml-1 bg-violet-50 px-2 py-0.5 rounded-md"
+                >0</span
+              >
+              টি দিন
+            </p>
+          </div>
+          <button
+            onclick="window.createNewDay()"
+            class="w-full sm:w-auto bg-violet-600 text-white px-7 py-3.5 rounded-xl hover:bg-violet-700 flex items-center justify-center shadow-[0_4px_14px_0_rgba(124,58,237,0.39)] hover:shadow-[0_6px_20px_rgba(124,58,237,0.23)] hover:-translate-y-0.5 transition-all duration-200 font-bold text-base"
+          >
+            <i data-lucide="plus-circle" class="w-5 h-5 mr-2"></i> নতুন দিন তৈরি
+            করুন
+          </button>
         </div>
 
         <div
           id="dashboard-grid"
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-        >
-
-        </div>
+        ></div>
       </div>
 
       <div
         id="view-editor"
-        class="hidden animate-fade-in bg-white rounded-xl shadow-lg p-6 max-w-4xl mx-auto border border-gray-100 pb-24 relative"
+        class="hidden animate-fade-in bg-white rounded-2xl shadow-sm p-4 sm:p-8 max-w-4xl mx-auto border border-gray-100 pb-28 relative"
       >
-        <div class="flex justify-between items-center mb-6 pb-4 border-b">
-          <h2 class="text-2xl font-bold text-violet-800">কন্টেন্ট এডিটর</h2>
-          <div class="flex space-x-3">
-            <button
-              onclick="window.switchView('dashboard')"
-              class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100 text-gray-700"
+        <div
+          class="bg-gradient-to-br from-violet-50 to-indigo-50/50 p-6 sm:p-8 rounded-2xl border border-violet-100 mb-8"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-8 items-center md:items-start"
+          >
+            <div
+              class="flex flex-col items-center md:items-start shrink-0 group relative"
             >
-              বাতিল
-            </button>
-            <button
-              onclick="window.saveCurrentDay()"
-              class="px-5 py-2 bg-violet-600 text-white rounded hover:bg-violet-700 flex items-center shadow"
-            >
-              <i data-lucide="save" class="w-4 h-4 mr-2"></i> সেভ করুন
-            </button>
+              <p
+                class="text-xs text-violet-500 font-bold uppercase tracking-widest mb-2 flex items-center"
+              >
+                <i data-lucide="calendar" class="w-3.5 h-3.5 mr-1.5"></i> ডে
+                নাম্বার
+              </p>
+              <div
+                class="flex items-baseline relative bg-white px-4 py-2 rounded-xl shadow-sm border border-violet-100/50"
+              >
+                <span
+                  class="text-4xl sm:text-5xl font-black text-violet-900 mr-2"
+                  >Day</span
+                >
+                <input
+                  type="number"
+                  id="edit-dayNumber"
+                  class="text-4xl sm:text-5xl font-black text-violet-600 bg-transparent w-24 border-b-2 border-dashed border-transparent hover:border-violet-300 focus:border-violet-500 outline-none text-center transition cursor-pointer focus:cursor-text p-0"
+                  placeholder="00"
+                  oninput="window.updateCurrentDay('dayNumber', this.value)"
+                />
+              </div>
+            </div>
+            <div class="w-full">
+              <label
+                class="block text-sm font-bold text-gray-700 mb-2 flex items-center"
+              >
+                <i data-lucide="quote" class="w-4 h-4 mr-2 text-violet-400"></i>
+                অনুপ্রেরণামূলক উক্তি
+                <span class="text-gray-400 font-normal text-xs ml-2"
+                  >(ঐচ্ছিক)</span
+                >
+              </label>
+              <textarea
+                id="edit-quote"
+                rows="2"
+                class="w-full p-4 bg-white border border-gray-200 shadow-sm rounded-xl focus:ring-2 focus:ring-violet-200 focus:border-violet-500 outline-none transition text-gray-700 resize-none leading-relaxed"
+                placeholder="যেমন: The secret of getting ahead is getting started..."
+                oninput="window.updateCurrentDay('quote', this.value)"
+              ></textarea>
+            </div>
           </div>
         </div>
 
         <div class="space-y-8">
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1"
-                >Day Number</label
-              >
-              <input
-                type="number"
-                id="edit-dayNumber"
-                class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-violet-500 outline-none"
-                placeholder="যেমন: 21"
-                oninput="window.updateCurrentDay('dayNumber', this.value)"
-              />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1"
-                >Inspirational Quote</label
-              >
-              <input
-                type="text"
-                id="edit-quote"
-                class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-violet-500 outline-none"
-                placeholder="উক্তি লিখুন..."
-                oninput="window.updateCurrentDay('quote', this.value)"
-              />
-            </div>
-          </div>
-
           <div id="list-vocabularies"></div>
           <div id="list-prepositions"></div>
           <div id="list-idioms"></div>
@@ -214,15 +285,21 @@
           <div id="list-oneWords"></div>
           <div id="list-analogies"></div>
 
-          <!-- Exam Link -->
-          <div>
-            <label class="block text-sm font-bold text-gray-700 mb-2"
-              >Google Form Exam Link</label
+          <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
+            <label
+              class="block text-sm font-bold text-gray-700 mb-3 flex items-center"
             >
+              <i data-lucide="link-2" class="w-5 h-5 mr-2 text-blue-500"></i>
+              Google Form Exam Link
+              <span
+                class="bg-white px-2 py-0.5 rounded text-gray-500 text-xs ml-3 shadow-sm border border-gray-100"
+                >ঐচ্ছিক</span
+              >
+            </label>
             <input
               type="text"
               id="edit-examLink"
-              class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-violet-500 outline-none"
+              class="w-full p-3.5 bg-white border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-200 focus:border-blue-500 outline-none transition"
               placeholder="https://docs.google.com/forms/..."
               oninput="window.updateCurrentDay('examLink', this.value)"
             />
@@ -230,97 +307,148 @@
         </div>
 
         <div
-          class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t p-4 flex justify-center shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-40 print-hidden"
+          class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-gray-200 p-4 flex justify-between sm:justify-center items-center shadow-[0_-10px_30px_-15px_rgba(0,0,0,0.1)] z-40 print-hidden gap-4 px-4 sm:px-0"
         >
           <button
-            onclick="window.saveCurrentDay()"
-            class="px-8 py-3 bg-violet-600 text-white font-bold rounded-full hover:bg-violet-700 flex items-center text-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
+            onclick="window.switchView('dashboard')"
+            class="px-6 py-3 sm:absolute sm:left-8 border border-gray-300 text-gray-700 font-bold rounded-xl hover:bg-gray-50 transition"
           >
-            <i data-lucide="save" class="w-6 h-6 mr-2"></i> কন্টেন্ট সেভ করুন
+            বাতিল
+          </button>
+          <button
+            onclick="window.saveCurrentDay()"
+            class="px-8 py-3 w-full sm:w-auto bg-gray-900 text-white font-bold rounded-xl hover:bg-black flex items-center justify-center text-lg shadow-xl hover:-translate-y-1 transition-all"
+          >
+            <i data-lucide="save" class="w-5 h-5 mr-2"></i>
+            <span id="save-btn-text">কন্টেন্ট সেভ করুন</span>
           </button>
         </div>
       </div>
 
-      <!-- Preview View -->
       <div id="view-preview" class="hidden">
         <div
-          class="max-w-2xl mx-auto bg-white shadow-2xl preview-container text-gray-800 font-sans relative"
+          class="max-w-[800px] mx-auto bg-gray-100/50 shadow-none sm:shadow-2xl preview-container font-sans relative sm:rounded-2xl overflow-hidden pb-12"
         >
           <div
-            class="sticky top-[72px] bg-white/90 backdrop-blur-sm p-4 border-b flex justify-end print-hidden z-40 rounded-t-xl"
+            class="sticky top-[72px] sm:top-0 bg-white/80 backdrop-blur-md p-4 border-b flex justify-between items-center print-hidden z-40"
           >
+            <p class="font-bold text-gray-500 flex items-center">
+              <i data-lucide="eye" class="w-5 h-5 mr-2"></i> প্রিভিউ মোড
+            </p>
             <button
               onclick="window.print()"
-              class="bg-violet-600 text-white px-5 py-2.5 rounded-lg shadow hover:bg-violet-700 flex items-center font-medium transition"
+              class="bg-indigo-600 text-white px-6 py-2.5 rounded-xl shadow-lg hover:bg-indigo-700 flex items-center font-bold transition hover:-translate-y-0.5"
             >
-              <i data-lucide="printer" class="w-5 h-5 mr-2"></i> প্রিন্ট / সেভ
-              অ্যাজ পিডিএফ
+              <i data-lucide="printer" class="w-5 h-5 mr-2"></i> সেভ PDF /
+              প্রিন্ট
             </button>
           </div>
-          <div id="preview-content">
-          </div>
+          <div id="preview-content" class="bg-white"></div>
         </div>
       </div>
     </main>
 
     <div
       id="custom-modal"
-      class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center print-hidden p-4"
+      class="hidden fixed inset-0 bg-gray-900/60 backdrop-blur-sm z-[100] flex items-center justify-center print-hidden p-4 transition-opacity"
     >
       <div
-        class="bg-white rounded-xl shadow-2xl p-6 max-w-sm w-full animate-fade-in relative"
+        class="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full animate-fade-in relative"
       >
-        <button
-          onclick="window.closeModal()"
-          class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
-        >
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-        <div class="text-center mb-6">
-          <i
-            id="modal-icon"
-            data-lucide="alert-circle"
-            class="w-12 h-12 mx-auto mb-4 text-violet-600"
-          ></i>
-          <h3 id="modal-message" class="text-lg font-bold text-gray-800">
+        <div class="text-center mb-6 mt-2">
+          <div
+            class="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-5 shadow-inner"
+            id="modal-icon-bg"
+          >
+            <i
+              id="modal-icon"
+              data-lucide="alert-circle"
+              class="w-10 h-10 text-violet-600"
+            ></i>
+          </div>
+          <h3
+            id="modal-message"
+            class="text-xl font-bold text-gray-800 leading-relaxed"
+          >
             Message
           </h3>
         </div>
-        <div class="flex justify-center gap-3" id="modal-actions">
-
-        </div>
+        <div class="flex justify-center gap-3 w-full" id="modal-actions"></div>
       </div>
     </div>
 
-    <!-- Application Logic -->
     <script>
-      window.appState = {
-        days: [],
-        currentDay: null,
+      window.appState = { days: [], currentDay: null };
+
+      // --- TEXT TO SPEECH (TTS) FUNCTION ---
+      window.speakText = function (text, event) {
+        if (event) {
+          event.stopPropagation();
+          event.preventDefault();
+        }
+        if (!text) return;
+
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = "en-US";
+          utterance.rate = 0.85;
+          utterance.pitch = 1;
+
+          window.speechSynthesis.speak(utterance);
+        } else {
+          window.showModal(
+            "alert",
+            "দুঃখিত, আপনার ব্রাউজার Text-to-Speech সাপোর্ট করে না।",
+          );
+        }
       };
 
-      // --- GLOBAL FUNCTIONS ---
+      const safeText = (text) => {
+        if (!text) return "";
+
+        let cleanText = text
+          .replace(/\\([^)]+\\)/g, "")
+          .replace(/[^\x00-\x7F]/g, "")
+          .trim();
+        return cleanText.replace(/'/g, "\\'");
+      };
+
+      window.toggleSettings = function () {
+        document.getElementById("settings-dropdown").classList.toggle("hidden");
+      };
+
+      document.addEventListener("click", function (event) {
+        const container = document.getElementById("settings-menu-container");
+        const dropdown = document.getElementById("settings-dropdown");
+        if (container && dropdown && !container.contains(event.target)) {
+          dropdown.classList.add("hidden");
+        }
+      });
 
       window.switchView = function (view) {
-        const elDashboard = document.getElementById("view-dashboard");
-        const elEditor = document.getElementById("view-editor");
-        const elPreview = document.getElementById("view-preview");
-        const elBtnBack = document.getElementById("btn-back-dashboard");
+        const els = {
+          dashboard: document.getElementById("view-dashboard"),
+          editor: document.getElementById("view-editor"),
+          preview: document.getElementById("view-preview"),
+          btnBack: document.getElementById("btn-back-dashboard"),
+          btnSettings: document.getElementById("btn-settings"),
+        };
 
-        elDashboard.classList.add("hidden");
-        elEditor.classList.add("hidden");
-        elPreview.classList.add("hidden");
-        elBtnBack.classList.remove("hidden");
+        Object.values(els).forEach((el) => el && el.classList.add("hidden"));
 
         if (view === "dashboard") {
-          elDashboard.classList.remove("hidden");
-          elBtnBack.classList.add("hidden");
+          els.dashboard.classList.remove("hidden");
+          els.btnSettings.classList.remove("hidden");
+          window.speechSynthesis && window.speechSynthesis.cancel();
           window.renderDashboard();
         } else if (view === "editor") {
-          elEditor.classList.remove("hidden");
+          els.editor.classList.remove("hidden");
           window.renderEditor();
         } else if (view === "preview") {
-          elPreview.classList.remove("hidden");
+          els.preview.classList.remove("hidden");
+          els.btnBack.classList.remove("hidden");
           window.renderPreview();
         }
 
@@ -335,9 +463,16 @@
             JSON.stringify(window.appState.days),
           );
         } catch (e) {
-          console.error("Local storage write error", e);
-          window.showModal("alert", "ডেটা সেভ করতে সমস্যা হয়েছে!");
+          console.error(e);
         }
+      };
+
+      window.getNextDayNumber = function () {
+        if (window.appState.days.length === 0) return 1;
+        const nums = window.appState.days
+          .map((d) => parseInt(d.dayNumber))
+          .filter((n) => !isNaN(n));
+        return nums.length > 0 ? Math.max(...nums) + 1 : 1;
       };
 
       window.renderDashboard = function () {
@@ -346,12 +481,17 @@
           window.appState.days.length;
         grid.innerHTML = "";
 
+        const nextDayNum = window.getNextDayNumber();
+
         if (window.appState.days.length === 0) {
           grid.innerHTML = `
-                    <div class="col-span-full text-center py-20 text-gray-400 bg-white rounded-xl border border-dashed border-gray-300 shadow-sm">
-                        <i data-lucide="alert-circle" class="w-12 h-12 mx-auto mb-4 opacity-50"></i>
-                        <p class="text-xl">কোনো কন্টেন্ট পাওয়া যায়নি। নতুন কন্টেন্ট তৈরি করুন অথবা ফাইল আপলোড করুন।</p>
-                    </div>`;
+            <div onclick="window.createNewDay()" class="col-span-full bg-violet-50/50 rounded-3xl border-2 border-dashed border-violet-300 hover:border-violet-500 hover:bg-violet-50 cursor-pointer transition-all flex flex-col items-center justify-center py-28 text-violet-600 group shadow-sm mt-4">
+                <div class="bg-white p-6 rounded-full shadow-sm group-hover:shadow-md group-hover:scale-110 transition-all mb-5 text-violet-600">
+                    <i data-lucide="folder-plus" class="w-12 h-12"></i>
+                </div>
+                <h3 class="font-bold text-2xl text-gray-800">প্রথম দিন তৈরি করুন</h3>
+                <p class="text-gray-500 mt-2 font-medium">আপনার লাইব্রেরি সম্পূর্ণ খালি। এখান থেকে শুরু করুন।</p>
+            </div>`;
         } else {
           const sortedDays = [...window.appState.days].sort(
             (a, b) => parseInt(a.dayNumber) - parseInt(b.dayNumber),
@@ -360,26 +500,40 @@
           sortedDays.forEach((day) => {
             const card = document.createElement("div");
             card.className =
-              "bg-white rounded-xl shadow-md p-6 border-t-4 border-violet-600 hover:shadow-lg transition flex flex-col h-full";
+              "bg-white rounded-2xl shadow-sm border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col h-full overflow-hidden group";
             card.innerHTML = `
-                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Day - ${day.dayNumber || "?"}</h2>
-                        <p class="text-gray-500 text-sm mb-4 line-clamp-2 italic flex-grow">${day.quote || "কোনো উক্তি নেই"}</p>
-                        <div class="flex justify-between mt-4 border-t pt-4">
-                            <button onclick="window.previewDay('${day.id}')" class="text-violet-600 hover:text-violet-800 flex items-center text-sm font-medium">
-                                <i data-lucide="eye" class="w-4 h-4 mr-1"></i> প্রিভিউ
-                            </button>
-                            <div class="flex space-x-3">
-                                <button onclick="window.editDay('${day.id}')" class="text-blue-600 hover:text-blue-800 flex items-center text-sm">
-                                    <i data-lucide="edit-2" class="w-4 h-4"></i>
-                                </button>
-                                <button onclick="window.deleteDay('${day.id}')" class="text-red-500 hover:text-red-700 flex items-center text-sm">
-                                    <i data-lucide="trash-2" class="w-4 h-4"></i>
-                                </button>
-                            </div>
-                        </div>
-                    `;
+                <div class="bg-gradient-to-r from-gray-50 to-white px-6 py-4 border-b border-gray-100 flex justify-between items-center">
+                    <h2 class="text-2xl font-black text-gray-800 tracking-tight">Day ${day.dayNumber || "?"}</h2>
+                    <div class="flex space-x-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <button onclick="window.editDay('${day.id}')" title="এডিট" class="p-2 text-blue-500 hover:bg-blue-100 rounded-lg transition"><i data-lucide="edit-3" class="w-4 h-4"></i></button>
+                        <button onclick="window.deleteDay('${day.id}')" title="ডিলিট" class="p-2 text-red-400 hover:bg-red-100 hover:text-red-600 rounded-lg transition"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <p class="text-gray-600 text-sm mb-6 line-clamp-3 italic flex-grow relative leading-relaxed">
+                        <i data-lucide="quote" class="w-4 h-4 absolute -top-1 -left-2 text-gray-200"></i>
+                        <span class="ml-4">${day.quote || "কোনো উক্তি যোগ করা হয়নি..."}</span>
+                    </p>
+                    <button onclick="window.previewDay('${day.id}')" class="w-full mt-auto bg-gray-50 text-gray-700 border border-gray-200 hover:bg-violet-600 hover:text-white hover:border-violet-600 py-2.5 rounded-xl flex items-center justify-center font-bold transition-all">
+                        <i data-lucide="book-open" class="w-4 h-4 mr-2"></i> প্রিভিউ দেখুন
+                    </button>
+                </div>
+            `;
             grid.appendChild(card);
           });
+
+          const addCard = document.createElement("div");
+          addCard.onclick = window.createNewDay;
+          addCard.className =
+            "bg-violet-50/50 rounded-2xl border-2 border-dashed border-violet-200 hover:border-violet-500 hover:bg-violet-50 cursor-pointer transition-all flex flex-col items-center justify-center min-h-[240px] text-violet-600 group shadow-sm";
+          addCard.innerHTML = `
+              <div class="bg-white p-4 rounded-full shadow-sm group-hover:shadow-md group-hover:scale-110 transition-all mb-4">
+                  <i data-lucide="plus" class="w-8 h-8"></i>
+              </div>
+              <h3 class="font-bold text-xl text-gray-800 group-hover:text-violet-700 transition">পরবর্তী দিন যোগ করুন</h3>
+              <p class="text-sm text-violet-600 mt-3 bg-violet-100/80 px-4 py-1.5 rounded-full font-bold">Day ${nextDayNum}</p>
+          `;
+          grid.appendChild(addCard);
         }
         if (typeof lucide !== "undefined") lucide.createIcons();
       };
@@ -400,14 +554,32 @@
       };
 
       window.createNewDay = function () {
+        const nextDayNum = window.getNextDayNumber();
         window.appState.currentDay = window.getEmptyDay();
+        window.appState.currentDay.dayNumber = nextDayNum.toString();
+        window.appState.currentDay.vocabularies.push({
+          word: "",
+          meaning: "",
+          synonym: "",
+          antonym: "",
+          example: "",
+        });
+        document.getElementById("save-btn-text").innerText =
+          `Day ${nextDayNum} সেভ করুন`;
         window.switchView("editor");
+        setTimeout(() => {
+          const firstInput = document.querySelector(
+            '#list-vocabularies input[placeholder="Word"]',
+          );
+          if (firstInput) firstInput.focus();
+        }, 150);
       };
 
       window.editDay = function (id) {
         const day = window.appState.days.find((d) => d.id === id);
         if (day) {
           window.appState.currentDay = JSON.parse(JSON.stringify(day));
+          document.getElementById("save-btn-text").innerText = "আপডেট করুন";
           window.switchView("editor");
         }
       };
@@ -423,7 +595,7 @@
       window.deleteDay = function (id) {
         window.showModal(
           "confirm",
-          "আপনি কি নিশ্চিত যে এটি ডিলিট করতে চান?",
+          "আপনি কি নিশ্চিত যে এই দিনের সম্পূর্ণ ডেটা ডিলিট করতে চান?",
           () => {
             window.appState.days = window.appState.days.filter(
               (d) => d.id !== id,
@@ -437,17 +609,28 @@
 
       window.saveCurrentDay = function () {
         const data = window.appState.currentDay;
-        if (!data.dayNumber) {
-          window.showModal("alert", "দয়া করে Day Number দিন!");
+        const lists = [
+          "vocabularies",
+          "prepositions",
+          "idioms",
+          "spellings",
+          "oneWords",
+          "analogies",
+        ];
+        lists.forEach((list) => {
+          data[list] = data[list].filter((item) =>
+            Object.values(item).some((val) => val.trim() !== ""),
+          );
+        });
+
+        if (!data.dayNumber || data.dayNumber.trim() === "") {
+          window.showModal("alert", "দয়া করে ডে নাম্বার (Day Number) লিখুন!");
           return;
         }
 
         const index = window.appState.days.findIndex((d) => d.id === data.id);
-        if (index >= 0) {
-          window.appState.days[index] = data;
-        } else {
-          window.appState.days.push(data);
-        }
+        if (index >= 0) window.appState.days[index] = data;
+        else window.appState.days.push(data);
 
         window.saveToLocalStorage();
         window.switchView("dashboard");
@@ -456,7 +639,6 @@
       window.updateCurrentDay = function (field, value) {
         window.appState.currentDay[field] = value;
       };
-
       window.updateListItem = function (listName, index, field, value) {
         window.appState.currentDay[listName][index][field] = value;
       };
@@ -520,63 +702,62 @@
       ) {
         const container = document.getElementById(containerId);
         if (!items) items = [];
-
         let html = `
-                <div class="bg-gray-50/50 p-4 rounded-xl border border-gray-200 shadow-sm">
-                    <div class="flex justify-between items-center mb-4 border-b border-gray-200 pb-2">
-                        <h3 class="font-bold text-lg text-gray-800">${title}</h3>
-                        <button onclick="window.addListItem('${listName}', '${fields.join(",")}')" class="text-sm bg-violet-100 text-violet-700 px-3 py-1.5 rounded hover:bg-violet-200 flex items-center font-medium transition">
-                            <i data-lucide="plus" class="w-4 h-4 mr-1"></i> যোগ করুন
-                        </button>
-                    </div>
-                    <div class="space-y-3">
-            `;
+            <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-8">
+                <div class="bg-gray-50/80 flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 sm:p-5 border-b border-gray-200 gap-4">
+                    <h3 class="font-bold text-xl text-gray-800 flex items-center tracking-tight">
+                        <span class="w-1.5 h-6 bg-violet-500 rounded-full mr-3"></span> ${title}
+                    </h3>
+                    <button onclick="window.addListItem('${listName}', '${fields.join(",")}')" class="text-sm bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:border-violet-500 hover:text-violet-600 flex items-center font-bold transition shadow-sm w-full sm:w-auto justify-center">
+                        <i data-lucide="plus" class="w-4 h-4 mr-1.5"></i> নতুন যোগ করুন
+                    </button>
+                </div>
+                <div class="p-4 sm:p-6 space-y-4 bg-gray-50/30">`;
 
         if (items.length === 0) {
-          html += `<p class="text-sm text-gray-400 italic bg-white p-3 rounded border border-dashed border-gray-300 text-center">কোনো ডেটা যোগ করা হয়নি।</p>`;
+          html += `<div class="text-center py-8 border-2 border-dashed border-gray-200 rounded-xl bg-white"><p class="text-gray-400 font-medium">কোনো ডেটা যোগ করা হয়নি</p></div>`;
         } else {
           items.forEach((item, index) => {
-            html += `<div class="flex gap-2 items-start bg-white p-3 rounded-lg shadow-sm border border-gray-100 relative group"><div class="flex-1">`;
+            html += `<div class="flex gap-3 items-start bg-white p-5 rounded-xl shadow-sm border border-gray-100 relative group transition hover:border-violet-300 hover:shadow-md"><div class="flex-1">`;
 
             if (listName === "vocabularies") {
-              html += `
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                <input placeholder="Word" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item.word || ""}" oninput="window.updateListItem('${listName}', ${index}, 'word', this.value)">
-                                <input placeholder="Meaning" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item.meaning || ""}" oninput="window.updateListItem('${listName}', ${index}, 'meaning', this.value)">
-                                <input placeholder="Synonym" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item.synonym || ""}" oninput="window.updateListItem('${listName}', ${index}, 'synonym', this.value)">
-                                <input placeholder="Antonym" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item.antonym || ""}" oninput="window.updateListItem('${listName}', ${index}, 'antonym', this.value)">
-                            </div>
-                            <input placeholder="Example Sentence" class="p-2 border border-gray-200 rounded w-full mt-2 outline-none focus:border-violet-400" value="${item.example || ""}" oninput="window.updateListItem('${listName}', ${index}, 'example', this.value)">
-                        `;
+              html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                    <input placeholder="Word" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition font-bold text-gray-800" value="${item.word || ""}" oninput="window.updateListItem('${listName}', ${index}, 'word', this.value)">
+                    <input placeholder="Meaning (অর্থ)" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition" value="${item.meaning || ""}" oninput="window.updateListItem('${listName}', ${index}, 'meaning', this.value)">
+                    <input placeholder="Synonym (সমার্থক)" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition" value="${item.synonym || ""}" oninput="window.updateListItem('${listName}', ${index}, 'synonym', this.value)">
+                    <input placeholder="Antonym (বিপরীত)" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition" value="${item.antonym || ""}" oninput="window.updateListItem('${listName}', ${index}, 'antonym', this.value)">
+                </div>
+                <input placeholder="Example Sentence (উদাহরণ)" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition italic" value="${item.example || ""}" oninput="window.updateListItem('${listName}', ${index}, 'example', this.value)">`;
             } else if (["prepositions", "idioms"].includes(listName)) {
-              html += `
-                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                                <input placeholder="Phrase/Idiom" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item.word || ""}" oninput="window.updateListItem('${listName}', ${index}, 'word', this.value)">
-                                <input placeholder="Meaning" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item.meaning || ""}" oninput="window.updateListItem('${listName}', ${index}, 'meaning', this.value)">
-                                <input placeholder="Example" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item.example || ""}" oninput="window.updateListItem('${listName}', ${index}, 'example', this.value)">
-                            </div>
-                        `;
+              html += `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <input placeholder="Phrase/Idiom" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition font-bold" value="${item.word || ""}" oninput="window.updateListItem('${listName}', ${index}, 'word', this.value)">
+                    <input placeholder="Meaning (অর্থ)" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition" value="${item.meaning || ""}" oninput="window.updateListItem('${listName}', ${index}, 'meaning', this.value)">
+                    <input placeholder="Example (উদাহরণ)" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full sm:col-span-2 lg:col-span-1 outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition italic" value="${item.example || ""}" oninput="window.updateListItem('${listName}', ${index}, 'example', this.value)">
+                </div>`;
             } else if (listName === "spellings" || listName === "analogies") {
-              html += `
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                <input placeholder="${fields[0]}" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item[fields[0]] || ""}" oninput="window.updateListItem('${listName}', ${index}, '${fields[0]}', this.value)">
-                                <input placeholder="${fields[1]}" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item[fields[1]] || ""}" oninput="window.updateListItem('${listName}', ${index}, '${fields[1]}', this.value)">
-                            </div>
-                        `;
+              const label1 =
+                listName === "spellings"
+                  ? "ভাঙা রূপ (Trick)"
+                  : "Relation (সম্পর্ক)";
+              const label2 =
+                listName === "spellings"
+                  ? "মূল শব্দ ও অর্থ"
+                  : "Explanation (ব্যাখ্যা)";
+              html += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input placeholder="${label1}" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition ${listName === "spellings" ? "text-blue-600 font-mono font-bold tracking-wider" : "font-bold"}" value="${item[fields[0]] || ""}" oninput="window.updateListItem('${listName}', ${index}, '${fields[0]}', this.value)">
+                    <input placeholder="${label2}" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition ${listName === "spellings" ? "text-green-700 font-bold" : ""}" value="${item[fields[1]] || ""}" oninput="window.updateListItem('${listName}', ${index}, '${fields[1]}', this.value)">
+                </div>`;
             } else if (listName === "oneWords") {
-              html += `
-                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                                <input placeholder="Phrase" class="p-2 border border-gray-200 rounded w-full sm:col-span-2 outline-none focus:border-violet-400" value="${item.phrase || ""}" oninput="window.updateListItem('${listName}', ${index}, 'phrase', this.value)">
-                                <input placeholder="Word" class="p-2 border border-gray-200 rounded w-full outline-none focus:border-violet-400" value="${item.word || ""}" oninput="window.updateListItem('${listName}', ${index}, 'word', this.value)">
-                            </div>
-                        `;
+              html += `<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <input placeholder="Phrase (বাক্যাংশ)" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full sm:col-span-2 outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition" value="${item.phrase || ""}" oninput="window.updateListItem('${listName}', ${index}, 'phrase', this.value)">
+                    <input placeholder="One Word (এক কথায়)" class="p-3 bg-gray-50 border border-gray-200 rounded-xl w-full outline-none focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-50 transition font-bold text-violet-700" value="${item.word || ""}" oninput="window.updateListItem('${listName}', ${index}, 'word', this.value)">
+                </div>`;
             }
-
             html += `</div>
-                        <button onclick="window.removeListItem('${listName}', ${index})" class="text-gray-400 hover:text-red-500 p-2 rounded-lg hover:bg-red-50 transition">
-                            <i data-lucide="trash-2" class="w-5 h-5"></i>
-                        </button>
-                    </div>`;
+                <button onclick="window.removeListItem('${listName}', ${index})" class="text-gray-400 hover:text-red-500 hover:bg-red-50 p-2.5 rounded-xl transition self-start mt-1" title="ডিলিট করুন">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>`;
           });
         }
         html += `</div></div>`;
@@ -592,6 +773,10 @@
           window.appState.currentDay[listName] = [];
         window.appState.currentDay[listName].push(emptyObj);
         window.renderEditor();
+        setTimeout(() => {
+          const inputs = document.querySelectorAll(`#list-${listName} input`);
+          if (inputs.length > 0) inputs[inputs.length - fields.length].focus();
+        }, 50);
       };
 
       window.removeListItem = function (listName, index) {
@@ -599,141 +784,222 @@
         window.renderEditor();
       };
 
+      // --- PREVIEW RENDERER ---
       window.renderPreview = function () {
         const data = window.appState.currentDay;
         if (!data) return;
 
-        const arrowIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>`;
-        const arrowIconLg = `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>`;
-
         const footerLink = `
-                <div class="absolute bottom-8 left-0 w-full text-center">
-                    <p class="text-xs text-gray-400 font-medium">Made with <span class="text-red-500 text-sm">❤️</span> Jesmin Juthi</p>
+            <div class="absolute bottom-6 left-0 w-full text-center print-bg-force">
+                <div class="inline-block px-6 py-2 bg-gray-50 rounded-full border border-gray-100">
+                    <p class="text-[11px] font-bold text-gray-400 tracking-widest uppercase">100 Days Challenge • Juthi's Vocab Library</p>
                 </div>
-            `;
+            </div>`;
 
         let html = `
-                <!-- Cover Page -->
-                <div class="page-break min-h-[1050px] print:h-[1100px] flex flex-col justify-center items-center bg-[#2c376c] text-white p-12 text-center relative border-b-8 border-gray-100 print:border-none">
-                    <h1 class="text-[8rem] sm:text-9xl font-black mb-12 tracking-tight drop-shadow-lg">Day-${data.dayNumber || "?"}</h1>
-                    <p class="text-2xl sm:text-3xl leading-relaxed max-w-lg font-medium px-4">${data.quote || ""}</p>
-                    <div class="absolute bottom-12 left-0 w-full text-center">
-                        <p class="text-xl font-bold bg-white/20 inline-block px-6 py-2 rounded-full backdrop-blur-sm shadow-sm">Juthi's Vocab Library</p>
-                        <p class="text-xs text-violet-100 font-medium opacity-80">Made with <span class="text-red-400 text-sm">❤️</span> Jesmin Juthi</p>
-                    </div>
+            <div class="page-break min-h-[1050px] print:h-[1100px] flex flex-col justify-center items-center bg-gradient-to-br from-[#1e1b4b] via-[#312e81] to-[#4c1d95] print-bg-force text-white p-12 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+                    <div class="absolute -top-24 -left-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+                    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-violet-400 rounded-full blur-3xl"></div>
                 </div>
-            `;
+                
+                <div class="z-10 bg-white/10 backdrop-blur-md px-8 py-3 rounded-full border border-white/20 mb-12">
+                    <span class="tracking-[0.2em] font-bold text-sm text-violet-200 uppercase">Daily Vocabulary Series</span>
+                </div>
+                <h1 class="text-[10rem] sm:text-[12rem] font-black mb-8 tracking-tighter drop-shadow-2xl leading-none">
+                    <span class="text-violet-300 text-6xl align-top mr-2 block text-center mb-4">Day</span>
+                    ${data.dayNumber || "0"}
+                </h1>
+                ${
+                  data.quote
+                    ? `<div class="max-w-2xl bg-black/20 p-8 rounded-3xl backdrop-blur-sm border border-white/10 mt-8 relative">
+                    <i data-lucide="quote" class="w-10 h-10 absolute -top-5 left-8 text-violet-400 bg-[#312e81] rounded-full p-2"></i>
+                    <p class="text-2xl sm:text-3xl leading-relaxed font-medium text-violet-50 italic">"${data.quote}"</p>
+                </div>`
+                    : ""
+                }
+                
+                <div class="absolute bottom-16 left-0 w-full text-center z-10">
+                    <p class="text-xs text-violet-300/80 font-bold uppercase tracking-widest">Prepared by</p>
+                    <p class="text-lg font-bold mt-1 tracking-wide">Jesmin Juthi</p>
+                </div>
+            </div>`;
 
-        const addDynamicPage = (title, items, renderItem) => {
+        const renderSection = (title, icon, items, renderItem) => {
           if (!items || items.length === 0) return "";
-          let pageHtml = `
-                    <div class="page-break min-h-[1050px] print:h-[1100px] bg-white p-8 sm:p-12 relative border-b-8 border-gray-100 flex flex-col">
-                        <div class="bg-[#2c376c] text-white text-2xl sm:text-3xl font-bold py-4 px-8 inline-block rounded-br-3xl rounded-tl-3xl mb-12 shadow-md self-start">${title}</div>
-                        <div class="space-y-10 flex-1 px-2 sm:px-6">
-                `;
+          let sectionHtml = `
+            <div class="page-break min-h-[1050px] print:h-[1100px] bg-white p-10 sm:p-14 relative flex flex-col print-bg-force">
+                <div class="flex items-center mb-10 pb-4 border-b-2 border-gray-100">
+                    <div class="bg-violet-100 p-3 rounded-2xl mr-4 print-bg-force">
+                        <i data-lucide="${icon}" class="w-8 h-8 text-violet-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-black text-gray-800 tracking-tight">${title}</h2>
+                </div>
+                <div class="space-y-6 flex-1 px-2 z-10">`;
           items.forEach((item) => {
-            pageHtml += `<div class="mb-6">${renderItem(item)}</div>`;
+            sectionHtml += renderItem(item);
           });
-          pageHtml += `</div>${footerLink}</div>`;
-          return pageHtml;
+          sectionHtml += `</div>${footerLink}</div>`;
+          return sectionHtml;
         };
 
-        html += addDynamicPage(
-          "Vocabulary",
+        html += renderSection(
+          "Vocabulary Mastery",
+          "book-a",
           data.vocabularies,
           (i) => `
-                <div class="pl-5 border-l-[5px] border-violet-500 rounded-sm">
-                    <p class="text-2xl font-bold text-violet-800 mb-3">${i.word || ""} : <span class="text-gray-700 font-normal">${i.meaning || ""}</span></p>
-                    <div class="pl-2 space-y-1.5 text-lg text-gray-600">
-                        <p><span class="font-semibold text-gray-800">Synonym:</span> ${i.synonym || ""}</p>
-                        <p><span class="font-semibold text-gray-800">Antonym:</span> ${i.antonym || ""}</p>
-                        ${i.example ? `<p class="text-violet-800 mt-3 bg-violet-50/80 px-4 py-2 rounded-lg inline-block shadow-sm border border-violet-100"><span class="font-semibold">Example:</span> ${i.example}</p>` : ""}
-                    </div>
-                </div>`,
+            <div class="avoid-break bg-white p-6 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden print-bg-force">
+                <div class="absolute left-0 top-0 w-1.5 h-full bg-violet-500 print-bg-force"></div>
+                <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-4 gap-2">
+                    <h3 class="text-2xl font-black text-gray-900 flex items-center">
+                        ${i.word || ""}
+                        ${i.word ? `<button onclick="window.speakText('${safeText(i.word)}', event)" class="ml-3 p-2 text-violet-500 bg-violet-50 hover:bg-violet-100 hover:text-violet-700 rounded-full transition-all print-hidden focus:outline-none" title="উচ্চারণ শুনুন"><i data-lucide="volume-2" class="w-5 h-5"></i></button>` : ""}
+                    </h3>
+                    <span class="text-lg font-bold text-violet-700 bg-violet-50 px-4 py-1 rounded-lg print-bg-force">${i.meaning || ""}</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-600 mb-4 bg-gray-50/50 p-4 rounded-xl border border-gray-50">
+                    <p><span class="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-1">Synonym</span> <span class="font-medium text-gray-800">${i.synonym || "-"}</span></p>
+                    <p><span class="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-1">Antonym</span> <span class="font-medium text-gray-800">${i.antonym || "-"}</span></p>
+                </div>
+                ${
+                  i.example
+                    ? `<div class="text-gray-700 italic border-l-2 border-gray-300 pl-4 py-1 flex items-start">
+                    <span class="font-bold not-italic text-gray-400 text-sm mr-2 mt-0.5">Ex:</span>
+                    <span>${i.example}</span>
+                    <button onclick="window.speakText('${safeText(i.example)}', event)" class="ml-2 p-1 text-gray-400 hover:text-violet-600 hover:bg-gray-100 rounded-full transition-all print-hidden shrink-0" title="উচ্চারণ শুনুন"><i data-lucide="volume-2" class="w-4 h-4"></i></button>
+                </div>`
+                    : ""
+                }
+            </div>`,
         );
 
-        html += addDynamicPage(
-          "Appropriate Preposition",
+        html += renderSection(
+          "Appropriate Prepositions",
+          "link",
           data.prepositions,
           (i) => `
-                <div class="pl-5 border-l-[5px] border-indigo-400 rounded-sm">
-                    <p class="text-2xl font-bold text-indigo-800 mb-2">${i.word || ""}</p>
-                    <div class="pl-2 space-y-2 text-lg text-gray-700">
-                        <p><span class="font-semibold text-gray-500 text-sm uppercase tracking-wider bg-gray-100 px-2 py-0.5 rounded mr-2">অর্থ</span> ${i.meaning || ""}</p>
-                        ${i.example ? `<p class="text-indigo-800 bg-indigo-50 border-indigo-100 px-4 py-2 border rounded-lg inline-block shadow-sm mt-2"><span class="font-semibold">Example:</span> ${i.example}</p>` : ""}
-                    </div>
-                </div>`,
+            <div class="avoid-break bg-white p-5 rounded-2xl border border-gray-100 flex flex-col shadow-sm print-bg-force">
+                <div class="flex items-center mb-2">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mr-3 print-bg-force"></div>
+                    <h3 class="text-xl font-bold text-gray-900 mr-2">${i.word || ""}</h3>
+                    ${i.word ? `<button onclick="window.speakText('${safeText(i.word)}', event)" class="mr-4 p-1.5 text-blue-500 hover:bg-blue-50 rounded-full transition-all print-hidden focus:outline-none" title="উচ্চারণ শুনুন"><i data-lucide="volume-2" class="w-4 h-4"></i></button>` : ""}
+                    <span class="text-sm font-bold text-blue-700 bg-blue-50 px-3 py-1 rounded-md print-bg-force">${i.meaning || ""}</span>
+                </div>
+                ${
+                  i.example
+                    ? `<div class="text-gray-600 ml-5 mt-2 italic text-sm border-l-2 border-gray-200 pl-3 flex items-center">
+                    <span>${i.example}</span>
+                    <button onclick="window.speakText('${safeText(i.example)}', event)" class="ml-2 p-1 text-gray-400 hover:text-blue-600 hover:bg-gray-100 rounded-full transition-all print-hidden shrink-0" title="উচ্চারণ শুনুন"><i data-lucide="volume-2" class="w-3.5 h-3.5"></i></button>
+                </div>`
+                    : ""
+                }
+            </div>`,
         );
 
-        html += addDynamicPage(
-          "Idioms & Phrase",
+        html += renderSection(
+          "Idioms & Phrases",
+          "message-square-quote",
           data.idioms,
           (i) => `
-                <div class="pl-5 border-l-[5px] border-rose-400 rounded-sm">
-                    <p class="text-2xl font-bold text-rose-800 mb-2">${i.word || ""}</p>
-                    <div class="pl-2 space-y-2 text-lg text-gray-700">
-                        <p><span class="font-semibold text-gray-500 text-sm uppercase tracking-wider bg-gray-100 px-2 py-0.5 rounded mr-2">অর্থ</span> ${i.meaning || ""}</p>
-                        ${i.example ? `<p class="text-rose-800 bg-rose-50 border-rose-100 px-4 py-2 border rounded-lg inline-block shadow-sm mt-2"><span class="font-semibold">Example:</span> ${i.example}</p>` : ""}
-                    </div>
-                </div>`,
+            <div class="avoid-break bg-rose-50/30 p-6 rounded-2xl border border-rose-100 shadow-sm print-bg-force">
+                <div class="flex items-center mb-2">
+                    <h3 class="text-xl font-black text-rose-900">${i.word || ""}</h3>
+                    ${i.word ? `<button onclick="window.speakText('${safeText(i.word)}', event)" class="ml-3 p-1.5 text-rose-500 hover:bg-rose-100 rounded-full transition-all print-hidden focus:outline-none" title="উচ্চারণ শুনুন"><i data-lucide="volume-2" class="w-4 h-4"></i></button>` : ""}
+                </div>
+                <p class="text-base font-bold text-rose-700 mb-3">${i.meaning || ""}</p>
+                ${
+                  i.example
+                    ? `<div class="flex items-center text-gray-700 bg-white p-3 rounded-lg border border-rose-50 text-sm print-bg-force">
+                    <span class="italic">" ${i.example} "</span>
+                    <button onclick="window.speakText('${safeText(i.example)}', event)" class="ml-auto p-1.5 text-gray-400 hover:text-rose-600 hover:bg-rose-50 rounded-full transition-all print-hidden shrink-0" title="উচ্চারণ শুনুন"><i data-lucide="volume-2" class="w-4 h-4"></i></button>
+                </div>`
+                    : ""
+                }
+            </div>`,
         );
 
-        html += addDynamicPage(
-          "Spelling",
+        html += renderSection(
+          "Spelling Rules / Tricks",
+          "spell-check",
           data.spellings,
           (i) => `
-                <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-4 md:gap-8 text-xl sm:text-2xl bg-gray-50 p-5 sm:p-6 rounded-xl shadow-sm border border-gray-100">
-                    <div class="font-mono text-gray-500 tracking-wider text-center md:text-right break-words">${i.broken || ""}</div>
-                    <div class="bg-white p-2 rounded-full shadow-sm mx-auto flex-shrink-0 transform rotate-90 md:rotate-0">${arrowIconLg}</div>
-                    <div class="font-bold text-violet-800 text-center md:text-left break-words">${i.correct || ""}</div>
-                </div>`,
+            <div class="avoid-break flex flex-col sm:flex-row items-center justify-between bg-white p-5 rounded-2xl border border-gray-100 shadow-sm print-bg-force gap-4 mb-4">
+                <div class="flex-1 w-full text-center sm:text-right flex flex-col items-center sm:items-end">
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-2">Memory Trick</span>
+                    <span class="text-lg sm:text-lg font-mono font-bold text-blue-600 tracking-[0.1em] bg-blue-50 px-4 py-1.5 rounded-xl border border-blue-100 inline-block print-bg-force">${i.broken || ""}</span>
+                </div>
+                <div class="bg-gray-50 p-2 rounded-full hidden sm:block print-bg-force shrink-0">
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-gray-400"></i>
+                </div>
+                <div class="bg-gray-50 p-1.5 rounded-full sm:hidden print-bg-force shrink-0 my-1">
+                    <i data-lucide="arrow-down" class="w-4 h-4 text-gray-400"></i>
+                </div>
+                <div class="flex-1 w-full flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-2">Actual Word</span>
+                    <div class="flex items-center justify-center sm:justify-start">
+                        <span class="text-lg sm:text-lg font-bold text-green-700">${i.correct || ""}</span>
+                        ${i.correct ? `<button onclick="window.speakText('${safeText(i.correct)}', event)" class="ml-2 p-1.5 text-green-600 hover:bg-green-50 rounded-full transition-all print-hidden focus:outline-none shrink-0" title="উচ্চারণ শুনুন"><i data-lucide="volume-2" class="w-5 h-5"></i></button>` : ""}
+                    </div>
+                </div>
+            </div>`,
         );
 
-        html += addDynamicPage(
-          "One word substitution",
+        html += renderSection(
+          "One Word Substitution",
+          "wrap-text",
           data.oneWords,
           (i) => `
-                <div class="text-xl bg-gray-50/50 p-5 rounded-xl border border-gray-100 shadow-sm">
-                    <p class="text-gray-700 mb-3 font-medium">${i.phrase || ""}</p>
-                    <div class="inline-flex items-start text-violet-700 font-bold bg-white px-4 py-2 rounded-lg shadow-sm border border-violet-50 max-w-full overflow-hidden break-words">
-                        <span class="text-violet-400 mt-1 sm:mt-0 flex-shrink-0">${arrowIcon}</span> 
-                        <span class="whitespace-normal flex-1">${i.word || ""}</span>
-                    </div>
-                </div>`,
+            <div class="avoid-break flex flex-col sm:flex-row sm:items-center bg-white p-5 rounded-2xl border border-gray-100 shadow-sm print-bg-force gap-4">
+                <p class="flex-1 text-gray-700 font-medium leading-relaxed">${i.phrase || ""}</p>
+                <div class="hidden sm:block text-gray-300"><i data-lucide="arrow-right" class="w-5 h-5"></i></div>
+                <div class="bg-indigo-50 px-5 py-3 rounded-xl border border-indigo-100 flex items-center justify-center sm:justify-end print-bg-force shrink-0">
+                    <span class="text-xl font-black text-indigo-700">${i.word || ""}</span>
+                    ${i.word ? `<button onclick="window.speakText('${safeText(i.word)}', event)" class="ml-3 p-1.5 text-indigo-600 hover:bg-indigo-100 rounded-full transition-all print-hidden focus:outline-none" title="উচ্চারণ শুনুন"><i data-lucide="volume-2" class="w-5 h-5"></i></button>` : ""}
+                </div>
+            </div>`,
         );
 
-        html += addDynamicPage(
-          "Analogy",
+        html += renderSection(
+          "Analogies",
+          "git-compare",
           data.analogies,
           (i) => `
-                <div class="text-xl border-b-2 border-gray-100 pb-6 last:border-0">
-                    <p class="font-bold text-gray-800 tracking-wide mb-3 text-2xl">${i.relation || ""}</p>
-                    <div class="text-violet-700 inline-flex items-start bg-violet-50 px-4 py-2 rounded-lg text-lg border border-violet-100 max-w-full overflow-hidden">
-                        <span class="text-violet-500 mt-1 flex-shrink-0">${arrowIcon}</span> 
-                        <span class="break-words whitespace-normal">${i.explanation || ""}</span>
-                    </div>
-                </div>`,
+            <div class="avoid-break bg-white p-6 rounded-2xl border border-gray-100 shadow-sm print-bg-force mb-4">
+                <div class="flex items-center justify-center mb-4">
+                    <h3 class="text-2xl font-black text-gray-800 tracking-widest font-mono text-center">${i.relation || ""}</h3>
+                    ${i.relation ? `<button onclick="window.speakText('${safeText(i.relation)}', event)" class="ml-3 p-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-800 rounded-full transition-all print-hidden focus:outline-none" title="উচ্চারণ শুনুন"><i data-lucide="volume-2" class="w-5 h-5"></i></button>` : ""}
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 print-bg-force text-center text-gray-600 font-medium">
+                    ${i.explanation || ""}
+                </div>
+            </div>`,
         );
 
         if (data.examLink) {
           html += `
-                <div class="page-break min-h-[1050px] print:h-[1100px] bg-white p-12 relative border-b-8 border-gray-100 flex flex-col justify-center items-center text-center">
-                    <h2 class="text-4xl font-bold text-gray-800 mb-8 px-4">Exam দিয়ে নিজের preparation যাচাই করুন-</h2>
-                    <div class="w-64 h-64 bg-gray-50 border-4 border-gray-800 rounded-2xl mb-10 flex items-center justify-center p-4 shadow-xl relative overflow-hidden group">
-                        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#000_2px,transparent_2px)] [background-size:16px_16px]"></div>
-                        <p class="text-gray-500 font-bold z-10 bg-white px-4 py-2 rounded-lg shadow-md">QR Code Space</p>
+            <div class="page-break min-h-[1050px] print:h-[1100px] bg-gray-50 p-12 relative flex flex-col justify-center items-center text-center print-bg-force">
+                <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 mb-10">
+                    <div class="w-64 h-64 bg-gray-50 border-2 border-dashed border-gray-300 rounded-2xl flex flex-col items-center justify-center p-4 relative overflow-hidden group">
+                        <i data-lucide="scan-line" class="w-16 h-16 text-gray-300 mb-2"></i>
+                        <p class="text-gray-400 font-bold text-sm uppercase tracking-widest">Space for QR Code</p>
                     </div>
-                    <p class="text-2xl text-gray-700 mb-6 leading-relaxed">QR code টা scan করুন অথবা নিচের link টাতে ক্লিক<br/>করলেই Exam এ অংশগ্রহণ করতে পারবেন।</p>
-                    <a href="${data.examLink}" target="_blank" class="text-blue-600 underline text-lg max-w-lg break-all hover:text-blue-800 transition px-6">${data.examLink}</a>
-                    ${footerLink}
-                </div>`;
+                </div>
+                <h2 class="text-4xl font-black text-gray-800 mb-6 tracking-tight">Test Your Knowledge</h2>
+                <p class="text-xl text-gray-500 mb-8 max-w-md leading-relaxed">
+                    Scan the QR code above or visit the link below to participate in today's assessment.
+                </p>
+                <div class="bg-white px-8 py-4 rounded-full shadow-sm border border-gray-200">
+                    <a href="${data.examLink}" target="_blank" class="text-indigo-600 font-bold text-lg break-all hover:text-indigo-800 transition">${data.examLink}</a>
+                </div>
+                ${footerLink}
+            </div>`;
         }
 
         document.getElementById("preview-content").innerHTML = html;
         if (typeof lucide !== "undefined") lucide.createIcons();
       };
 
-      // EXPORT ALL DATA
+      // Full Backup & Import
       window.exportData = function () {
         if (window.appState.days.length === 0) {
           window.showModal("alert", "এক্সপোর্ট করার মতো কোনো ডাটা নেই!");
@@ -748,13 +1014,13 @@
         document.body.appendChild(downloadNode);
         downloadNode.click();
         downloadNode.remove();
+        window.toggleSettings();
       };
 
-      // IMPORT FULL BACKUP (Replace all)
       window.importData = function (event) {
         const file = event.target.files[0];
         if (!file) return;
-
+        window.toggleSettings();
         const reader = new FileReader();
         reader.readAsText(file, "UTF-8");
         reader.onload = (e) => {
@@ -763,20 +1029,12 @@
             if (Array.isArray(importedDays)) {
               window.showModal(
                 "confirm",
-                "এটি আপলোড করলে আপনার বর্তমান সব ডেটা মুছে গিয়ে নতুন ডেটা বসবে। আপনি কি নিশ্চিত?",
+                "বর্তমান সব ডেটা মুছে নতুন ডেটা বসবে। আপনি কি নিশ্চিত?",
                 () => {
                   window.appState.days = importedDays;
                   window.saveToLocalStorage();
                   window.renderDashboard();
                   window.closeModal();
-                  setTimeout(
-                    () =>
-                      window.showModal(
-                        "alert",
-                        "ফুল ব্যাকআপ সফলভাবে ইমপোর্ট হয়েছে!",
-                      ),
-                    300,
-                  );
                 },
               );
             } else {
@@ -789,66 +1047,45 @@
         };
       };
 
-      // IMPORT SINGLE DAY (Merge/Append)
       window.importSingleDay = function (event) {
         const file = event.target.files[0];
         if (!file) return;
-
+        window.toggleSettings();
         const reader = new FileReader();
         reader.readAsText(file, "UTF-8");
         reader.onload = (e) => {
           try {
             const importedData = JSON.parse(e.target.result);
-            let newDay = null;
-            if (Array.isArray(importedData) && importedData.length > 0) {
-              newDay = importedData[0];
-            } else if (
-              importedData &&
-              typeof importedData === "object" &&
-              !Array.isArray(importedData)
-            ) {
-              newDay = importedData;
-            }
+            let newDay =
+              Array.isArray(importedData) && importedData.length > 0
+                ? importedData[0]
+                : importedData && typeof importedData === "object"
+                  ? importedData
+                  : null;
 
             if (newDay && (newDay.id || newDay.dayNumber)) {
-              
               const existingIndex = window.appState.days.findIndex(
                 (d) => d.dayNumber === newDay.dayNumber,
               );
-
               if (existingIndex >= 0) {
                 window.showModal(
                   "confirm",
-                  `Day-${newDay.dayNumber} এর ডেটা আগে থেকেই আছে। আপনি কি পুরনো ডেটা মুছে এটি আপডেট করতে চান?`,
+                  `Day-${newDay.dayNumber} এর ডেটা আগে থেকেই আছে। আপডেট করতে চান?`,
                   () => {
                     window.appState.days[existingIndex] = newDay;
                     window.saveToLocalStorage();
                     window.renderDashboard();
                     window.closeModal();
-                    setTimeout(
-                      () =>
-                        window.showModal(
-                          "alert",
-                          `Day-${newDay.dayNumber} সফলভাবে আপডেট হয়েছে!`,
-                        ),
-                      300,
-                    );
                   },
                 );
               } else {
                 window.appState.days.push(newDay);
                 window.saveToLocalStorage();
                 window.renderDashboard();
-                window.showModal(
-                  "alert",
-                  `নতুন দিন (Day-${newDay.dayNumber}) সফলভাবে যোগ হয়েছে!`,
-                );
+                window.showModal("alert", `নতুন দিন যোগ হয়েছে!`);
               }
             } else {
-              window.showModal(
-                "alert",
-                "ভুল ফাইল ফরম্যাট! কনভার্টার থেকে জেনারেট করা সঠিক JSON ফাইল আপলোড করুন।",
-              );
+              window.showModal("alert", "ভুল ফাইল ফরম্যাট!");
             }
           } catch (error) {
             window.showModal("alert", "ফাইল পড়তে সমস্যা হয়েছে!");
@@ -860,6 +1097,7 @@
       window.showModal = function (type, message, onConfirm = null) {
         const modal = document.getElementById("custom-modal");
         const icon = document.getElementById("modal-icon");
+        const bg = document.getElementById("modal-icon-bg");
         const msgEl = document.getElementById("modal-message");
         const actions = document.getElementById("modal-actions");
 
@@ -868,20 +1106,22 @@
 
         if (type === "confirm") {
           icon.setAttribute("data-lucide", "alert-triangle");
-          icon.classList.replace("text-violet-600", "text-yellow-500");
+          icon.className = "w-10 h-10 text-orange-500";
+          bg.className =
+            "w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-5 shadow-inner";
           actions.innerHTML = `
-                    <button onclick="window.closeModal()" class="px-5 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 font-medium">বাতিল</button>
-                    <button id="modal-confirm-btn" class="px-5 py-2 text-white rounded-lg font-medium shadow-md bg-red-500 hover:bg-red-600">নিশ্চিত করুন</button>
-                `;
-          document.getElementById("modal-confirm-btn").onclick = () => {
-            onConfirm();
-          };
+            <button onclick="window.closeModal()" class="flex-1 px-6 py-3.5 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 font-bold transition">বাতিল</button>
+            <button id="modal-confirm-btn" class="flex-1 px-6 py-3.5 text-white rounded-xl font-bold shadow-lg bg-orange-500 hover:bg-orange-600 hover:-translate-y-0.5 transition-all">নিশ্চিত করুন</button>
+          `;
+          document.getElementById("modal-confirm-btn").onclick = onConfirm;
         } else {
           icon.setAttribute("data-lucide", "check-circle-2");
-          icon.classList.replace("text-yellow-500", "text-violet-600");
+          icon.className = "w-10 h-10 text-green-500";
+          bg.className =
+            "w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-5 shadow-inner";
           actions.innerHTML = `
-                    <button onclick="window.closeModal()" class="px-5 py-2 text-white rounded-lg font-medium shadow-md bg-violet-600 hover:bg-violet-700">ঠিক আছে</button>
-                `;
+            <button onclick="window.closeModal()" class="w-full px-6 py-3.5 text-white rounded-xl font-bold shadow-lg bg-gray-900 hover:bg-black transition-all">ঠিক আছে</button>
+          `;
         }
 
         if (typeof lucide !== "undefined") lucide.createIcons();
@@ -892,24 +1132,16 @@
         document.getElementById("custom-modal").classList.add("hidden");
       };
 
-      // --- APP INITIALIZATION ---
+      // Init
       document.addEventListener("DOMContentLoaded", function () {
-        if (typeof lucide !== "undefined") {
-          lucide.createIcons();
-        }
-
+        if (typeof lucide !== "undefined") lucide.createIcons();
         try {
           const savedData = localStorage.getItem("jobAchieverData");
           if (savedData) {
             const parsedData = JSON.parse(savedData);
-            if (Array.isArray(parsedData)) {
-              window.appState.days = parsedData;
-            }
+            if (Array.isArray(parsedData)) window.appState.days = parsedData;
           }
-        } catch (e) {
-          console.error("Local storage read error", e);
-        }
-
+        } catch (e) {}
         document.getElementById("loader").classList.add("hidden");
         window.switchView("dashboard");
       });
