@@ -1,0 +1,1632 @@
+[
+  {
+    "id": "day-91-generated-20260715",
+    "dayNumber": "91",
+    "quote": "“শেষ দশ দিন মানে শেষ নয়; এটি তোমার ধারাবাহিকতার প্রমাণ।”",
+    "vocabularies": [
+      {
+        "word": "Abjure",
+        "meaning": "আনুষ্ঠানিকভাবে ত্যাগ করা / পরিত্যাগ করা",
+        "synonym": "Renounce, Forswear, Repudiate",
+        "antonym": "Embrace, Accept, Adopt",
+        "example": "He decided to abjure violence and pursue peace."
+      },
+      {
+        "word": "Acerbic",
+        "meaning": "তীক্ষ্ণ ও কটু স্বভাবের / কথার",
+        "synonym": "Sharp, Caustic, Biting",
+        "antonym": "Mild, Gentle, Sweet",
+        "example": "Her acerbic remarks made the meeting uncomfortable."
+      },
+      {
+        "word": "Aggrandize",
+        "meaning": "ক্ষমতা, মর্যাদা বা গুরুত্ব বাড়ানো",
+        "synonym": "Enhance, Exalt, Magnify",
+        "antonym": "Diminish, Belittle, Reduce",
+        "example": "The ruler tried to aggrandize his own authority."
+      },
+      {
+        "word": "Anodyne",
+        "meaning": "ব্যথানাশক বা মন শান্তকারী; নিরীহ",
+        "synonym": "Soothing, Palliative, Harmless",
+        "antonym": "Irritating, Painful, Provocative",
+        "example": "The speech offered an anodyne message to calm the crowd."
+      },
+      {
+        "word": "Antediluvian",
+        "meaning": "অত্যন্ত পুরোনো / সেকেলে",
+        "synonym": "Ancient, Archaic, Outmoded",
+        "antonym": "Modern, Current, Contemporary",
+        "example": "Their antediluvian filing system wastes a lot of time."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Abet in",
+        "meaning": "অন্যায় কাজে সহায়তা করা",
+        "example": "He was accused of abetting the criminals in the fraud."
+      },
+      {
+        "word": "Abhorrence of",
+        "meaning": "তীব্র ঘৃণা",
+        "example": "She has a deep abhorrence of cruelty."
+      },
+      {
+        "word": "Accomplice in",
+        "meaning": "অপরাধে সহযোগী",
+        "example": "He was an accomplice in the robbery."
+      },
+      {
+        "word": "Adept at",
+        "meaning": "কোনো কাজে অত্যন্ত দক্ষ",
+        "example": "She is adept at solving logical problems."
+      },
+      {
+        "word": "Adverse to",
+        "meaning": "প্রতিকূল / বিরূপ",
+        "example": "Smoking is adverse to good health."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "A bad egg",
+        "meaning": "অবিশ্বস্ত বা খারাপ স্বভাবের ব্যক্তি",
+        "example": "Everyone eventually realized that the new agent was a bad egg."
+      },
+      {
+        "word": "A damp squib",
+        "meaning": "প্রত্যাশার তুলনায় হতাশাজনক ঘটনা",
+        "example": "The much-advertised event turned out to be a damp squib."
+      },
+      {
+        "word": "A fly in the ointment",
+        "meaning": "ভালো অবস্থায় ছোট কিন্তু বিরক্তিকর সমস্যা",
+        "example": "The only fly in the ointment was the poor internet connection."
+      },
+      {
+        "word": "A foregone conclusion",
+        "meaning": "আগেই নিশ্চিত বলে ধরে নেওয়া ফল",
+        "example": "Her victory was almost a foregone conclusion."
+      },
+      {
+        "word": "A leap in the dark",
+        "meaning": "ফল না জেনে ঝুঁকিপূর্ণ সিদ্ধান্ত",
+        "example": "Starting the business without research was a leap in the dark."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ac-knowl-edg-ment",
+        "correct": "Acknowledgment (স্বীকৃতি)"
+      },
+      {
+        "broken": "An-ni-hi-la-tion",
+        "correct": "Annihilation (সম্পূর্ণ ধ্বংস)"
+      },
+      {
+        "broken": "An-ti-quar-i-an",
+        "correct": "Antiquarian (প্রাচীন সামগ্রীর অনুরাগী / বিশেষজ্ঞ)"
+      },
+      {
+        "broken": "Ap-pur-te-nance",
+        "correct": "Appurtenance (আনুষঙ্গিক বস্তু)"
+      },
+      {
+        "broken": "As-phyx-i-a-tion",
+        "correct": "Asphyxiation (শ্বাসরোধ)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "One who destroys books",
+        "word": "Biblioclast (বই ধ্বংসকারী)"
+      },
+      {
+        "phrase": "A lover or connoisseur of wine",
+        "word": "Oenophile (ওয়াইনপ্রেমী)"
+      },
+      {
+        "phrase": "A lover of trees and forests",
+        "word": "Dendrophile (বৃক্ষপ্রেমী)"
+      },
+      {
+        "phrase": "A lover of sunlight",
+        "word": "Heliophile (সূর্যালোকপ্রেমী)"
+      },
+      {
+        "phrase": "A lover of the moon",
+        "word": "Selenophile (চাঁদপ্রেমী)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Bee : Hive :: Ant : Anthill",
+        "explanation": "(সম্পর্ক: প্রাণী ও বাসস্থান। মৌমাছি Hive-এ, পিঁপড়া Anthill-এ থাকে।)"
+      },
+      {
+        "relation": "Sheep : Flock :: Lion : Pride",
+        "explanation": "(সম্পর্ক: প্রাণী ও তাদের সমষ্টিবাচক নাম।)"
+      },
+      {
+        "relation": "Cow : Calf :: Goat : Kid",
+        "explanation": "(সম্পর্ক: প্রাপ্তবয়স্ক প্রাণী ও তার বাচ্চা।)"
+      },
+      {
+        "relation": "Horse : Foal :: Deer : Fawn",
+        "explanation": "(সম্পর্ক: প্রাপ্তবয়স্ক প্রাণী ও তার শাবক।)"
+      },
+      {
+        "relation": "Duck : Duckling :: Goose : Gosling",
+        "explanation": "(সম্পর্ক: পাখি ও তার বাচ্চার নাম।)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-92-generated-20260715",
+    "dayNumber": "92",
+    "quote": "“প্রতিদিন শেখা একটি নতুন শব্দ তোমার চিন্তার জগতকে একটু বড় করে।”",
+    "vocabularies": [
+      {
+        "word": "Apotheosis",
+        "meaning": "সর্বোচ্চ মহিমা বা আদর্শ রূপ",
+        "synonym": "Glorification, Pinnacle, Exaltation",
+        "antonym": "Degradation, Disgrace, Decline",
+        "example": "The performance was regarded as the apotheosis of her career."
+      },
+      {
+        "word": "Baleful",
+        "meaning": "অশুভ / ক্ষতিকর",
+        "synonym": "Menacing, Harmful, Sinister",
+        "antonym": "Beneficial, Benign, Auspicious",
+        "example": "He gave his rival a baleful look."
+      },
+      {
+        "word": "Beatific",
+        "meaning": "পরম আনন্দময় / শান্তিময়",
+        "synonym": "Blissful, Serene, Radiant",
+        "antonym": "Miserable, Troubled, Gloomy",
+        "example": "A beatific smile appeared on the old monk’s face."
+      },
+      {
+        "word": "Bifurcate",
+        "meaning": "দুই ভাগে বিভক্ত হওয়া বা করা",
+        "synonym": "Divide, Fork, Split",
+        "antonym": "Unite, Merge, Combine",
+        "example": "The road bifurcates near the river."
+      },
+      {
+        "word": "Boorish",
+        "meaning": "অসভ্য ও রূঢ়",
+        "synonym": "Rude, Coarse, Uncouth",
+        "antonym": "Polite, Refined, Courteous",
+        "example": "His boorish behavior embarrassed his colleagues."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Advocate for",
+        "meaning": "কোনো কিছুর পক্ষে সমর্থন করা",
+        "example": "They advocate for equal educational opportunities."
+      },
+      {
+        "word": "Agree with",
+        "meaning": "কারও মতের সঙ্গে একমত হওয়া",
+        "example": "I agree with your suggestion."
+      },
+      {
+        "word": "Aim for",
+        "meaning": "লক্ষ্য স্থির করা",
+        "example": "We should aim for steady improvement."
+      },
+      {
+        "word": "Alarmed by",
+        "meaning": "কোনো কারণে আতঙ্কিত",
+        "example": "The residents were alarmed by the sudden explosion."
+      },
+      {
+        "word": "Alternate between",
+        "meaning": "দুটি অবস্থার মধ্যে পালাক্রমে বদলানো",
+        "example": "The weather alternates between sunshine and rain."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "A mare's nest",
+        "meaning": "ভুল বা ভিত্তিহীন আবিষ্কার / জটিল গোলমাল",
+        "example": "The investigation uncovered a mare’s nest of false assumptions."
+      },
+      {
+        "word": "A snake in the grass",
+        "meaning": "গোপন শত্রু বা বিশ্বাসঘাতক",
+        "example": "Be careful of him; he may be a snake in the grass."
+      },
+      {
+        "word": "A white elephant",
+        "meaning": "ব্যয়বহুল কিন্তু অপ্রয়োজনীয় সম্পদ",
+        "example": "The unused stadium became a white elephant for the city."
+      },
+      {
+        "word": "At one's wit's end",
+        "meaning": "কী করতে হবে বুঝতে না পারা",
+        "example": "After hours of troubleshooting, I was at my wit’s end."
+      },
+      {
+        "word": "Beside oneself with rage",
+        "meaning": "প্রচণ্ড রাগে অস্থির",
+        "example": "He was beside himself with rage after hearing the accusation."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Bour-geoi-sie",
+        "correct": "Bourgeoisie (বুর্জোয়া / মধ্যবিত্ত শ্রেণি)"
+      },
+      {
+        "broken": "Brag-ga-do-cio",
+        "correct": "Braggadocio (দম্ভপূর্ণ আচরণ)"
+      },
+      {
+        "broken": "Ca-tarrh",
+        "correct": "Catarrh (শ্লেষ্মাজনিত প্রদাহ)"
+      },
+      {
+        "broken": "Con-san-guin-i-ty",
+        "correct": "Consanguinity (রক্তসম্পর্ক)"
+      },
+      {
+        "broken": "Em-bou-chure",
+        "correct": "Embouchure (বাদ্যযন্ত্র বাজাতে ঠোঁটের ভঙ্গি)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A lover of the sea",
+        "word": "Thalassophile (সমুদ্রপ্রেমী)"
+      },
+      {
+        "phrase": "A person enthusiastic about technology",
+        "word": "Technophile (প্রযুক্তিপ্রেমী)"
+      },
+      {
+        "phrase": "A person opposed to new technology",
+        "word": "Luddite (নতুন প্রযুক্তিবিরোধী)"
+      },
+      {
+        "phrase": "One who hates change or innovation",
+        "word": "Misoneist (পরিবর্তনবিরোধী)"
+      },
+      {
+        "phrase": "A strict disciplinarian",
+        "word": "Martinet (কঠোর শৃঙ্খলাবাদী)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Book : Author :: Painting : Artist",
+        "explanation": "(সম্পর্ক: সৃষ্টিকর্ম ও স্রষ্টা।)"
+      },
+      {
+        "relation": "Poem : Poet :: Sculpture : Sculptor",
+        "explanation": "(সম্পর্ক: সৃষ্টিকর্ম ও যিনি তা সৃষ্টি করেন।)"
+      },
+      {
+        "relation": "Novel : Novelist :: Symphony : Composer",
+        "explanation": "(সম্পর্ক: রচনা ও রচয়িতা / সুরকার।)"
+      },
+      {
+        "relation": "Scalpel : Surgeon :: Gavel : Judge",
+        "explanation": "(সম্পর্ক: পেশাজীবী ও ব্যবহৃত বিশেষ উপকরণ।)"
+      },
+      {
+        "relation": "Page : Book :: Brick : Wall",
+        "explanation": "(সম্পর্ক: অংশ ও সম্পূর্ণ কাঠামো।)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-93-generated-20260715",
+    "dayNumber": "93",
+    "quote": "“অল্প অল্প করে এগোনোই দীর্ঘ পথ জয়ের সবচেয়ে নির্ভরযোগ্য উপায়।”",
+    "vocabularies": [
+      {
+        "word": "Celerity",
+        "meaning": "দ্রুততা / ক্ষিপ্রতা",
+        "synonym": "Swiftness, Speed, Rapidity",
+        "antonym": "Slowness, Delay, Lethargy",
+        "example": "The rescue team responded with remarkable celerity."
+      },
+      {
+        "word": "Churlish",
+        "meaning": "রূঢ় / অমার্জিত",
+        "synonym": "Surly, Rude, Discourteous",
+        "antonym": "Gracious, Civil, Polite",
+        "example": "It was churlish of him to ignore the guests."
+      },
+      {
+        "word": "Coalesce",
+        "meaning": "একত্রিত হয়ে এক হওয়া",
+        "synonym": "Merge, Unite, Combine",
+        "antonym": "Separate, Divide, Disperse",
+        "example": "The small groups coalesced into a single movement."
+      },
+      {
+        "word": "Comity",
+        "meaning": "পারস্পরিক সৌহার্দ্য ও ভদ্রতা",
+        "synonym": "Courtesy, Harmony, Amity",
+        "antonym": "Hostility, Discord, Animosity",
+        "example": "The two communities lived together in comity."
+      },
+      {
+        "word": "Contrite",
+        "meaning": "অনুতপ্ত",
+        "synonym": "Remorseful, Penitent, Repentant",
+        "antonym": "Unrepentant, Defiant, Shameless",
+        "example": "He sounded genuinely contrite after admitting the mistake."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Answer for",
+        "meaning": "কোনো কাজের দায় বহন করা",
+        "example": "You must answer for your actions."
+      },
+      {
+        "word": "Apprise of",
+        "meaning": "কোনো বিষয়ে অবহিত করা",
+        "example": "Please apprise me of any new development."
+      },
+      {
+        "word": "Arrive at",
+        "meaning": "ছোট স্থান বা নির্দিষ্ট সিদ্ধান্তে পৌঁছানো",
+        "example": "We arrived at the station before noon."
+      },
+      {
+        "word": "Arrive in",
+        "meaning": "শহর বা দেশে পৌঁছানো",
+        "example": "They arrived in Dhaka late at night."
+      },
+      {
+        "word": "Astonished at",
+        "meaning": "কোনো কিছু দেখে বিস্মিত",
+        "example": "We were astonished at his sudden success."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Between Scylla and Charybdis",
+        "meaning": "দুটি বিপদের মাঝখানে পড়া",
+        "example": "The manager was caught between Scylla and Charybdis."
+      },
+      {
+        "word": "Come off with flying colors",
+        "meaning": "অত্যন্ত সফলভাবে উত্তীর্ণ হওয়া",
+        "example": "She came off with flying colors in the final assessment."
+      },
+      {
+        "word": "Cross swords with",
+        "meaning": "তীব্র বিতর্কে জড়ানো",
+        "example": "The two experts crossed swords over the policy."
+      },
+      {
+        "word": "Cut to the quick",
+        "meaning": "গভীরভাবে কষ্ট দেওয়া",
+        "example": "His unfair criticism cut her to the quick."
+      },
+      {
+        "word": "Fair-weather friend",
+        "meaning": "সুসময়ের বন্ধু",
+        "example": "A fair-weather friend disappears when trouble begins."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Ex-com-mu-ni-ca-tion",
+        "correct": "Excommunication (ধর্মীয় সম্প্রদায় থেকে বহিষ্কার)"
+      },
+      {
+        "broken": "Gas-tro-en-ter-ol-o-gy",
+        "correct": "Gastroenterology (পরিপাকতন্ত্রবিদ্যা)"
+      },
+      {
+        "broken": "Hem-or-rhoid",
+        "correct": "Hemorrhoid (অর্শ)"
+      },
+      {
+        "broken": "Ir-i-des-cent",
+        "correct": "Iridescent (রংধনুর মতো বর্ণিল)"
+      },
+      {
+        "broken": "Lab-y-rin-thine",
+        "correct": "Labyrinthine (গোলকধাঁধাসদৃশ জটিল)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A traitor who collaborates with an enemy",
+        "word": "Quisling (বিশ্বাসঘাতক সহযোগী)"
+      },
+      {
+        "phrase": "One who is excessively fond of eating",
+        "word": "Gourmand (ভোজনরসিক / অতিভোজী)"
+      },
+      {
+        "phrase": "An expert judge of food and drink",
+        "word": "Gourmet (খাদ্যরসিক)"
+      },
+      {
+        "phrase": "An expert in wine service",
+        "word": "Sommelier (ওয়াইন বিশেষজ্ঞ)"
+      },
+      {
+        "phrase": "One who makes or sells wine",
+        "word": "Vintner (মদ প্রস্তুতকারী বা বিক্রেতা)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Orchestra : Musician :: Cast : Actor",
+        "explanation": "(সম্পর্ক: দল ও তার সদস্য।)"
+      },
+      {
+        "relation": "Roar : Lion :: Neigh : Horse",
+        "explanation": "(সম্পর্ক: প্রাণী ও তার স্বাভাবিক ডাক।)"
+      },
+      {
+        "relation": "Bark : Dog :: Croak : Frog",
+        "explanation": "(সম্পর্ক: প্রাণী ও তার ডাক।)"
+      },
+      {
+        "relation": "Honey : Bee :: Silk : Silkworm",
+        "explanation": "(সম্পর্ক: প্রাণী ও উৎপাদিত পদার্থ।)"
+      },
+      {
+        "relation": "Ink : Pen :: Fuel : Engine",
+        "explanation": "(সম্পর্ক: যন্ত্র ও চালনা/ব্যবহারের প্রয়োজনীয় উপাদান।)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-94-generated-20260715",
+    "dayNumber": "94",
+    "quote": "“শৃঙ্খলা তখনই শক্তি হয়ে ওঠে, যখন তুমি মন না চাইলেও কাজটি করে যাও।”",
+    "vocabularies": [
+      {
+        "word": "Defenestrate",
+        "meaning": "জানালা দিয়ে বাইরে নিক্ষেপ করা",
+        "synonym": "Throw out, Eject, Hurl",
+        "antonym": "Retain, Keep, Admit",
+        "example": "The comic scene showed a chair being defenestrated."
+      },
+      {
+        "word": "Desiccate",
+        "meaning": "শুকিয়ে ফেলা / আর্দ্রতা দূর করা",
+        "synonym": "Dry, Dehydrate, Parched",
+        "antonym": "Moisten, Hydrate, Saturate",
+        "example": "The hot wind can desiccate the soil quickly."
+      },
+      {
+        "word": "Desuetude",
+        "meaning": "দীর্ঘদিন ব্যবহার না হওয়ার অবস্থা",
+        "synonym": "Disuse, Obsolescence, Abandonment",
+        "antonym": "Use, Practice, Adoption",
+        "example": "The old custom gradually fell into desuetude."
+      },
+      {
+        "word": "Diatribe",
+        "meaning": "তীব্র সমালোচনামূলক বক্তৃতা বা লেখা",
+        "synonym": "Tirade, Denunciation, Rant",
+        "antonym": "Praise, Tribute, Commendation",
+        "example": "The article was a long diatribe against corruption."
+      },
+      {
+        "word": "Dilettante",
+        "meaning": "অগভীরভাবে কোনো শিল্প বা বিষয়ে আগ্রহী ব্যক্তি",
+        "synonym": "Amateur, Dabbler, Nonexpert",
+        "antonym": "Expert, Professional, Specialist",
+        "example": "He was a dilettante in music but never studied it seriously."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Attach to",
+        "meaning": "কোনো কিছুর সঙ্গে যুক্ত করা",
+        "example": "Attach the document to the email."
+      },
+      {
+        "word": "Caution about",
+        "meaning": "কোনো বিষয়ে সতর্ক করা",
+        "example": "The doctor cautioned him about excessive sugar."
+      },
+      {
+        "word": "Compare to",
+        "meaning": "সাদৃশ্য বোঝাতে তুলনা করা",
+        "example": "Poets often compare life to a journey."
+      },
+      {
+        "word": "Compare with",
+        "meaning": "পার্থক্য বা মিল বিচার করতে তুলনা করা",
+        "example": "Compare this report with last year’s report."
+      },
+      {
+        "word": "Compensate for",
+        "meaning": "ক্ষতি বা ঘাটতি পূরণ করা",
+        "example": "Extra practice can compensate for lost time."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Green-eyed monster",
+        "meaning": "ঈর্ষা",
+        "example": "Jealousy, the green-eyed monster, ruined their friendship."
+      },
+      {
+        "word": "In the good books of",
+        "meaning": "কারও অনুগ্রহ বা পছন্দের মধ্যে থাকা",
+        "example": "He is in the good books of his supervisor."
+      },
+      {
+        "word": "Skeleton in the cupboard",
+        "meaning": "গোপন লজ্জাজনক বিষয়",
+        "example": "Every old family seems to have a skeleton in the cupboard."
+      },
+      {
+        "word": "Take with a pinch of salt",
+        "meaning": "পুরোপুরি বিশ্বাস না করে সন্দেহের সঙ্গে গ্রহণ করা",
+        "example": "Take online rumors with a pinch of salt."
+      },
+      {
+        "word": "Under a cloud",
+        "meaning": "সন্দেহ বা অসম্মানের মধ্যে",
+        "example": "The officer left the department under a cloud."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Log-or-rhea",
+        "correct": "Logorrhea (অতিরিক্ত কথা বলার প্রবণতা)"
+      },
+      {
+        "broken": "Ma-ca-bre",
+        "correct": "Macabre (ভয়াবহ / মৃত্যুভাবপূর্ণ)"
+      },
+      {
+        "broken": "Nar-cis-sis-tic",
+        "correct": "Narcissistic (আত্মমুগ্ধ)"
+      },
+      {
+        "broken": "Par-a-pher-na-li-a",
+        "correct": "Paraphernalia (নানা আনুষঙ্গিক সরঞ্জাম)"
+      },
+      {
+        "broken": "Pres-ti-gious",
+        "correct": "Prestigious (মর্যাদাপূর্ণ)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "One who keeps bees",
+        "word": "Apiarist (মৌমাছি পালনকারী)"
+      },
+      {
+        "phrase": "One who studies mosses",
+        "word": "Bryologist (মসজাতীয় উদ্ভিদবিদ)"
+      },
+      {
+        "phrase": "One who studies fruit cultivation",
+        "word": "Pomologist (ফলচাষবিদ)"
+      },
+      {
+        "phrase": "One who specializes in vegetable cultivation",
+        "word": "Olericulturist (সবজিচাষ বিশেষজ্ঞ)"
+      },
+      {
+        "phrase": "One who cares for and studies trees",
+        "word": "Arborist (বৃক্ষবিশেষজ্ঞ)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Map : Route :: Recipe : Dish",
+        "explanation": "(সম্পর্ক: নির্দেশনা ও সেই নির্দেশনায় তৈরি/নির্ধারিত ফল।)"
+      },
+      {
+        "relation": "Compass : Direction :: Thermometer : Temperature",
+        "explanation": "(সম্পর্ক: যন্ত্র ও যা নির্ণয়/দেখায়।)"
+      },
+      {
+        "relation": "Microscope : Cell :: Telescope : Galaxy",
+        "explanation": "(সম্পর্ক: দর্শনযন্ত্র ও পর্যবেক্ষণের বস্তু।)"
+      },
+      {
+        "relation": "Stethoscope : Heartbeat :: Seismograph : Earthquake",
+        "explanation": "(সম্পর্ক: যন্ত্র ও যা শনাক্ত বা পর্যবেক্ষণ করে।)"
+      },
+      {
+        "relation": "Kilogram : Mass :: Liter : Volume",
+        "explanation": "(সম্পর্ক: পরিমাপের একক ও পরিমাপযোগ্য রাশি।)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-95-generated-20260715",
+    "dayNumber": "95",
+    "quote": "“আজকের পুনরাবৃত্ত অনুশীলনই আগামী দিনের আত্মবিশ্বাস তৈরি করে।”",
+    "vocabularies": [
+      {
+        "word": "Discomfit",
+        "meaning": "বিব্রত বা হতবুদ্ধি করা",
+        "synonym": "Embarrass, Unsettle, Confound",
+        "antonym": "Comfort, Reassure, Encourage",
+        "example": "The unexpected question discomfited the speaker."
+      },
+      {
+        "word": "Ebullition",
+        "meaning": "হঠাৎ প্রবল আবেগের বিস্ফোরণ",
+        "synonym": "Outburst, Eruption, Effusion",
+        "antonym": "Restraint, Calm, Reserve",
+        "example": "The victory caused an ebullition of joy in the stadium."
+      },
+      {
+        "word": "Elide",
+        "meaning": "বাদ দেওয়া / উচ্চারণে অংশ লোপ করা",
+        "synonym": "Omit, Suppress, Delete",
+        "antonym": "Include, Insert, Retain",
+        "example": "In rapid speech, people often elide certain sounds."
+      },
+      {
+        "word": "Emollient",
+        "meaning": "নরম বা প্রশমিতকারী",
+        "synonym": "Soothing, Softening, Mollifying",
+        "antonym": "Harsh, Irritating, Abrasive",
+        "example": "The cream has an emollient effect on dry skin."
+      },
+      {
+        "word": "Ennui",
+        "meaning": "একঘেয়েমিজনিত গভীর বিরক্তি",
+        "synonym": "Boredom, Weariness, Tedium",
+        "antonym": "Excitement, Interest, Enthusiasm",
+        "example": "Months of inactivity filled him with ennui."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Complain about",
+        "meaning": "কোনো বিষয়ে অভিযোগ করা",
+        "example": "Customers complained about the long delay."
+      },
+      {
+        "word": "Conceal from",
+        "meaning": "কারও কাছ থেকে গোপন করা",
+        "example": "He concealed the truth from his family."
+      },
+      {
+        "word": "Condemn for",
+        "meaning": "কোনো কাজের জন্য নিন্দা করা",
+        "example": "The official was condemned for abusing his power."
+      },
+      {
+        "word": "Converse with",
+        "meaning": "কারও সঙ্গে আলাপ করা",
+        "example": "I had a chance to converse with the visiting scholar."
+      },
+      {
+        "word": "Depend upon",
+        "meaning": "নির্ভর করা",
+        "example": "Success depends upon consistent effort."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Up to the mark",
+        "meaning": "প্রয়োজনীয় মানে পৌঁছানো",
+        "example": "Your recent performance is not yet up to the mark."
+      },
+      {
+        "word": "White lie",
+        "meaning": "কারও ক্ষতি না করতে বলা ছোট মিথ্যা",
+        "example": "She told a white lie to avoid hurting his feelings."
+      },
+      {
+        "word": "A chip off the old block",
+        "meaning": "বাবা-মায়ের মতো স্বভাবের সন্তান",
+        "example": "The boy is a chip off the old block and loves mathematics like his father."
+      },
+      {
+        "word": "A drop in the ocean",
+        "meaning": "প্রয়োজনের তুলনায় খুব সামান্য",
+        "example": "The donation was only a drop in the ocean compared with the total cost."
+      },
+      {
+        "word": "A needle in a haystack",
+        "meaning": "খুব কঠিনভাবে খুঁজে পাওয়া জিনিস",
+        "example": "Finding that old receipt was like looking for a needle in a haystack."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Pro-cras-ti-na-tion",
+        "correct": "Procrastination (কাজ ফেলে রাখার প্রবণতা)"
+      },
+      {
+        "broken": "Pseu-do-sci-ence",
+        "correct": "Pseudoscience (ছদ্মবিজ্ঞান)"
+      },
+      {
+        "broken": "Schiz-o-phre-ni-a",
+        "correct": "Schizophrenia (সিজোফ্রেনিয়া)"
+      },
+      {
+        "broken": "Sub-ter-ra-ne-an",
+        "correct": "Subterranean (ভূগর্ভস্থ)"
+      },
+      {
+        "broken": "Syn-chro-ni-za-tion",
+        "correct": "Synchronization (সমসময়করণ)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A doctor specializing in pregnancy and childbirth",
+        "word": "Obstetrician (প্রসূতিবিদ)"
+      },
+      {
+        "phrase": "A specialist in correcting teeth alignment",
+        "word": "Orthodontist (দন্তবিন্যাস বিশেষজ্ঞ)"
+      },
+      {
+        "phrase": "A doctor specializing in medical imaging",
+        "word": "Radiologist (রেডিওলজি বিশেষজ্ঞ)"
+      },
+      {
+        "phrase": "A doctor who administers anesthesia",
+        "word": "Anesthesiologist (অ্যানেস্থেশিয়া বিশেষজ্ঞ)"
+      },
+      {
+        "phrase": "One who studies patterns of disease in populations",
+        "word": "Epidemiologist (মহামারিতত্ত্ববিদ)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Volt : Potential :: Ampere : Current",
+        "explanation": "(সম্পর্ক: বৈদ্যুতিক একক ও সংশ্লিষ্ট রাশি।)"
+      },
+      {
+        "relation": "Decibel : Sound :: Lumen : Light",
+        "explanation": "(সম্পর্ক: তীব্রতা/আউটপুট পরিমাপ ও সংশ্লিষ্ট বিষয়।)"
+      },
+      {
+        "relation": "Carpenter : Wood :: Potter : Clay",
+        "explanation": "(সম্পর্ক: কারিগর ও প্রধান কাঁচামাল।)"
+      },
+      {
+        "relation": "Goldsmith : Gold :: Blacksmith : Iron",
+        "explanation": "(সম্পর্ক: কারিগর ও কাজের ধাতু।)"
+      },
+      {
+        "relation": "Farmer : Field :: Sailor : Sea",
+        "explanation": "(সম্পর্ক: পেশাজীবী ও কর্মক্ষেত্র।)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-96-generated-20260715",
+    "dayNumber": "96",
+    "quote": "“জ্ঞান জমে না এক দিনে; কিন্তু প্রতিদিন জমলে একদিন পাহাড় হয়ে যায়।”",
+    "vocabularies": [
+      {
+        "word": "Esoteric",
+        "meaning": "শুধু বিশেষজ্ঞ বা অল্প কয়েকজনের বোধগম্য",
+        "synonym": "Abstruse, Arcane, Obscure",
+        "antonym": "Common, Familiar, Accessible",
+        "example": "The lecture dealt with an esoteric branch of philosophy."
+      },
+      {
+        "word": "Expiate",
+        "meaning": "প্রায়শ্চিত্ত করা / অপরাধের ক্ষতিপূরণ করা",
+        "synonym": "Atone, Redeem, Make amends",
+        "antonym": "Worsen, Offend, Transgress",
+        "example": "He tried to expiate his guilt through years of service."
+      },
+      {
+        "word": "Fallacious",
+        "meaning": "ভুল যুক্তিনির্ভর / ভ্রান্ত",
+        "synonym": "Misleading, Unsound, Erroneous",
+        "antonym": "Valid, Logical, Sound",
+        "example": "The conclusion rests on a fallacious assumption."
+      },
+      {
+        "word": "Felicitous",
+        "meaning": "যথাযথ ও সুন্দরভাবে মানানসই",
+        "synonym": "Apt, Appropriate, Well-chosen",
+        "antonym": "Awkward, Unsuitable, Inapt",
+        "example": "Her felicitous choice of words impressed the audience."
+      },
+      {
+        "word": "Fractious",
+        "meaning": "খিটখিটে ও নিয়ন্ত্রণে কঠিন",
+        "synonym": "Irritable, Unruly, Peevish",
+        "antonym": "Docile, Calm, Cooperative",
+        "example": "The fractious child refused to follow instructions."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Destitute of",
+        "meaning": "সম্পূর্ণভাবে বঞ্চিত",
+        "example": "The statement is destitute of any factual basis."
+      },
+      {
+        "word": "Detrimental to",
+        "meaning": "ক্ষতিকর",
+        "example": "Excessive stress is detrimental to health."
+      },
+      {
+        "word": "Entrust to",
+        "meaning": "দায়িত্ব দিয়ে কারও কাছে সমর্পণ করা",
+        "example": "They entrusted the project to an experienced team."
+      },
+      {
+        "word": "Excuse for",
+        "meaning": "কোনো কিছুর অজুহাত",
+        "example": "There is no excuse for deliberate dishonesty."
+      },
+      {
+        "word": "Feed on",
+        "meaning": "খাদ্য হিসেবে খাওয়া",
+        "example": "Many birds feed on insects."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Bated breath",
+        "meaning": "উদ্বেগ ও প্রত্যাশায় নিঃশ্বাস আটকে অপেক্ষা",
+        "example": "We waited with bated breath for the result."
+      },
+      {
+        "word": "Be in the doldrums",
+        "meaning": "মনমরা বা স্থবির অবস্থায় থাকা",
+        "example": "The team has been in the doldrums since the defeat."
+      },
+      {
+        "word": "Be on tenterhooks",
+        "meaning": "উদ্বেগে উৎকণ্ঠিত হয়ে অপেক্ষা করা",
+        "example": "Parents were on tenterhooks until the children returned."
+      },
+      {
+        "word": "Between the devil and the deep blue sea",
+        "meaning": "দুটি কঠিন বিকল্পের মাঝখানে পড়া",
+        "example": "She was between the devil and the deep blue sea."
+      },
+      {
+        "word": "Carry coals to Newcastle",
+        "meaning": "যেখানে প্রাচুর্য আছে সেখানে একই জিনিস নিয়ে যাওয়া",
+        "example": "Sending tea to that famous tea estate is like carrying coals to Newcastle."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Tris-kai-dek-a-pho-bi-a",
+        "correct": "Triskaidekaphobia (১৩ সংখ্যার ভয়)"
+      },
+      {
+        "broken": "Veng-eance",
+        "correct": "Vengeance (প্রতিশোধ)"
+      },
+      {
+        "broken": "Vi-cis-si-tude",
+        "correct": "Vicissitude (ভাগ্যের উত্থান-পতন)"
+      },
+      {
+        "broken": "Wor-ces-ter-shire",
+        "correct": "Worcestershire (ইংল্যান্ডের একটি কাউন্টি / সসের নাম)"
+      },
+      {
+        "broken": "Xy-lo-phone",
+        "correct": "Xylophone (জাইলোফোন)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "One who studies viruses",
+        "word": "Virologist (ভাইরাসবিদ)"
+      },
+      {
+        "phrase": "One who studies bacteria",
+        "word": "Bacteriologist (ব্যাকটেরিয়াবিদ)"
+      },
+      {
+        "phrase": "One who studies and describes cultures",
+        "word": "Ethnographer (সংস্কৃতি-বর্ণনাকারী নৃতাত্ত্বিক গবেষক)"
+      },
+      {
+        "phrase": "One who studies human societies and cultures",
+        "word": "Anthropologist (নৃতত্ত্ববিদ)"
+      },
+      {
+        "phrase": "One who studies prisons and punishment",
+        "word": "Penologist (দণ্ডতত্ত্ববিদ)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Judge : Court :: Professor : University",
+        "explanation": "(সম্পর্ক: পেশাজীবী ও কর্মপ্রতিষ্ঠান।)"
+      },
+      {
+        "relation": "Pilot : Cockpit :: Driver : Cabin",
+        "explanation": "(সম্পর্ক: চালক ও নিয়ন্ত্রণের স্থান।)"
+      },
+      {
+        "relation": "Wine : Grapes :: Bread : Flour",
+        "explanation": "(সম্পর্ক: পণ্য ও প্রধান উপাদান।)"
+      },
+      {
+        "relation": "Butter : Milk :: Paper : Pulp",
+        "explanation": "(সম্পর্ক: উৎপাদিত বস্তু ও কাঁচামাল।)"
+      },
+      {
+        "relation": "Glass : Sand :: Steel : Iron",
+        "explanation": "(সম্পর্ক: উৎপাদিত পদার্থ ও মূল উপাদান।)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-97-generated-20260715",
+    "dayNumber": "97",
+    "quote": "“ভুলকে ভয় পেয়ো না—ভুল থেকেই সঠিক উত্তর খুঁজে পাওয়ার দক্ষতা জন্মায়।”",
+    "vocabularies": [
+      {
+        "word": "Halcyon",
+        "meaning": "শান্ত, সুখী ও সমৃদ্ধ",
+        "synonym": "Peaceful, Idyllic, Tranquil",
+        "antonym": "Troubled, Chaotic, Turbulent",
+        "example": "She often remembered the halcyon days of her childhood."
+      },
+      {
+        "word": "Hegemony",
+        "meaning": "প্রভাবশালী আধিপত্য",
+        "synonym": "Dominance, Supremacy, Leadership",
+        "antonym": "Subordination, Weakness, Inferiority",
+        "example": "The empire sought regional hegemony."
+      },
+      {
+        "word": "Iconoclast",
+        "meaning": "প্রচলিত বিশ্বাস বা রীতির বিরোধী ব্যক্তি",
+        "synonym": "Nonconformist, Rebel, Dissenter",
+        "antonym": "Traditionalist, Conformist, Conservative",
+        "example": "The young writer became known as an iconoclast."
+      },
+      {
+        "word": "Imbroglio",
+        "meaning": "জটিল ও বিব্রতকর পরিস্থিতি",
+        "synonym": "Entanglement, Confusion, Complication",
+        "antonym": "Clarity, Simplicity, Order",
+        "example": "The contract dispute turned into a legal imbroglio."
+      },
+      {
+        "word": "Impugn",
+        "meaning": "সত্যতা বা সততা নিয়ে প্রশ্ন তোলা",
+        "synonym": "Challenge, Dispute, Question",
+        "antonym": "Defend, Uphold, Validate",
+        "example": "The lawyer refused to impugn the witness without evidence."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Grieve over",
+        "meaning": "কোনো ক্ষতিতে শোক করা",
+        "example": "She continued to grieve over the loss of her friend."
+      },
+      {
+        "word": "Impose on",
+        "meaning": "কারও ওপর চাপিয়ে দেওয়া",
+        "example": "Do not impose your opinion on others."
+      },
+      {
+        "word": "Introduce to",
+        "meaning": "কারও সঙ্গে পরিচয় করিয়ে দেওয়া",
+        "example": "Let me introduce you to our new teacher."
+      },
+      {
+        "word": "Keen on",
+        "meaning": "কোনো কিছুতে খুব আগ্রহী",
+        "example": "He is keen on learning foreign languages."
+      },
+      {
+        "word": "Lean on",
+        "meaning": "সহায়তার জন্য নির্ভর করা",
+        "example": "You can lean on your friends during difficult times."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Cut the Gordian knot",
+        "meaning": "জটিল সমস্যা সাহসী ও সরাসরি উপায়ে সমাধান করা",
+        "example": "The new director cut the Gordian knot with one decisive reform."
+      },
+      {
+        "word": "Get into hot water",
+        "meaning": "বিপদ বা ঝামেলায় পড়া",
+        "example": "He got into hot water for ignoring the rules."
+      },
+      {
+        "word": "Give the devil his due",
+        "meaning": "অপছন্দের ব্যক্তিরও প্রাপ্য কৃতিত্ব স্বীকার করা",
+        "example": "I dislike his methods, but I must give the devil his due."
+      },
+      {
+        "word": "Harp on the same string",
+        "meaning": "একই কথা বারবার বলা",
+        "example": "Stop harping on the same string and suggest a solution."
+      },
+      {
+        "word": "Have too many irons in the fire",
+        "meaning": "একসঙ্গে অতিরিক্ত কাজ হাতে নেওয়া",
+        "example": "She has too many irons in the fire this semester."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Quin-tes-sen-tial",
+        "correct": "Quintessential (আদর্শ প্রতিরূপ)"
+      },
+      {
+        "broken": "Quar-an-tine",
+        "correct": "Quarantine (সংক্রমণরোধে পৃথকীকরণ)"
+      },
+      {
+        "broken": "Ses-qui-pe-da-li-an",
+        "correct": "Sesquipedalian (দীর্ঘ শব্দপ্রবণ / দীর্ঘ শব্দবিশিষ্ট)"
+      },
+      {
+        "broken": "Ob-so-les-cence",
+        "correct": "Obsolescence (অপ্রচলিত হয়ে যাওয়ার অবস্থা)"
+      },
+      {
+        "broken": "Par-al-lel-ism",
+        "correct": "Parallelism (সমান্তরালতা)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "One who studies poisons",
+        "word": "Toxicologist (বিষতত্ত্ববিদ)"
+      },
+      {
+        "phrase": "One who studies butterflies and moths",
+        "word": "Lepidopterist (প্রজাপতি ও মথবিশারদ)"
+      },
+      {
+        "phrase": "One who studies shells and mollusks",
+        "word": "Conchologist (শামুক-ঝিনুকবিদ)"
+      },
+      {
+        "phrase": "One who studies inland waters",
+        "word": "Limnologist (হ্রদ ও অভ্যন্তরীণ জলবিদ)"
+      },
+      {
+        "phrase": "One who studies glaciers",
+        "word": "Glaciologist (হিমবাহবিদ)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Seed : Germination :: Egg : Hatching",
+        "explanation": "(সম্পর্ক: উৎস ও বিকাশের প্রক্রিয়া।)"
+      },
+      {
+        "relation": "Evidence : Proof :: Symptom : Diagnosis",
+        "explanation": "(সম্পর্ক: তথ্য/চিহ্ন থেকে নির্ণীত ফল।)"
+      },
+      {
+        "relation": "Hunger : Food :: Thirst : Water",
+        "explanation": "(সম্পর্ক: চাহিদা ও তা পূরণের উপায়।)"
+      },
+      {
+        "relation": "Exercise : Fitness :: Study : Knowledge",
+        "explanation": "(সম্পর্ক: কাজ ও অর্জিত ফল।)"
+      },
+      {
+        "relation": "Spark : Fire :: Germ : Disease",
+        "explanation": "(সম্পর্ক: ছোট কারণ থেকে সম্ভাব্য ফল।)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-98-generated-20260715",
+    "dayNumber": "98",
+    "quote": "“শেষের দিকে ক্লান্তি বাড়ে, কিন্তু এখানেই অধ্যবসায়ের সত্যিকারের পরীক্ষা।”",
+    "vocabularies": [
+      {
+        "word": "Incipient",
+        "meaning": "শুরু হতে যাচ্ছে বা প্রাথমিক পর্যায়ে",
+        "synonym": "Beginning, Emerging, Nascent",
+        "antonym": "Mature, Developed, Advanced",
+        "example": "Doctors detected the disease at an incipient stage."
+      },
+      {
+        "word": "Insouciant",
+        "meaning": "নিরুদ্বেগ / উদাসীনভাবে নিশ্চিন্ত",
+        "synonym": "Carefree, Unconcerned, Nonchalant",
+        "antonym": "Anxious, Concerned, Worried",
+        "example": "He remained insouciant despite the approaching deadline."
+      },
+      {
+        "word": "Internecine",
+        "meaning": "নিজেদের মধ্যকার ধ্বংসাত্মক সংঘর্ষসংক্রান্ত",
+        "synonym": "Mutual, Destructive, Fratricidal",
+        "antonym": "Cooperative, Peaceful, Harmonious",
+        "example": "Internecine rivalry weakened the organization."
+      },
+      {
+        "word": "Loquacious",
+        "meaning": "অত্যন্ত বাকপটু / বেশি কথা বলে এমন",
+        "synonym": "Talkative, Voluble, Garrulous",
+        "antonym": "Taciturn, Reticent, Silent",
+        "example": "The loquacious passenger chatted throughout the journey."
+      },
+      {
+        "word": "Maladroit",
+        "meaning": "অদক্ষ / অস্বচ্ছন্দ",
+        "synonym": "Clumsy, Inept, Awkward",
+        "antonym": "Skillful, Adroit, Dexterous",
+        "example": "His maladroit handling of the issue made matters worse."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Liable to",
+        "meaning": "কোনো কিছুর ঝুঁকিতে / সম্ভাবনায় থাকা",
+        "example": "Old machines are liable to break down."
+      },
+      {
+        "word": "Oblivious of",
+        "meaning": "সম্পূর্ণ অজ্ঞ / অসচেতন",
+        "example": "He was oblivious of the danger around him."
+      },
+      {
+        "word": "Preventive of",
+        "meaning": "প্রতিরোধকারী",
+        "example": "Regular exercise can be preventive of several diseases."
+      },
+      {
+        "word": "Qualified for",
+        "meaning": "কোনো কাজের যোগ্য",
+        "example": "She is fully qualified for the position."
+      },
+      {
+        "word": "Rely on",
+        "meaning": "নির্ভর করা",
+        "example": "You can rely on him to keep his promise."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Keep one's head above water",
+        "meaning": "কষ্টে হলেও টিকে থাকা",
+        "example": "The small shop is just keeping its head above water."
+      },
+      {
+        "word": "On the horns of a dilemma",
+        "meaning": "কঠিন দ্বিধায় পড়া",
+        "example": "He was on the horns of a dilemma about accepting the offer."
+      },
+      {
+        "word": "Put a spoke in one's wheel",
+        "meaning": "কারও কাজে বাধা সৃষ্টি করা",
+        "example": "Unexpected regulations put a spoke in their wheel."
+      },
+      {
+        "word": "Rain or shine",
+        "meaning": "যে কোনো পরিস্থিতিতে",
+        "example": "She goes for a walk every morning, rain or shine."
+      },
+      {
+        "word": "Run riot",
+        "meaning": "অনিয়ন্ত্রিতভাবে ছড়িয়ে পড়া বা আচরণ করা",
+        "example": "Weeds were allowed to run riot in the abandoned garden."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "A-nem-o-ne",
+        "correct": "Anemone (অ্যানিমোনি ফুল / সমুদ্র অ্যানিমোনি)"
+      },
+      {
+        "broken": "Ar-chae-op-ter-yx",
+        "correct": "Archaeopteryx (প্রাচীন পাখিসদৃশ জীবাশ্মপ্রাণী)"
+      },
+      {
+        "broken": "Buc-ca-neer",
+        "correct": "Buccaneer (জলদস্যু)"
+      },
+      {
+        "broken": "Chi-a-ro-scu-ro",
+        "correct": "Chiaroscuro (আলো-ছায়ার বৈপরীত্য কৌশল)"
+      },
+      {
+        "broken": "Cir-cum-lo-cu-tion",
+        "correct": "Circumlocution (ঘুরিয়ে-পেঁচিয়ে বলা)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "One who studies the movement and distribution of water",
+        "word": "Hydrologist (জলবিদ)"
+      },
+      {
+        "phrase": "One who studies soil and crop production",
+        "word": "Agronomist (কৃষিতত্ত্ববিদ)"
+      },
+      {
+        "phrase": "One who measures the size and shape of the earth",
+        "word": "Geodesist (ভূমিতিবিদ)"
+      },
+      {
+        "phrase": "One who studies ancient handwriting",
+        "word": "Paleographer (প্রাচীন লিপিবিদ)"
+      },
+      {
+        "phrase": "One who studies inscriptions",
+        "word": "Epigrapher (শিলালিপিবিদ)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Drizzle : Rain :: Breeze : Wind",
+        "explanation": "(সম্পর্ক: কম তীব্রতার রূপ ও সাধারণ রূপ।)"
+      },
+      {
+        "relation": "Victory : Defeat :: Profit : Loss",
+        "explanation": "(সম্পর্ক: বিপরীতার্থক জোড়া।)"
+      },
+      {
+        "relation": "Optimism : Hope :: Pessimism : Despair",
+        "explanation": "(সম্পর্ক: মানসিক দৃষ্টিভঙ্গি ও তার স্বাভাবিক ফল।)"
+      },
+      {
+        "relation": "Feather : Bird :: Scale : Fish",
+        "explanation": "(সম্পর্ক: প্রাণী ও দেহের আবরণ।)"
+      },
+      {
+        "relation": "Petal : Flower :: Leaf : Tree",
+        "explanation": "(সম্পর্ক: অংশ ও যে জীব/বস্তুর অংশ।)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-99-generated-20260715",
+    "dayNumber": "99",
+    "quote": "“তুমি যত বেশি শিখবে, তত বেশি বুঝবে—তোমার সম্ভাবনার সীমা আরও দূরে।”",
+    "vocabularies": [
+      {
+        "word": "Nadir",
+        "meaning": "সর্বনিম্ন বিন্দু / সবচেয়ে খারাপ অবস্থা",
+        "synonym": "Lowest point, Bottom, Depth",
+        "antonym": "Zenith, Peak, Summit",
+        "example": "Public confidence reached its nadir after the scandal."
+      },
+      {
+        "word": "Nascent",
+        "meaning": "সদ্য বিকাশমান / নতুন জন্ম নেওয়া",
+        "synonym": "Emerging, Developing, Budding",
+        "antonym": "Mature, Established, Declining",
+        "example": "The nascent industry needs careful investment."
+      },
+      {
+        "word": "Panglossian",
+        "meaning": "অতিরিক্ত আশাবাদী",
+        "synonym": "Overoptimistic, Sanguine, Rosy",
+        "antonym": "Pessimistic, Gloomy, Cynical",
+        "example": "His Panglossian view ignored the obvious risks."
+      },
+      {
+        "word": "Paragon",
+        "meaning": "আদর্শ উদাহরণ / উৎকৃষ্ট নমুনা",
+        "synonym": "Model, Exemplar, Ideal",
+        "antonym": "Disgrace, Failure, Inferiority",
+        "example": "She is a paragon of patience and discipline."
+      },
+      {
+        "word": "Peccadillo",
+        "meaning": "ছোটখাটো অপরাধ বা দোষ",
+        "synonym": "Minor fault, Indiscretion, Foible",
+        "antonym": "Virtue, Merit, Excellence",
+        "example": "The manager treated the error as a mere peccadillo."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Resign from",
+        "meaning": "পদ থেকে পদত্যাগ করা",
+        "example": "He resigned from the committee yesterday."
+      },
+      {
+        "word": "Result from",
+        "meaning": "কোনো কারণ থেকে সৃষ্টি হওয়া",
+        "example": "Many problems result from poor planning."
+      },
+      {
+        "word": "Result in",
+        "meaning": "কোনো ফল ঘটানো",
+        "example": "Careless driving may result in serious accidents."
+      },
+      {
+        "word": "Safe from",
+        "meaning": "কোনো বিপদ থেকে নিরাপদ",
+        "example": "The documents are safe from water damage."
+      },
+      {
+        "word": "Threaten with",
+        "meaning": "কোনো শাস্তি বা ক্ষতির হুমকি দেওয়া",
+        "example": "The robber threatened him with a knife."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "Show a clean pair of heels",
+        "meaning": "দ্রুত পালিয়ে যাওয়া",
+        "example": "The thief showed a clean pair of heels when the police arrived."
+      },
+      {
+        "word": "Take a leaf out of someone's book",
+        "meaning": "কারও ভালো উদাহরণ অনুসরণ করা",
+        "example": "You should take a leaf out of your sister’s book and plan ahead."
+      },
+      {
+        "word": "The acid test",
+        "meaning": "চূড়ান্ত ও কঠিন পরীক্ষা",
+        "example": "The real acid test will be how the system performs under pressure."
+      },
+      {
+        "word": "The apple of one's eye",
+        "meaning": "অত্যন্ত প্রিয় ব্যক্তি",
+        "example": "Her youngest daughter is the apple of her eye."
+      },
+      {
+        "word": "Tooth and nail",
+        "meaning": "সর্বশক্তি দিয়ে",
+        "example": "They fought tooth and nail to protect the forest."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Col-on-nade",
+        "correct": "Colonnade (স্তম্ভশ্রেণি)"
+      },
+      {
+        "broken": "Eu-ca-lyp-tus",
+        "correct": "Eucalyptus (ইউক্যালিপটাস)"
+      },
+      {
+        "broken": "Ex-che-quer",
+        "correct": "Exchequer (রাজকোষ)"
+      },
+      {
+        "broken": "Fi-bril-la-tion",
+        "correct": "Fibrillation (অনিয়মিত পেশী বা হৃদস্পন্দন)"
+      },
+      {
+        "broken": "Fjord",
+        "correct": "Fjord (হিমবাহে সৃষ্ট সরু গভীর সমুদ্রখাত)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A place where trees and shrubs are cultivated for study",
+        "word": "Arboretum (বৃক্ষউদ্যান)"
+      },
+      {
+        "phrase": "A building for viewing the stars and planets",
+        "word": "Planetarium (তারামণ্ডল প্রদর্শনাগার)"
+      },
+      {
+        "phrase": "A dining hall in a monastery or institution",
+        "word": "Refectory (সমবায় ভোজনকক্ষ)"
+      },
+      {
+        "phrase": "A place where manuscripts are written or copied",
+        "word": "Scriptorium (পাণ্ডুলিপি লেখার কক্ষ)"
+      },
+      {
+        "phrase": "A building with niches for funeral urns",
+        "word": "Columbarium (ভস্মাধার সংরক্ষণাগার)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Roof : House :: Crown : Head",
+        "explanation": "(সম্পর্ক: উপরের অংশ ও যে কাঠামোর ওপর থাকে।)"
+      },
+      {
+        "relation": "Soldier : Regiment :: Player : Team",
+        "explanation": "(সম্পর্ক: ব্যক্তি ও তার সংগঠিত দল।)"
+      },
+      {
+        "relation": "Word : Sentence :: Note : Melody",
+        "explanation": "(সম্পর্ক: ক্ষুদ্র একক ও তা দিয়ে গঠিত বড় রূপ।)"
+      },
+      {
+        "relation": "Minute : Hour :: Centimeter : Meter",
+        "explanation": "(সম্পর্ক: ছোট একক ও বড় একক।)"
+      },
+      {
+        "relation": "Spring : Summer :: Dawn : Morning",
+        "explanation": "(সম্পর্ক: এক পর্যায়ের পরবর্তী পর্যায়।)"
+      }
+    ],
+    "examLink": ""
+  },
+  {
+    "id": "day-100-generated-20260715",
+    "dayNumber": "100",
+    "quote": "“একশ দিন ধরে শেখার অভ্যাসই তোমার সবচেয়ে বড় অর্জন।”",
+    "vocabularies": [
+      {
+        "word": "Platitude",
+        "meaning": "বহুল ব্যবহারে অর্থহীন হয়ে যাওয়া গতানুগতিক কথা",
+        "synonym": "Cliché, Banality, Truism",
+        "antonym": "Originality, Novelty, Insight",
+        "example": "The speech was full of empty platitudes."
+      },
+      {
+        "word": "Polemic",
+        "meaning": "তর্কাত্মক ও আক্রমণাত্মক লেখা বা বক্তৃতা",
+        "synonym": "Controversy, Argument, Diatribe",
+        "antonym": "Agreement, Harmony, Conciliation",
+        "example": "The book is a fierce polemic against censorship."
+      },
+      {
+        "word": "Prevaricate",
+        "meaning": "সত্য এড়িয়ে অস্পষ্ট বা বিভ্রান্তিকর কথা বলা",
+        "synonym": "Equivocate, Evade, Quibble",
+        "antonym": "Answer, Clarify, Be truthful",
+        "example": "The witness continued to prevaricate under questioning."
+      },
+      {
+        "word": "Proclivity",
+        "meaning": "স্বাভাবিক প্রবণতা / ঝোঁক",
+        "synonym": "Tendency, Inclination, Predisposition",
+        "antonym": "Aversion, Disinclination, Resistance",
+        "example": "He has a proclivity for solving complex puzzles."
+      },
+      {
+        "word": "Recondite",
+        "meaning": "গভীর ও দুর্বোধ্য",
+        "synonym": "Obscure, Abstruse, Esoteric",
+        "antonym": "Simple, Obvious, Accessible",
+        "example": "The article contains recondite references to medieval law."
+      }
+    ],
+    "prepositions": [
+      {
+        "word": "Unmindful of",
+        "meaning": "কোনো বিষয়ে খেয়াল না রাখা",
+        "example": "He walked on, unmindful of the heavy rain."
+      },
+      {
+        "word": "Vary from",
+        "meaning": "একটি জিনিস থেকে অন্যটির পার্থক্য হওয়া",
+        "example": "Prices vary from one shop to another."
+      },
+      {
+        "word": "Accede to",
+        "meaning": "অনুরোধ বা প্রস্তাবে সম্মত হওয়া",
+        "example": "The board acceded to the workers’ request."
+      },
+      {
+        "word": "Admitted to",
+        "meaning": "কোনো প্রতিষ্ঠান বা স্থানে ভর্তি / প্রবেশাধিকার পাওয়া",
+        "example": "She was admitted to the university on merit."
+      },
+      {
+        "word": "Alarmed at",
+        "meaning": "কোনো ঘটনা দেখে আতঙ্কিত",
+        "example": "The villagers were alarmed at the rising water level."
+      }
+    ],
+    "idioms": [
+      {
+        "word": "A bull in a china shop",
+        "meaning": "অসাবধান ও বেখাপ্পা ব্যক্তি",
+        "example": "He handled the delicate negotiation like a bull in a china shop."
+      },
+      {
+        "word": "A sitting duck",
+        "meaning": "সহজ লক্ষ্য",
+        "example": "Without proper security, the server was a sitting duck for attackers."
+      },
+      {
+        "word": "An eye for an eye",
+        "meaning": "সমপরিমাণ প্রতিশোধের নীতি",
+        "example": "An eye for an eye cannot be the basis of lasting peace."
+      },
+      {
+        "word": "Beat a dead horse",
+        "meaning": "নিষ্ফল বিষয়ে বারবার চেষ্টা বা আলোচনা করা",
+        "example": "Arguing about that settled issue is beating a dead horse."
+      },
+      {
+        "word": "Blow the whistle",
+        "meaning": "অন্যায় বা গোপন অনিয়ম প্রকাশ করা",
+        "example": "An employee decided to blow the whistle on the fraud."
+      }
+    ],
+    "spellings": [
+      {
+        "broken": "Gnoc-chi",
+        "correct": "Gnocchi (ইতালীয় ডাম্পলিং)"
+      },
+      {
+        "broken": "He-ma-tol-o-gy",
+        "correct": "Hematology (রক্তবিদ্যা)"
+      },
+      {
+        "broken": "Knick-knack",
+        "correct": "Knickknack (ছোট সাজসজ্জার বস্তু)"
+      },
+      {
+        "broken": "Leu-ke-mi-a",
+        "correct": "Leukemia (লিউকেমিয়া / রক্তের ক্যান্সার)"
+      },
+      {
+        "broken": "Mous-tache",
+        "correct": "Moustache (গোঁফ)"
+      }
+    ],
+    "oneWords": [
+      {
+        "phrase": "A large tomb or monumental burial place",
+        "word": "Mausoleum (সমাধিসৌধ)"
+      },
+      {
+        "phrase": "A place where bones of the dead are kept",
+        "word": "Ossuary (অস্থি সংরক্ষণাগার)"
+      },
+      {
+        "phrase": "A collection or place of live animals for exhibition",
+        "word": "Menagerie (প্রাণীসংগ্রহশালা)"
+      },
+      {
+        "phrase": "An enclosure for keeping living animals for study",
+        "word": "Vivarium (জীবন্ত প্রাণী সংরক্ষণাগার)"
+      },
+      {
+        "phrase": "A collection of preserved plant specimens",
+        "word": "Herbarium (উদ্ভিদ নমুনা সংগ্রহশালা)"
+      }
+    ],
+    "analogies": [
+      {
+        "relation": "Needle : Sewing :: Chisel : Carving",
+        "explanation": "(সম্পর্ক: যন্ত্র ও তার প্রধান কাজ।)"
+      },
+      {
+        "relation": "Keyboard : Typist :: Easel : Painter",
+        "explanation": "(সম্পর্ক: পেশাজীবী ও ব্যবহৃত সহায়ক উপকরণ।)"
+      },
+      {
+        "relation": "Refrigerator : Cooling :: Furnace : Heating",
+        "explanation": "(সম্পর্ক: যন্ত্র ও তার কার্য।)"
+      },
+      {
+        "relation": "Calendar : Date :: Clock : Time",
+        "explanation": "(সম্পর্ক: যন্ত্র/মাধ্যম ও যে তথ্য দেখায়।)"
+      },
+      {
+        "relation": "Neuron : Brain :: Alveolus : Lung",
+        "explanation": "(সম্পর্ক: ক্ষুদ্র গঠনমূলক একক ও সংশ্লিষ্ট অঙ্গ।)"
+      }
+    ],
+    "examLink": ""
+  }
+]
